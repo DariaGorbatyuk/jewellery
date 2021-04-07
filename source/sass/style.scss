@@ -1,3 +1,8 @@
-h1 {
-  color: red;
-}
+@import "fonts";
+@import "variables";
+@import "general";
+@import "mixin";
+@import "block/visually-hidden";
+@import "block/container";
+@import "block/novelty";
+@import "block/card";
