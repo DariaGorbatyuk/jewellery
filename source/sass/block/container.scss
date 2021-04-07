@@ -1,0 +1,16 @@
+.container {
+  max-width: $l-end;
+  min-width: $small;
+  padding: 0 7.17%;
+  margin: 0 auto;
+  position: relative;
+
+  @media (max-width: $m-end) {
+    width: 100%;
+    padding: 0 3.24%;
+  }
+
+  @media (max-width: $s-end) {
+    padding: 0 4.68%;
+  }
+}
