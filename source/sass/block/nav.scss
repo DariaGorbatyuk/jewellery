@@ -10,6 +10,11 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+
+  @media (max-width: $m-end) {
+    display: block;
+    margin-bottom: 40px;
+  }
 }
 
 
@@ -17,7 +22,12 @@
   margin-right: 32px;
 
   &:last-child {
+    margin: 0;
+  }
+
+  @media (max-width: $m-end) {
     margin-right: 0;
+    margin-bottom: 21px;
   }
 }
 
@@ -29,12 +39,66 @@
   font-size: 16px;
   line-height: 24px;
   color: $dark;
+
+  @media (max-width: $m-end) {
+    font-size: 24px;
+    line-height: 36px;
+    color: $white;
+    width: 100%;
+    display: block;
+    padding-left: 20px;
+  }
 }
 
 .nav__small-list {
   display: none;
+
+  @media (max-width: $m-end) {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 44px;
+  }
+}
+
+.nav__small-item {
+  @media (max-width: $m-end){
+    margin-bottom: 20px;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+
+.nav__small-link {
+  @media (max-width: $m-end) {
+    font-family: $poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: rgba($white, 0.75);
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding-left: 20px;
+  }
 }
 
 .nav__login {
   display: none;
+
+  @media (max-width: $m-end) {
+    font-family: $poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: $white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding-left: 20px;
+  }
 }

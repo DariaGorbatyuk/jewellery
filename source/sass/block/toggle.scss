@@ -1,6 +1,6 @@
 .toggle {
   border: none;
-  background-color: tomato;
+  background-color: transparent;
   padding: 0;
   position: relative;
   width: 25px;
@@ -25,8 +25,23 @@
       top: 0;
     }
 
-    &::after{
+    &::after {
       bottom: 0;
+    }
+  }
+
+  &--opened {
+    span {
+      transform: rotate(45deg);
+
+      &::before {
+        top: unset;
+        transform: rotate(-92deg);
+      }
+
+      &::after {
+        display: none;
+      }
     }
   }
 }
