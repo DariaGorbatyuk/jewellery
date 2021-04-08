@@ -30,9 +30,9 @@
 
 
 .user-nav__bucket {
-  margin: 0;
   padding: 5px 0 5px 5px;
-  margin-right: 29px;
+  margin: 0 29px 0 0;
+  text-decoration: none;
 
   @media (max-width: $m-end) {
     margin: 0;

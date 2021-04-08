@@ -112,7 +112,7 @@
   align-items: flex-start;
   justify-content: space-between;
   padding-bottom: 15px;
-  overflow-y: hidden;
+  overflow: hidden;
   max-height: 78px;
   min-height: 78px;
   margin-bottom: 26px;
@@ -129,7 +129,7 @@
     padding: 0;
     margin: 0;
     max-height: unset;
-    overflow-y: visible;
+    overflow: visible;
     min-height: unset;
 
     &::after {
