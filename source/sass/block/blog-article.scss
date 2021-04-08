@@ -39,6 +39,16 @@
       }
     }
   }
+
+  @media (max-width: $s-end) {
+    flex-direction: column;
+
+    &--big {
+      .blog-article__text-container {
+        padding-top: 62px;
+      }
+    }
+  }
 }
 
 .blog-article__img-container {
@@ -54,6 +64,13 @@
   @media (max-width: $m-end) {
     height: 300px;
   }
+
+  @media (max-width: $s-end) {
+    order: -1;
+    width: 100%;
+    flex-basis: auto;
+    height: 256px;
+  }
 }
 
 .blog-article__text-container {
@@ -65,6 +82,12 @@
 
   @media (max-width: $m-end) {
     padding: 67px 13% 20px;
+  }
+
+  @media (max-width: $s-end) {
+    width: 100%;
+    flex-basis: auto;
+    padding: 45px 21% 49px;
   }
 }
 

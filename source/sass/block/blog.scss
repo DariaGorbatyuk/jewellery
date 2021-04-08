@@ -46,6 +46,9 @@
   @media (max-width: $m-end) {
 
   }
+  @media (max-width: $s-end) {
+    margin-bottom: 50px;
+  }
 }
 
 .blog__layout {
@@ -59,10 +62,22 @@
     display: block;
     margin: 0 24px;
   }
+
+  @media (max-width: $m-end) {
+    margin: 0;
+  }
 }
 
 .blog__article {
   @media (max-width: $m-end) {
     margin-bottom: 51px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: $s-end) {
+    margin-bottom: 40px;
   }
 }
