@@ -2,6 +2,29 @@
   padding-top: 30px;
   padding-bottom: 18px;
   position: relative;
+
+  @media (max-width: $m-end) {
+    &--closed {
+      .nav,
+      .search-form,
+      .user-nav__login {
+        display: none;
+      }
+
+      .user-nav__bucket {
+        font-size: 0;
+
+        svg {
+          display: block;
+          fill: white;
+        }
+      }
+
+      .header__toggle {
+        display: block;
+      }
+    }
+  }
 }
 
 .header__top {
@@ -20,6 +43,24 @@
     background-color: $white-gray;
     top: 114px;
     left: 0;
+  }
+
+  @media (max-width: $m-end) {
+    padding: 0;
+    margin: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.header__toggle {
+  display: none;
+
+  @media (max-width: $m-end) {
+    margin-top: 23px;
+    margin-left: 20px;
   }
 }
 
