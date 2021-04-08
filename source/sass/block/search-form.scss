@@ -6,7 +6,6 @@
   line-height: 21px;
   color: $light-gary;
   position: relative;
-  margin-top: 7px;
 
   input {
     color: $light-gary;
@@ -28,7 +27,6 @@
 
   @media (max-width: $m-end) {
     width: 100%;
-    margin: 0 20px;
 
     input {
       width: 100%;

@@ -15,6 +15,10 @@
     display: block;
     margin-bottom: 40px;
   }
+
+  @media (max-width: $s-end) {
+    margin-bottom: 30px;
+  }
 }
 
 
@@ -48,6 +52,10 @@
     display: block;
     padding-left: 20px;
   }
+
+  @media (max-width: $s-end) {
+    padding-left: 0;
+  }
 }
 
 .nav__small-list {
@@ -59,13 +67,17 @@
     list-style: none;
     margin-bottom: 44px;
   }
+
+  @media (max-width: $s-end) {
+    margin-bottom: 35px;
+  }
 }
 
 .nav__small-item {
-  @media (max-width: $m-end){
+  @media (max-width: $m-end) {
     margin-bottom: 20px;
 
-    &:last-child{
+    &:last-child {
       margin-bottom: 0;
     }
   }
@@ -84,6 +96,10 @@
     width: 100%;
     padding-left: 20px;
   }
+
+  @media (max-width: $s-end) {
+    padding-left: 0;
+  }
 }
 
 .nav__login {
@@ -100,5 +116,9 @@
     display: block;
     width: 100%;
     padding-left: 20px;
+  }
+
+  @media (max-width: $s-end) {
+    padding-left: 0;
   }
 }

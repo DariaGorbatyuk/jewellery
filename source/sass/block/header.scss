@@ -86,10 +86,23 @@
       }
     }
   }
+
   @media (max-width: $s-end) {
     &--closed {
       padding-top: 34px;
       padding-bottom: 12px;
+    }
+
+    &--opened {
+      padding-bottom: 45px;
+
+      .header__toggle {
+        margin-bottom: 52px;
+      }
+
+      .header__top {
+        margin-bottom: 36px
+      }
     }
   }
 }
@@ -155,5 +168,13 @@
 }
 
 .header__search-form {
-  margin-top: 106px;
+  margin-top: 7px;
+
+  @media (max-width: $m-end) {
+    margin: 0 20px;
+  }
+
+  @media (max-width: $s-end) {
+    margin: 0;
+  }
 }
