@@ -16,6 +16,10 @@
     max-width: unset;
     margin: 20px 20px 0 0;
   }
+
+  @media (max-width: $s-end) {
+    margin: 0;
+  }
 }
 
 .user-nav__login {
