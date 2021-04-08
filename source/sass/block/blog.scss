@@ -1,5 +1,9 @@
 .blog {
   font-style: normal;
+
+  @media (max-width: $m-end) {
+
+  }
 }
 
 .blog h2 {
@@ -12,6 +16,10 @@
   color: $dark;
   margin-top: 0;
   margin-bottom: 18px;
+
+  @media (max-width: $m-end) {
+
+  }
 }
 
 .blog__excerpt {
@@ -34,6 +42,10 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
+  @media (max-width: $m-end) {
+
+  }
 }
 
 .blog__layout {
@@ -42,8 +54,15 @@
   grid-template-rows: minmax(300px, auto) minmax(300px, auto);
   column-gap: 30px;
   row-gap: 30px;
+
+  @media (max-width: $m-end) {
+    display: block;
+    margin: 0 24px;
+  }
 }
 
 .blog__article {
-
+  @media (max-width: $m-end) {
+    margin-bottom: 51px;
+  }
 }
