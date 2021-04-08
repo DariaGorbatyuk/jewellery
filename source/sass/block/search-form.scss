@@ -1,0 +1,41 @@
+.search-form {
+  font-family: $poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: $light-gary;
+  position: relative;
+  margin-top: 7px;
+
+  input {
+    color: $light-gary;
+    padding: 5px 6px 5px 30px;
+    border: none;
+
+    &::placeholder {
+      font-style: inherit;
+      font-weight: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      color: $light-gary;
+    }
+
+    &::-ms-clear {
+      display: none;
+    }
+
+    /*    &::focus{
+          outline: none;
+        }*/
+  }
+}
+
+.search-form__btn {
+  position: absolute;
+  left: -5px;
+  top: 3px;
+  background-color: transparent;
+  border: none;
+  padding: 5px;
+}

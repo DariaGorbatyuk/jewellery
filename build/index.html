@@ -11,282 +11,289 @@
 <header class="header">
   <div class="container">
     <h1 class="visually-hidden">jewelry store</h1>
-    <form action="https://echo.htmlacademy.ru" method="get" class="header__search-form search-form">
-      <div>
-        <input type="search" name="search" id="search" placeholder="Type here to search">
-        <label class="visually-hidden" for="search">Type here to search</label>
-      </div>
-      <button type="submit">Search</button>
-    </form>
-    <a class="header__logo logo" aria-label="You are already on the main page">
-      <svg width="66" height="66" role="img">
-        <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
-      </svg>
-    </a>
-    <nav class="header__user-nav user-nav">
-      <a href="#">Login</a>
-      <p>
-        <svg width="18" height="16" role="img">
-          <use xlink:href="img/sprite_auto.svg#icon-bucket"></use>
+    <div class="header__top">
+      <form action="https://echo.htmlacademy.ru" method="get" class="header__search-form search-form">
+        <div>
+          <input type="search" name="search" id="search" placeholder="Type here to search">
+          <label class="visually-hidden" for="search">Type here to search</label>
+        </div>
+        <button class="search-form__btn" type="submit" aria-label="Search">
+          <svg width="14" height="14" role="img">
+            <use xlink:href="img/sprite_auto.svg#icon-search"></use>
+          </svg>
+        </button>
+      </form>
+      <a class="header__logo" aria-label="You are already on the main page">
+        <svg width="66" height="66" role="img">
+          <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
         </svg>
-        Cart <span>0</span></p>
-    </nav>
+      </a>
+      <nav class="header__user-nav user-nav">
+        <a class="user-nav__login" href="#">Login</a>
+        <a class="user-nav__bucket">
+          <svg width="18" height="16" role="img">
+            <use xlink:href="img/sprite_auto.svg#icon-bucket"></use>
+          </svg>
+          Cart <span>0</span>
+        </a>
+      </nav>
+    </div>
     <nav class="header__nav nav">
       <ul class="nav__main-list">
-        <li class="nav__main-item"><a href="#">What’s new</a></li>
-        <li class="nav__main-item"><a href="#">Chokers</a></li>
-        <li class="nav__main-item"><a href="#">Necklaces</a></li>
-        <li class="nav__main-item"><a href="#">Rings</a></li>
-        <li class="nav__main-item"><a href="#">Earrings</a></li>
+        <li class="nav__main-item"><a class="nav__main-link" href="#">What’s new</a></li>
+        <li class="nav__main-item"><a class="nav__main-link" href="#">Chokers</a></li>
+        <li class="nav__main-item"><a class="nav__main-link" href="#">Necklaces</a></li>
+        <li class="nav__main-item"><a class="nav__main-link" href="#">Rings</a></li>
+        <li class="nav__main-item"><a class="nav__main-link" href="#">Earrings</a></li>
       </ul>
       <ul class="nav__small-list">
-        <li class="nav__small-item"><a href="#">About CH</a></li>
-        <li class="nav__small-item"><a href="#">Stores & Hours</a></li>
-        <li class="nav__small-item"><a href="#">Contact Us</a></li>
+        <li class="nav__small-item"><a class="nav__small-link" href="#">About CH</a></li>
+        <li class="nav__small-item"><a class="nav__small-link" href="#">Stores & Hours</a></li>
+        <li class="nav__small-item"><a class="nav__small-link" href="#">Contact Us</a></li>
       </ul>
-      <a href="#">Login</a>
+      <a class="nav__login" href="#">Login</a>
     </nav>
   </div>
 </header>
 <main class="main">
-<!--  <div class="main__promo promo">
-    <div class="container">
-      <p>perfection <span>made to be yours</span></p>
-    </div>
-  </div>-->
- <!-- <section class="novelty">
-    <div class="container">
-      <h2>New In</h2>
-      <a class="novelty__excerpt" href="#">Shop Now</a>
-      <ul class="novelty__list">
-        <li class="novelty__item card">
-          <h3>Necklace with amethyst</h3>
-          <div class="card__img-container">
-            <img src="img/purple-gemstone-necklace-desktop.jpg" alt="Purple gemstone necklace"
-                 srcset="img/purple-gemstone-necklace-desktop@2x.jpg 2x" width="270" height="284">
+  <!--  <div class="main__promo promo">
+      <div class="container">
+        <p>perfection <span>made to be yours</span></p>
+      </div>
+    </div>-->
+  <!-- <section class="novelty">
+     <div class="container">
+       <h2>New In</h2>
+       <a class="novelty__excerpt" href="#">Shop Now</a>
+       <ul class="novelty__list">
+         <li class="novelty__item card">
+           <h3>Necklace with amethyst</h3>
+           <div class="card__img-container">
+             <img src="img/purple-gemstone-necklace-desktop.jpg" alt="Purple gemstone necklace"
+                  srcset="img/purple-gemstone-necklace-desktop@2x.jpg 2x" width="270" height="284">
+           </div>
+           <span>$ 145</span>
+         </li>
+         <li class="novelty__item card">
+           <h3>Layered сhoker</h3>
+           <div class="card__img-container">
+             <img src="img/layered-choker-necklace-desktop.jpg" alt="layered choker - necklace"
+                  srcset="img/layered-choker-necklace-desktop@2x.jpg 2x" width="270" height="284">
+           </div>
+           <span>$ 115</span>
+         </li>
+         <li class="novelty__item card">
+           <h3>Gold chain</h3>
+           <div class="card__img-container">
+             <img src="img/dainty-gold-necklace-desktop.jpg" alt="Dainty gold chain"
+                  srcset="img/dainty-gold-necklace-desktop@2x.jpg 2x" width="270" height="284">
+           </div>
+           <span>$ 215</span>
+         </li>
+         <li class="novelty__item card">
+           <h3>Galaxy earrings</h3>
+           <div class="card__img-container">
+             <img src="img/galaxy-earrings-desktop.jpg" alt="Galaxy earrings"
+                  srcset="img/galaxy-earrings-desktop@2x.jpg 2x" width="270" height="284">
+           </div>
+           <span>$ 95</span>
+         </li>
+       </ul>
+     </div>
+   </section>-->
+  <!--  <section class="blog">
+      <div class="container">
+        <h2>Blog</h2>
+        <a class="blog__excerpt" href="#">Read All</a>
+        <article class="blog__article blog-article">
+          <div class="blog-article__img-container">
+            <img src="img/care.jpg" srcset="img/care@2x.jpg 2x" alt="Several gold accessories on a white background"
+                 width="285" height="300">
           </div>
-          <span>$ 145</span>
-        </li>
-        <li class="novelty__item card">
-          <h3>Layered сhoker</h3>
-          <div class="card__img-container">
-            <img src="img/layered-choker-necklace-desktop.jpg" alt="layered choker - necklace"
-                 srcset="img/layered-choker-necklace-desktop@2x.jpg 2x" width="270" height="284">
+          <div class="blog-article__text-container">
+            <h3>How to care for your jewellery</h3>
+            <p>September 30, 2019</p>
+            <a class="blog-article__excerpt" href="#">Read Article</a>
           </div>
-          <span>$ 115</span>
-        </li>
-        <li class="novelty__item card">
-          <h3>Gold chain</h3>
-          <div class="card__img-container">
-            <img src="img/dainty-gold-necklace-desktop.jpg" alt="Dainty gold chain"
-                 srcset="img/dainty-gold-necklace-desktop@2x.jpg 2x" width="270" height="284">
+        </article>
+        <article class="blog__article blog-article">
+          <div class="blog-article__text-container">
+            <h3>Power of crystals</h3>
+            <p>September 23, 2019</p>
+            <a class="blog-article__excerpt" href="#">Read Article</a>
           </div>
-          <span>$ 215</span>
-        </li>
-        <li class="novelty__item card">
-          <h3>Galaxy earrings</h3>
-          <div class="card__img-container">
-            <img src="img/galaxy-earrings-desktop.jpg" alt="Galaxy earrings"
-                 srcset="img/galaxy-earrings-desktop@2x.jpg 2x" width="270" height="284">
+          <div class="blog-article__img-container">
+            <img src="img/crystal.jpg" srcset="img/crystal@2x.jpg 2x" alt="Several crystals on a gray background"
+                 width="285" height="300">
           </div>
-          <span>$ 95</span>
-        </li>
-      </ul>
-    </div>
-  </section>-->
-<!--  <section class="blog">
-    <div class="container">
-      <h2>Blog</h2>
-      <a class="blog__excerpt" href="#">Read All</a>
-      <article class="blog__article blog-article">
-        <div class="blog-article__img-container">
-          <img src="img/care.jpg" srcset="img/care@2x.jpg 2x" alt="Several gold accessories on a white background"
-               width="285" height="300">
-        </div>
-        <div class="blog-article__text-container">
-          <h3>How to care for your jewellery</h3>
-          <p>September 30, 2019</p>
-          <a class="blog-article__excerpt" href="#">Read Article</a>
-        </div>
-      </article>
-      <article class="blog__article blog-article">
-        <div class="blog-article__text-container">
-          <h3>Power of crystals</h3>
-          <p>September 23, 2019</p>
-          <a class="blog-article__excerpt" href="#">Read Article</a>
-        </div>
-        <div class="blog-article__img-container">
-          <img src="img/crystal.jpg" srcset="img/crystal@2x.jpg 2x" alt="Several crystals on a gray background"
-               width="285" height="300">
-        </div>
-      </article>
-      <article class="blog__article blog-article blog-article&#45;&#45;big">
-        <div class="blog-article__text-container">
-          <h3>AW 19 trends</h3>
-          <p>September 16, 2019</p>
-          <a class="blog-article__excerpt" href="#">Read Article</a>
-        </div>
-        <div class="blog-article__img-container">
-          <img src="img/trends.jpg" srcset="img/trends@2x.jpg 2x" alt="Several crystals on a gray background"
-               width="570"
-               height="630">
-        </div>
-      </article>
-    </div>
-  </section>-->
- <!-- <section class="faq">
-    <div class="container">
-      <h2>Frequently asked questions</h2>
-      <ul class="faq__list">
-        <li class="faq__item">
-          <details>
-            <summary>What materials are the jewellery made of?</summary>
-            <p>
-              Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
-              semiprecious
-              stones and crystals.
-            </p>
-          </details>
-        </li>
-        <li class="faq__item">
-          <details>
-            <summary>Which countries do you deliver to?</summary>
-            <p>
-              Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
-              semiprecious
-              stones and crystals.
-            </p>
-          </details>
-        </li>
-        <li class="faq__item">
-          <details>
-            <summary>What are the payment methods?</summary>
-            <p>
-              Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
-              semiprecious
-              stones and crystals.
-            </p>
-          </details>
-        </li>
-        <li class="faq__item">
-          <details>
-            <summary>Can I return the jewellery if it didn’t fit me?</summary>
-            <p>
-              Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
-              semiprecious
-              stones and crystals.
-            </p>
-          </details>
-        </li>
-      </ul>
-    </div>
-  </section>-->
- <!-- <section class="inst">
-    <div class="container">
-      <h2>@Chjewellery</h2>
-      <a href="#">Follow Us</a>
-      <div class="inst__img-container">
-        <img src="img/11inst-desktop.jpg" srcset="img/11inst-desktop@2x.jpg 2x" alt="The square earrings" width="230"
-             height="230">
-      </div>
-      <div class="inst__img-container">
-        <img src="img/21inst-desktop.jpg" srcset="img/21inst-desktop@2x.jpg 2x" alt="The multi-colored earrings"
-             width="230" height="154">
-      </div>
-      <div class="inst__img-container">
-        <img src="img/2inst-desktop.jpg" srcset="img/2inst-desktop@2x.jpg 2x" alt="A girl with big gold earrings"
-             width="400" height="414">
-      </div>
-      <div class="inst__img-container">
-        <img src="img/13inst-desktop.jpg" srcset="img/13inst-desktop@2x.jpg 2x"
-             alt="Two gold bracelets and a ring on the girl's hands" width="232" height="193">
-      </div>
-      <div class="inst__img-container">
-        <img src="img/14inst-desktop.jpg" srcset="img/14inst-desktop@2x.jpg 2x" alt="Round earrings" width="218"
-             height="218">
-      </div>
-      <div class="inst__img-container">
-        <img src="img/23inst-desktop.jpg" srcset="img/23inst-desktop@2x.jpg 2x" alt="Crystals necklace and bracelet"
-             width="218" height="191">
-      </div>
-      <div class="inst__img-container">
-        <img src="img/24inst-desktop.jpg" srcset="img/24inst-desktop@2x.jpg 2x" alt="Ring on crossed female hands"
-             width="232" height="166">
-      </div>
-    </div>
-  </section>-->
- <!-- <footer class="footer">
-    <div class="container">
-      <section class="footer__subscribe subscribe">
-        <h2>The good stuff in your inbox</h2>
-        <p>News and updates from CH. No spam, we promise.</p>
-        <form action="" method="post" class="subscribe__form subs-form">
-          <div>
-            <input type="email" name="email" id="subs-email" placeholder="Your E-mail">
-            <label for="subs-email">Your E-mail</label>
+        </article>
+        <article class="blog__article blog-article blog-article&#45;&#45;big">
+          <div class="blog-article__text-container">
+            <h3>AW 19 trends</h3>
+            <p>September 16, 2019</p>
+            <a class="blog-article__excerpt" href="#">Read Article</a>
           </div>
-          <button type="submit">
-            <span>Sign Up</span>
-            <svg width="29" height="9" role="img">
-              <use xlink:href="img/sprite_auto.svg#icon-signup"></use>
-            </svg>
-          </button>
-        </form>
-      </section>
-      <section class="footer__about about">
-        <h2 class="visually-hidden">Purchase information</h2>
-        <ul class="about__list about__list&#45;&#45;buy">
-          <li class="about__item"><a href="#" class="about__link">Ordering & Payment</a></li>
-          <li class="about__item"><a href="#" class="about__link">Terms & Conditions</a></li>
-          <li class="about__item"><a href="#" class="about__link">Returns & Exchanges</a></li>
-          <li class="about__item"><a href="#" class="about__link">Delivery</a></li>
-        </ul>
-        <ul class="about__list about__list&#45;&#45;info">
-          <li class="about__item"><a href="#" class="about__link">About CH</a></li>
-          <li class="about__item"><a href="#" class="about__link">Stores & Hours</a></li>
-          <li class="about__item"><a href="#" class="about__link">Jobs</a></li>
-          <li class="about__item"><a href="#" class="about__link">Contact Us</a></li>
-        </ul>
-      </section>
-      <section class="socials">
-        <h2 class="visually-hidden">Our contacts</h2>
-        <ul class="socials__list">
-          <li class="socials__item">
-            <a href="#" class="socials__link" aria-label="Facebook">
-              <svg class="socials__svg" width="8" height="15" role="img">
-                <use xlink:href="img/sprite_auto.svg#icon-f"></use>
-              </svg>
-              <span>Facebook</span>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a href="#" class="socials__link" aria-label="Instagram">
-              <svg class="socials__svg" width="15" height="15" role="img">
-                <use xlink:href="img/sprite_auto.svg#icon-i"></use>
-              </svg>
-              <span>Instagram</span>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a href="#" class="socials__link" aria-label="Pinterest">
-              <svg class="socials__svg" width="15" height="15" role="img">
-                <use xlink:href="img/sprite_auto.svg#icon-p"></use>
-              </svg>
-              <span>Pinterest</span>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a href="#" class="socials__link" aria-label="Twitter">
-              <svg class="socials__svg" width="15" height="13" role="img">
-                <use xlink:href="img/sprite_auto.svg#icon-tw"></use>
-              </svg>
-              <span>Twitter</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-    </div>
-  </footer>-->
+          <div class="blog-article__img-container">
+            <img src="img/trends.jpg" srcset="img/trends@2x.jpg 2x" alt="Several crystals on a gray background"
+                 width="570"
+                 height="630">
+          </div>
+        </article>
+      </div>
+    </section>-->
+  <!-- <section class="faq">
+     <div class="container">
+       <h2>Frequently asked questions</h2>
+       <ul class="faq__list">
+         <li class="faq__item">
+           <details>
+             <summary>What materials are the jewellery made of?</summary>
+             <p>
+               Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
+               semiprecious
+               stones and crystals.
+             </p>
+           </details>
+         </li>
+         <li class="faq__item">
+           <details>
+             <summary>Which countries do you deliver to?</summary>
+             <p>
+               Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
+               semiprecious
+               stones and crystals.
+             </p>
+           </details>
+         </li>
+         <li class="faq__item">
+           <details>
+             <summary>What are the payment methods?</summary>
+             <p>
+               Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
+               semiprecious
+               stones and crystals.
+             </p>
+           </details>
+         </li>
+         <li class="faq__item">
+           <details>
+             <summary>Can I return the jewellery if it didn’t fit me?</summary>
+             <p>
+               Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
+               semiprecious
+               stones and crystals.
+             </p>
+           </details>
+         </li>
+       </ul>
+     </div>
+   </section>-->
+  <!-- <section class="inst">
+     <div class="container">
+       <h2>@Chjewellery</h2>
+       <a href="#">Follow Us</a>
+       <div class="inst__img-container">
+         <img src="img/11inst-desktop.jpg" srcset="img/11inst-desktop@2x.jpg 2x" alt="The square earrings" width="230"
+              height="230">
+       </div>
+       <div class="inst__img-container">
+         <img src="img/21inst-desktop.jpg" srcset="img/21inst-desktop@2x.jpg 2x" alt="The multi-colored earrings"
+              width="230" height="154">
+       </div>
+       <div class="inst__img-container">
+         <img src="img/2inst-desktop.jpg" srcset="img/2inst-desktop@2x.jpg 2x" alt="A girl with big gold earrings"
+              width="400" height="414">
+       </div>
+       <div class="inst__img-container">
+         <img src="img/13inst-desktop.jpg" srcset="img/13inst-desktop@2x.jpg 2x"
+              alt="Two gold bracelets and a ring on the girl's hands" width="232" height="193">
+       </div>
+       <div class="inst__img-container">
+         <img src="img/14inst-desktop.jpg" srcset="img/14inst-desktop@2x.jpg 2x" alt="Round earrings" width="218"
+              height="218">
+       </div>
+       <div class="inst__img-container">
+         <img src="img/23inst-desktop.jpg" srcset="img/23inst-desktop@2x.jpg 2x" alt="Crystals necklace and bracelet"
+              width="218" height="191">
+       </div>
+       <div class="inst__img-container">
+         <img src="img/24inst-desktop.jpg" srcset="img/24inst-desktop@2x.jpg 2x" alt="Ring on crossed female hands"
+              width="232" height="166">
+       </div>
+     </div>
+   </section>-->
+  <!-- <footer class="footer">
+     <div class="container">
+       <section class="footer__subscribe subscribe">
+         <h2>The good stuff in your inbox</h2>
+         <p>News and updates from CH. No spam, we promise.</p>
+         <form action="" method="post" class="subscribe__form subs-form">
+           <div>
+             <input type="email" name="email" id="subs-email" placeholder="Your E-mail">
+             <label for="subs-email">Your E-mail</label>
+           </div>
+           <button type="submit">
+             <span>Sign Up</span>
+             <svg width="29" height="9" role="img">
+               <use xlink:href="img/sprite_auto.svg#icon-signup"></use>
+             </svg>
+           </button>
+         </form>
+       </section>
+       <section class="footer__about about">
+         <h2 class="visually-hidden">Purchase information</h2>
+         <ul class="about__list about__list&#45;&#45;buy">
+           <li class="about__item"><a href="#" class="about__link">Ordering & Payment</a></li>
+           <li class="about__item"><a href="#" class="about__link">Terms & Conditions</a></li>
+           <li class="about__item"><a href="#" class="about__link">Returns & Exchanges</a></li>
+           <li class="about__item"><a href="#" class="about__link">Delivery</a></li>
+         </ul>
+         <ul class="about__list about__list&#45;&#45;info">
+           <li class="about__item"><a href="#" class="about__link">About CH</a></li>
+           <li class="about__item"><a href="#" class="about__link">Stores & Hours</a></li>
+           <li class="about__item"><a href="#" class="about__link">Jobs</a></li>
+           <li class="about__item"><a href="#" class="about__link">Contact Us</a></li>
+         </ul>
+       </section>
+       <section class="socials">
+         <h2 class="visually-hidden">Our contacts</h2>
+         <ul class="socials__list">
+           <li class="socials__item">
+             <a href="#" class="socials__link" aria-label="Facebook">
+               <svg class="socials__svg" width="8" height="15" role="img">
+                 <use xlink:href="img/sprite_auto.svg#icon-f"></use>
+               </svg>
+               <span>Facebook</span>
+             </a>
+           </li>
+           <li class="socials__item">
+             <a href="#" class="socials__link" aria-label="Instagram">
+               <svg class="socials__svg" width="15" height="15" role="img">
+                 <use xlink:href="img/sprite_auto.svg#icon-i"></use>
+               </svg>
+               <span>Instagram</span>
+             </a>
+           </li>
+           <li class="socials__item">
+             <a href="#" class="socials__link" aria-label="Pinterest">
+               <svg class="socials__svg" width="15" height="15" role="img">
+                 <use xlink:href="img/sprite_auto.svg#icon-p"></use>
+               </svg>
+               <span>Pinterest</span>
+             </a>
+           </li>
+           <li class="socials__item">
+             <a href="#" class="socials__link" aria-label="Twitter">
+               <svg class="socials__svg" width="15" height="13" role="img">
+                 <use xlink:href="img/sprite_auto.svg#icon-tw"></use>
+               </svg>
+               <span>Twitter</span>
+             </a>
+           </li>
+         </ul>
+       </section>
+     </div>
+   </footer>-->
 </main>
 </body>
 </html>

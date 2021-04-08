@@ -1,0 +1,30 @@
+.header {
+  padding-top: 30px;
+  padding-bottom: 18px;
+  position: relative;
+}
+
+.header__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  overflow-y: hidden;
+  max-height: 78px;
+  min-height: 78px;
+  margin-bottom: 26px;
+
+  &::after {
+    @include pseudo();
+    @include size(100%, 1px);
+    background-color: $white-gray;
+    top: 114px;
+    left: 0;
+  }
+}
+
+.header__logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
