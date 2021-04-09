@@ -1,0 +1,38 @@
+.promo {
+  min-height: 463px;
+  background-color: $promo-filter;
+  background-image: linear-gradient(rgba($promo-filter, 0.7), rgba($promo-filter, 0.7)), url("../img/intro-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: $cg;
+  color: $white;
+  filter: drop-shadow(0 4px 4px rgba($black, 0.25));
+  padding-top: 180px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/intro-desktop@2x.jpg");
+  }
+}
+
+.promo span {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+}
+
+.promo p {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 1.1;
+  text-transform: lowercase;
+  margin: 0;
+  text-align: center;
+}
+
