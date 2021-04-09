@@ -1,0 +1,22 @@
+.footer {
+  background-color: $black;
+  color: $white;
+  padding-bottom: 99px;
+  padding-top: 90px;
+}
+
+.footer__layout {
+  display: grid;
+  grid-template-columns: minmax(410px, 500px) minmax(30px, 77px) minmax(300px, 380px) minmax(30px, 93px) 120px;
+}
+
+.footer__about {
+  grid-column: 3/4;
+  margin-top: 7px;
+  margin-left: 13px;
+}
+
+.footer__socials {
+  grid-column: 5/6;
+  margin-top: 7px;
+}

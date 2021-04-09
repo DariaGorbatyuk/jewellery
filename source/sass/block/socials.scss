@@ -1,0 +1,34 @@
+.socials {
+  font-family: $poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.socials__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.socials__item {
+  margin-bottom: 22px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+.socials__link {
+  text-decoration: none;
+
+  span {
+
+  }
+}
+
+.socials__svg {
+  margin-right: 15px;
+}
