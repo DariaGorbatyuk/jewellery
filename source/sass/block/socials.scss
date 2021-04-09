@@ -10,6 +10,13 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (max-width: $s-end) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
 }
 
 .socials__item {
@@ -18,14 +25,26 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media (max-width: $s-end) {
+    margin-right: 15px;
+    margin-bottom: 7px;
+
+    &:last-child{
+      margin-right: 0;
+      margin-bottom: 7px;
+    }
+  }
 }
 
 
 .socials__link {
   text-decoration: none;
 
-  span {
-
+  @media (max-width: $s-end) {
+    span {
+      display: none;
+    }
   }
 }
 
@@ -34,5 +53,10 @@
 
   @media (max-width: $m-end) {
     margin-right: 12px;
+  }
+
+  @media (max-width: $s-end) {
+    width: 20px;
+    height: 21px;
   }
 }

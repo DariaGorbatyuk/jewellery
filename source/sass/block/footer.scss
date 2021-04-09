@@ -8,6 +8,10 @@
     padding-bottom: 55px;
     padding-top: 52px;
   }
+
+  @media (max-width: $s-end) {
+    padding-bottom: 48px;
+  }
 }
 
 .footer__layout {
@@ -17,9 +21,13 @@
   @media (max-width: $m-end) {
     grid-template-rows: repeat(2, min-content);
     grid-template-columns: repeat(3, 1fr);
-    //grid-template-columns: 376px minmax(30px, 81px) 1fr;
     margin-left: 21px;
     row-gap: 45px;
+  }
+
+  @media (max-width: $s-end) {
+    display: block;
+    margin-left: 0;
   }
 }
 
@@ -27,6 +35,10 @@
   @media (max-width: $m-end) {
     grid-column: 1/4;
     grid-row: 1/2;
+  }
+
+  @media (max-width: $s-end) {
+    margin-bottom: 45px;
   }
 }
 
@@ -40,6 +52,10 @@
     margin-top: 0;
     margin-left: 0;
   }
+
+  @media (max-width: $s-end) {
+
+  }
 }
 
 .footer__socials {
@@ -50,5 +66,9 @@
     grid-column: 3/4;
     margin-top: 0;
     margin-right: auto;
+  }
+
+  @media (max-width: $s-end) {
+
   }
 }

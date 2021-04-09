@@ -11,6 +11,12 @@
   letter-spacing: 0.03em;
   margin-top: 0;
   margin-bottom: 14px;
+
+  @media (max-width: $s-end) {
+    margin-right: 21%;
+    line-height: 1.3;
+    margin-bottom: 14px;
+  }
 }
 
 .subscribe p {
@@ -22,6 +28,10 @@
   margin-top: 0;
   color: $light-gary;
   margin-bottom: 34px;
+
+  @media (max-width: $s-end) {
+    margin-right: 21%;
+  }
 }
 
 .subscribe__form {
