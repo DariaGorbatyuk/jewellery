@@ -31,4 +31,8 @@
 
 .socials__svg {
   margin-right: 15px;
+
+  @media (max-width: $m-end) {
+    margin-right: 12px;
+  }
 }
