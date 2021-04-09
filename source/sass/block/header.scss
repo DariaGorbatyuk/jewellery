@@ -5,6 +5,8 @@
 
   @media (max-width: $m-end) {
     &--closed {
+      padding-bottom: 29px;
+
       .nav,
       .search-form,
       .user-nav__login {

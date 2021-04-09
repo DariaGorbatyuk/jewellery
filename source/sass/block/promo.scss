@@ -13,6 +13,10 @@
   @media (min-resolution: 2dppx) {
     background-image: url("../img/intro-desktop@2x.jpg");
   }
+
+  @media (max-width: $m-end) {
+    filter: none;
+  }
 }
 
 .promo span {
