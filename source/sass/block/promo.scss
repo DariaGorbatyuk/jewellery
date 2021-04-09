@@ -17,6 +17,15 @@
   @media (max-width: $m-end) {
     filter: none;
   }
+
+  @media (max-width: $s-end) {
+    padding-top: 188px;
+    background-image: linear-gradient(rgba($promo-filter, 0.7), rgba($promo-filter, 0.7)), url("../img/intro-320.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro-320@2x.jpg");
+    }
+  }
 }
 
 .promo span {
@@ -28,6 +37,10 @@
   text-transform: uppercase;
   text-align: center;
   display: block;
+
+  @media (max-width: $s-end) {
+    font-size: 38px;
+  }
 }
 
 .promo p {
@@ -38,5 +51,9 @@
   text-transform: lowercase;
   margin: 0;
   text-align: center;
+
+  @media (max-width: $s-end) {
+    font-size: 34px;
+  }
 }
 
