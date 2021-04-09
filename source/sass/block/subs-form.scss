@@ -25,6 +25,10 @@
       color: $light-gary;
     }
   }
+
+  @media (max-width: $m-end) {
+    max-width: 80%;
+  }
 }
 
 .subs-form__btn {
