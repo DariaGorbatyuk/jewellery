@@ -13,6 +13,10 @@
   text-align: center;
   margin-top: 0;
   margin-bottom: 30px;
+
+  @media (max-width: $m-end) {
+    margin-bottom: 19px;
+  }
 }
 
 .inst__follow {
@@ -39,6 +43,11 @@
 
 .inst__wrapper {
   display: flex;
+
+  @media (max-width: $m-end) {
+    width: 678px;
+    margin: 0 auto;
+  }
 }
 
 .inst__list {
@@ -63,6 +72,18 @@
     justify-content: space-between;
     min-width: 450px;
   }
+
+  @media (max-width: $m-end) {
+    &--l {
+      width: auto;
+    }
+
+    &--r {
+      max-width: unset;
+      min-width: 277px;
+      grid-template-rows: 129px 111px;
+    }
+  }
 }
 
 .inst__item {
@@ -74,16 +95,58 @@
     }
   }
 
-  &--rt {
+  &--r2 {
     display: flex;
     justify-content: flex-end;
   }
 
-  &--rl {
+  &--r4 {
     align-self: flex-end;
   }
 
   &--big {
     width: 34.2%;
+  }
+
+  @media (max-width: $m-end) {
+    overflow: hidden;
+
+    &--l {
+      width: 133px;
+      margin-top: 18px;
+    }
+
+    &--l1 {
+      height: 133px;
+    }
+
+    &--l2 {
+      height: 89px;
+    }
+
+    &--big {
+      width: 231px;
+      height: 240px;
+      overflow: hidden;
+    }
+
+    &--r1 {
+      width: 131px;
+      height: 111px;
+    }
+
+    &--r2 {
+      width: 126px;
+      height: 126px;
+      justify-self: center;
+    }
+    &--r3 {
+      width: 126px;
+      height: 111px;
+    }
+    &--r4 {
+      width: 134px;
+      height: 96px;
+    }
   }
 }
