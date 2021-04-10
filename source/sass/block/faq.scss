@@ -13,6 +13,10 @@
   color: $dark;
   margin-top: 0;
   margin-bottom: 48px;
+
+  @media (max-width: $s-end) {
+    margin-bottom: 29px;
+  }
 }
 
 .faq__list {

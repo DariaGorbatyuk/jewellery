@@ -6,26 +6,24 @@
   color: $dark;
   position: relative;
   width: 83%;
-  padding: 43px 66px 34px 42px;
+  padding: 43px 66px 43px 42px;
 
   @media (max-width: $m-end) {
     width: 94%;
     padding-left: 47px;
-    padding-bottom: 35px;
+    padding-bottom: 43px;
     padding-right: 73px;
+  }
+
+  @media (max-width: $s-end) {
+    width: 100%;
+    padding: 16px 55px 21px 24px;
   }
 }
 
 .faq-el__det {
-
   &[open] .faq-el__sum::after {
     transform: rotate(180deg);
-  }
-
-  @media (max-width: $m-end) {
-    &[open] .faq-el__sum {
-      margin-bottom: 27px;
-    }
   }
 }
 
@@ -33,7 +31,6 @@
   font-weight: 500;
   font-size: 18px;
   list-style: none;
-  margin-bottom: 9px;
 
   &::-webkit-details-marker {
     display: none;
@@ -64,16 +61,37 @@
       right: 45px;
     }
   }
+
+  @media (max-width: $s-end) {
+    font-size: 16px;
+    line-height: 1.4;
+
+    &::after {
+      right: 13px;
+      top: 26px;
+    }
+  }
 }
 
 .faq-el p {
   font-weight: normal;
   font-size: 16px;
   max-width: 61%;
-  margin: 0 0 9px 7px;
+  margin: 9px 0 0 7px;
 
   @media (max-width: $m-end) {
     margin-left: 0;
     max-width: 100%;
+    margin-top: 27px;
+  }
+
+  @media (max-width: $s-end) {
+    font-size: 14px;
+    line-height: 1.4;
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 14px;
+    padding-right: 1px;
   }
 }
