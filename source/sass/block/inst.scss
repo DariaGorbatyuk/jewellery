@@ -1,0 +1,87 @@
+.inst {
+  color: $dark;
+  line-height: 1.3;
+}
+
+.inst h2 {
+  font-family: $cg;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-top: 0;
+}
+
+.inst__follow {
+  font-family: $poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  display: block;
+  padding-bottom: 7px;
+  position: relative;
+  text-decoration: none;
+
+  &::after {
+    @include pseudo();
+    @include size(74px, 1px);
+    background-color: $dark-gold;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.inst__wrapper {
+  display: flex;
+}
+
+.inst__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &--l {
+    margin-right: 2.6%;
+    display: flex;
+    flex-direction: column;
+    width: 19.7%;
+  }
+
+  &--r {
+    display: grid;
+    grid-template-rows: 218px 191px;
+    grid-template-columns: 52.6% 50.4%;
+    max-width: 46.1%;
+    margin-left: 2.6%;
+    align-items: flex-start;
+    justify-content: space-between;
+    min-width: 450px;
+  }
+}
+
+.inst__item {
+  &--l {
+    margin-top: 30px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &--rt {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &--rl {
+    align-self: flex-end;
+  }
+
+  &--big {
+    width: 34.2%;
+  }
+}
