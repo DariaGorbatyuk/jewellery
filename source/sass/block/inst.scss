@@ -12,6 +12,7 @@
   letter-spacing: 0.03em;
   text-align: center;
   margin-top: 0;
+  margin-bottom: 30px;
 }
 
 .inst__follow {
@@ -24,6 +25,7 @@
   padding-bottom: 7px;
   position: relative;
   text-decoration: none;
+  margin-bottom: 59px;
 
   &::after {
     @include pseudo();
@@ -53,7 +55,7 @@
 
   &--r {
     display: grid;
-    grid-template-rows: 218px 191px;
+    grid-template-rows: 223px 191px;
     grid-template-columns: 52.6% 50.4%;
     max-width: 46.1%;
     margin-left: 2.6%;
