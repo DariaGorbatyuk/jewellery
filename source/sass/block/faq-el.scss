@@ -7,6 +7,26 @@
   position: relative;
   width: 83%;
   padding: 43px 66px 34px 42px;
+
+  @media (max-width: $m-end) {
+    width: 94%;
+    padding-left: 47px;
+    padding-bottom: 35px;
+    padding-right: 73px;
+  }
+}
+
+.faq-el__det {
+
+  &[open] .faq-el__sum::after {
+    transform: rotate(180deg);
+  }
+
+  @media (max-width: $m-end) {
+    &[open] .faq-el__sum {
+      margin-bottom: 27px;
+    }
+  }
 }
 
 .faq-el__sum {
@@ -29,24 +49,31 @@
 
   &::after {
     @include pseudo();
-    @include size(15px, 12px);
+    @include size(30px, 30px);
     background-image: url("../img/icon-details.svg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 15px 12px;
     background-position: center;
-    right: 50px;
-    top: 47px;
+    right: 41px;
+    top: 40px;
   }
 
-  details[open] &::after {
-    transform: rotate(180deg);
+  @media (max-width: $m-end) {
+    &::after {
+      background-size: 23px 12px;
+      right: 45px;
+    }
   }
 }
 
 .faq-el p {
   font-weight: normal;
   font-size: 16px;
-  margin: 0 0 0 7px;
   max-width: 61%;
-  margin-bottom: 9px;
+  margin: 0 0 9px 7px;
+
+  @media (max-width: $m-end) {
+    margin-left: 0;
+    max-width: 100%;
+  }
 }
