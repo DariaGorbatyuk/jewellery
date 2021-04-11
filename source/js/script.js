@@ -1,15 +1,24 @@
 'use strict';
-var pageHeader = document.querySelector('.page-header');
-var headerToggle = document.querySelector('.page-header__toggle');
+(function () {
+  var pageHeader = document.querySelector('.header');
+  var headerToggle = document.querySelector('.header__toggle');
+  var body = document.querySelector('body');
 
-pageHeader.classList.remove('page-header--nojs');
+  pageHeader.classList.remove('header--nojs');
+  pageHeader.classList.add('header--closed');
 
-headerToggle.addEventListener('click', function () {
-  if (pageHeader.classList.contains('page-header--closed')) {
-    pageHeader.classList.remove('page-header--closed');
-    pageHeader.classList.add('page-header--opened');
-  } else {
-    pageHeader.classList.add('page-header--closed');
-    pageHeader.classList.remove('page-header--opened');
-  }
-});
+  headerToggle.addEventListener('click', function () {
+    if (pageHeader.classList.contains('header--closed')) {
+      pageHeader.classList.remove('header--closed');
+      pageHeader.classList.add('header--opened');
+      body.classList.add('overflow');
+      pageHeader.classList.add('overflow--scroll');
+    } else {
+      pageHeader.classList.add('header--closed');
+      pageHeader.classList.remove('header--opened');
+      body.classList.remove('overflow');
+      pageHeader.classList.remove('overflow--scroll');
+    }
+  });
+})();
+

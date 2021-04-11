@@ -1,0 +1,7 @@
+.overflow {
+  overflow: hidden;
+
+  &--scroll {
+    overflow: scroll;
+  }
+}
