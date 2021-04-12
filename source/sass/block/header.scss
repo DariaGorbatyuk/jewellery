@@ -3,7 +3,18 @@
   padding-bottom: 18px;
   position: relative;
 
+  &::after {
+    @include pseudo();
+    @include size(100%, 1px);
+    background-color: $white-gray;
+    top: 114px;
+    left: 0;
+  }
+
   @media (max-width: $m-end) {
+    &::after {
+      display: none;
+    }
     &--closed {
       padding-bottom: 29px;
 
@@ -138,24 +149,12 @@
   min-height: 78px;
   margin-bottom: 26px;
 
-  &::after {
-    @include pseudo();
-    @include size(100%, 1px);
-    background-color: $white-gray;
-    top: 114px;
-    left: 0;
-  }
-
   @media (max-width: $m-end) {
     padding: 0;
     margin: 0;
     max-height: unset;
     overflow: visible;
     min-height: unset;
-
-    &::after {
-      display: none;
-    }
   }
 }
 

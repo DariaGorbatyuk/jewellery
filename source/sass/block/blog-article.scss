@@ -113,7 +113,7 @@
   color: $light-gary;
   order: -1;
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 12px;
 }
 
 .blog-article__excerpt {
@@ -135,9 +135,5 @@
     left: 50%;
     transform: translateX(-50%);
     bottom: 0;
-  }
-
-  @media (max-width: $m-end) {
-
   }
 }
