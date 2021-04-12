@@ -7,6 +7,10 @@
   @media (max-width: $m-end) {
     max-width: 324px;
   }
+
+  @media (max-width: $s-end) {
+    max-width: 130px;
+  }
 }
 
 .card__link {
@@ -43,6 +47,11 @@
       height: 100%;
       width: 100%;
     }
+  }
+
+  @media (max-width: $s-end) {
+    width: 130px;
+    height: 136px;
   }
 }
 

@@ -46,6 +46,7 @@
     &--big {
       .blog-article__text-container {
         padding-top: 62px;
+        padding-bottom: 66px;
       }
     }
   }
@@ -135,5 +136,9 @@
     left: 50%;
     transform: translateX(-50%);
     bottom: 0;
+  }
+
+  @media (max-width: $s-end) {
+    padding-bottom: 5px;
   }
 }

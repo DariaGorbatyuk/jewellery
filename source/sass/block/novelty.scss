@@ -44,6 +44,10 @@
     padding-bottom: 5px;
     margin-bottom: 50px;
   }
+
+  @media (max-width: $s-end) {
+    margin-bottom: 40px;
+  }
 }
 
 .novelty__excerpt {
@@ -63,6 +67,10 @@
 
   @media (max-width: $m-end) {
     margin-bottom: 41px;
+  }
+
+  @media (max-width: $s-end) {
+    margin-bottom: 28px;
   }
 }
 

@@ -36,8 +36,30 @@
       margin-bottom: 75px;
     }
 
-    &__inst{
+    &__inst {
       margin-bottom: 80px;
+    }
+  }
+
+  @media (max-width: $m-end) {
+    &__promo {
+      margin-bottom: 60px;
+    }
+
+    &__novelty {
+      margin-bottom: 49px;
+    }
+
+    &__blog {
+      margin-bottom: 57px;
+    }
+
+    &__faq {
+      margin-bottom: 60px;
+    }
+
+    &__inst {
+      margin-bottom: 71px;
     }
   }
 }
