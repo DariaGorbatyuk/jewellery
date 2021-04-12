@@ -15,8 +15,6 @@ body {
   padding: 0;
   min-height: 100%;
   min-width: $small;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
   background-color: $white;
   color: $black;
 }
