@@ -1,0 +1,13 @@
+.link {
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $dark-gold;
+    outline: none;
+  }
+
+  &:active {
+    color: darken($dark-gold, 20%);
+  }
+}

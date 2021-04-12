@@ -23,6 +23,19 @@
     &::-ms-clear {
       display: none;
     }
+
+    &:hover,
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &:hover,
+  &:focus-within {
+    input {
+      background-color: lighten($dark-gold, 40%);
+      color: $black;
+    }
   }
 
   @media (max-width: $m-end) {
@@ -44,7 +57,7 @@
 
 .search-form__btn {
   position: absolute;
-  left: -5px;
+  left: -2px;
   top: 3px;
   background-color: transparent;
   border: none;
@@ -52,6 +65,15 @@
 
   svg {
     fill: $black;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+
+    svg {
+      fill: $dark-gold;
+    }
   }
 
   @media (max-width: $m-end) {

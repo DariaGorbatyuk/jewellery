@@ -51,6 +51,11 @@
     width: 100%;
     display: block;
     padding-left: 20px;
+
+    &:hover,
+    &:focus {
+      color: $white;
+    }
   }
 
   @media (max-width: $s-end) {

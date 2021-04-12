@@ -1,9 +1,5 @@
 .blog {
   font-style: normal;
-
-  @media (max-width: $m-end) {
-
-  }
 }
 
 .blog h2 {
@@ -16,23 +12,14 @@
   color: $dark;
   margin-top: 0;
   margin-bottom: 18px;
-
-  @media (max-width: $m-end) {
-
-  }
 }
 
-.blog__excerpt {
-  font-family: $poppins;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.3;
-  text-align: center;
-  text-decoration: none;
+.blog p {
+  margin: 0;
+  margin-bottom: 59px;
   position: relative;
   padding-bottom: 7px;
-  display: block;
-  margin-bottom: 59px;
+  text-align: center;
 
   &::after {
     @include pseudo();
@@ -43,12 +30,17 @@
     transform: translateX(-50%);
   }
 
-  @media (max-width: $m-end) {
-
-  }
   @media (max-width: $s-end) {
     margin-bottom: 50px;
   }
+}
+
+.blog__excerpt {
+  font-family: $poppins;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.3;
+  text-decoration: none;
 }
 
 .blog__layout {

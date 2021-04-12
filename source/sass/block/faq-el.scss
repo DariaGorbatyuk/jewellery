@@ -36,14 +36,6 @@
     display: none;
   }
 
-  &:hover {
-    cursor: pointer;
-  }
-
-  &:focus {
-    outline: none;
-  }
-
   &::after {
     @include pseudo();
     @include size(30px, 30px);
@@ -55,10 +47,30 @@
     top: 40px;
   }
 
+  &:hover,
+  &:focus {
+    outline: none;
+    cursor: pointer;
+
+    &::after {
+      background-size: 30px, 30px;
+    }
+  }
+
   @media (max-width: $m-end) {
     &::after {
       background-size: 23px 12px;
       right: 45px;
+    }
+
+    &:hover,
+    &:focus {
+      outline: none;
+      cursor: pointer;
+
+      &::after {
+        background-size: 30px, 30px;
+      }
     }
   }
 

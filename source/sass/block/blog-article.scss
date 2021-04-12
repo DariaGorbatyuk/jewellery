@@ -101,13 +101,9 @@
   color: $black;
   margin-top: 0;
   margin-bottom: 40px;
-
-  @media (max-width: $m-end) {
-
-  }
 }
 
-.blog-article p {
+.blog-article span {
   font-family: $poppins;
   font-style: normal;
   font-weight: 500;
@@ -117,10 +113,7 @@
   color: $light-gary;
   order: -1;
   margin-top: 0;
-
-  @media (max-width: $m-end) {
-
-  }
+  margin-bottom: 25px;
 }
 
 .blog-article__excerpt {

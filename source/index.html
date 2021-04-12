@@ -18,7 +18,7 @@
       </button>
       <form action="https://echo.htmlacademy.ru" method="get" class="header__search-form search-form">
         <div>
-          <input type="search" name="search" id="search" placeholder="Type here to search">
+          <input type="text" name="search" id="search" placeholder="Type here to search">
           <label class="visually-hidden" for="search">Type here to search</label>
         </div>
         <button class="search-form__btn" type="submit" aria-label="Search">
@@ -33,8 +33,8 @@
         </svg>
       </a>
       <nav class="header__user-nav user-nav">
-        <a class="user-nav__login" href="#">Login</a>
-        <a class="user-nav__bucket" href="#">
+        <a class="user-nav__login link" href="#">Login</a>
+        <a class="user-nav__bucket link" href="#">
           <svg width="18" height="16" role="img">
             <use xlink:href="img/sprite_auto.svg#icon-bucket"></use>
           </svg>
@@ -44,11 +44,11 @@
     </div>
     <nav class="header__nav nav">
       <ul class="nav__main-list">
-        <li class="nav__main-item"><a class="nav__main-link" href="#">What’s new</a></li>
-        <li class="nav__main-item"><a class="nav__main-link" href="#">Chokers</a></li>
-        <li class="nav__main-item"><a class="nav__main-link" href="#">Necklaces</a></li>
-        <li class="nav__main-item"><a class="nav__main-link" href="#">Rings</a></li>
-        <li class="nav__main-item"><a class="nav__main-link" href="#">Earrings</a></li>
+        <li class="nav__main-item"><a class="nav__main-link link" href="#">What’s new</a></li>
+        <li class="nav__main-item"><a class="nav__main-link link" href="#">Chokers</a></li>
+        <li class="nav__main-item"><a class="nav__main-link link" href="#">Necklaces</a></li>
+        <li class="nav__main-item"><a class="nav__main-link link" href="#">Rings</a></li>
+        <li class="nav__main-item"><a class="nav__main-link link" href="#">Earrings</a></li>
       </ul>
       <ul class="nav__small-list">
         <li class="nav__small-item"><a class="nav__small-link" href="#">About CH</a></li>
@@ -143,7 +143,9 @@
   <section class="blog">
     <div class="container">
       <h2>Blog</h2>
-      <a class="blog__excerpt" href="#">Read All</a>
+      <p>
+        <a class="blog__excerpt link" href="#">Read All</a>
+      </p>
       <div class="blog__layout">
         <article class="blog__article blog-article blog-article">
           <div class="blog-article__img-container">
@@ -152,15 +154,15 @@
           </div>
           <div class="blog-article__text-container">
             <h3>How to care for your jewellery</h3>
-            <p>September 30, 2019</p>
-            <a class="blog-article__excerpt" href="#">Read Article</a>
+            <span>September 30, 2019</span>
+            <a class="blog-article__excerpt link" href="#">Read Article</a>
           </div>
         </article>
         <article class="blog__article blog-article">
           <div class="blog-article__text-container">
             <h3>Power of crystals</h3>
-            <p>September 23, 2019</p>
-            <a class="blog-article__excerpt" href="#">Read Article</a>
+            <span>September 23, 2019</span>
+            <a class="blog-article__excerpt link" href="#">Read Article</a>
           </div>
           <div class="blog-article__img-container">
             <img src="img/crystal.jpg" srcset="img/crystal@2x.jpg 2x" alt="Several crystals on a gray background"
@@ -170,8 +172,8 @@
         <article class="blog__article blog-article blog-article--big">
           <div class="blog-article__text-container">
             <h3>AW 19 trends</h3>
-            <p>September 16, 2019</p>
-            <a class="blog-article__excerpt" href="#">Read Article</a>
+            <span>September 16, 2019</span>
+            <a class="blog-article__excerpt link" href="#">Read Article</a>
           </div>
           <div class="blog-article__img-container">
             <img src="img/trends.jpg" srcset="img/trends@2x.jpg 2x" alt="Silver rings on woman hands"
@@ -232,7 +234,9 @@
   <section class="inst">
     <div class="container">
       <h2>@Chjewellery</h2>
-      <a class="inst__follow" href="#">Follow Us</a>
+      <p>
+        <a class="inst__follow link" href="#">Follow Us</a>
+      </p>
       <div class="inst__wrapper">
         <ul class="inst__list inst__list--l">
           <li class="inst__item inst__item--l inst__item--l1">

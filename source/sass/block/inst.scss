@@ -19,17 +19,12 @@
   }
 }
 
-.inst__follow {
-  font-family: $poppins;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  text-align: center;
-  display: block;
+.inst p {
+  margin-top: 0;
+  margin-bottom: 59px;
   padding-bottom: 7px;
   position: relative;
-  text-decoration: none;
-  margin-bottom: 59px;
+  text-align: center;
 
   &::after {
     @include pseudo();
@@ -43,6 +38,14 @@
   @media (max-width: $s-end) {
     margin-bottom: 44px;
   }
+}
+
+.inst__follow {
+  font-family: $poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
 }
 
 .inst__wrapper {
