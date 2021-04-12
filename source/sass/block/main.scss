@@ -15,7 +15,29 @@
     margin-bottom: 109px;
   }
 
-  &__inst{
+  &__inst {
     margin-bottom: 130px;
+  }
+
+  @media (max-width: $m-end) {
+    &__promo {
+      margin-bottom: 70px;
+    }
+
+    &__novelty {
+      margin-bottom: 61px;
+    }
+
+    &__blog {
+      margin-bottom: 70px;
+    }
+
+    &__faq {
+      margin-bottom: 75px;
+    }
+
+    &__inst{
+      margin-bottom: 80px;
+    }
   }
 }

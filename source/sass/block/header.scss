@@ -15,8 +15,9 @@
     &::after {
       display: none;
     }
+
     &--closed {
-      padding-bottom: 29px;
+      padding-bottom: 30px;
 
       .nav,
       .search-form,
@@ -163,7 +164,6 @@
 
   @media (max-width: $m-end) {
     margin-top: 23px;
-    margin-left: 20px;
   }
 
   @media (max-width: $s-end) {

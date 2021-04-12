@@ -21,7 +21,6 @@
   @media (max-width: $m-end) {
     grid-template-rows: repeat(2, min-content);
     grid-template-columns: repeat(3, 1fr);
-    margin-left: 21px;
     row-gap: 45px;
   }
 

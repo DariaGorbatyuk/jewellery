@@ -3,6 +3,10 @@
   font-style: normal;
   line-height: 1.3;
   color: $dark;
+
+  @media (max-width: $m-end) {
+    max-width: 324px;
+  }
 }
 
 .card__link {
@@ -29,6 +33,17 @@
 .card__img-container {
   order: -1;
   margin-bottom: 23px;
+
+  @media (max-width: $m-end) {
+    width: 324px;
+    height: 340px;
+    margin-bottom: 19px;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
 }
 
 .card span {

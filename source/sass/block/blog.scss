@@ -30,6 +30,10 @@
     transform: translateX(-50%);
   }
 
+  @media (max-width: $m-end) {
+    padding-bottom: 5px;
+  }
+
   @media (max-width: $s-end) {
     margin-bottom: 50px;
   }
@@ -62,7 +66,7 @@
 
 .blog__article {
   @media (max-width: $m-end) {
-    margin-bottom: 51px;
+    margin-bottom: 50px;
 
     &:last-child {
       margin-bottom: 0;

@@ -16,6 +16,10 @@
   text-align: center;
   margin-top: 0;
   margin-bottom: 24px;
+
+  @media (max-width: $m-end) {
+    margin-bottom: 19px;
+  }
 }
 
 .novelty p {
@@ -35,6 +39,11 @@
     right: 0;
     margin: 0 auto;
   }
+
+  @media (max-width: $m-end) {
+    padding-bottom: 5px;
+    margin-bottom: 50px;
+  }
 }
 
 .novelty__excerpt {
@@ -51,6 +60,10 @@
 
 .novelty__list {
   margin-bottom: 48px;
+
+  @media (max-width: $m-end) {
+    margin-bottom: 41px;
+  }
 }
 
 .novelty__pagination {
@@ -77,6 +90,10 @@
   &:hover {
     transition: all 300ms;
     transform: scale(1.03);
+  }
+
+  @media (max-width: $m-end) {
+    width: 15px;
   }
 }
 
@@ -121,5 +138,12 @@
   &:focus {
     outline: none;
     border: 1px solid $dark-gold;
+  }
+
+  @media (max-width: $m-end) {
+    svg {
+      width: 36px;
+      height: 15px;
+    }
   }
 }
