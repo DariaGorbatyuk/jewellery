@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Stylish jewelry store">
+  <title>Jewellery shop - filter</title>
+  <link rel="preload" href="fonts/Poppins-Regular.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/Poppins-Medium.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/Poppins-Bold.woff2" as="font" type="font/woff2">
+
+  <link rel="preload" href="fonts/CormorantGaramond-SemiBold.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/CormorantGaramond-Italic.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/CormorantGaramond-Bold.woff2" as="font" type="font/woff2">
+
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<header class="header header--closed">
+  <!--  header--nojs header--opened header--closed-->
+  <div class="container">
+    <h1 class="visually-hidden">jewelry store</h1>
+    <div class="header__top">
+      <button class="header__toggle toggle" type="button" aria-label="Открыть/закрыть меню">
+        <span></span>
+      </button>
+      <form action="https://echo.htmlacademy.ru" method="get" class="header__search-form search-form">
+        <div>
+          <input type="text" name="search" id="search" placeholder="Type here to search">
+          <label class="visually-hidden" for="search">Type here to search</label>
+        </div>
+        <button class="search-form__btn" type="submit" aria-label="Search">
+          <svg width="14" height="14" role="img">
+            <use xlink:href="img/sprite_auto.svg#icon-search"></use>
+          </svg>
+        </button>
+      </form>
+      <a class="header__logo" aria-label="Go to main page" href="index.html">
+        <svg width="66" height="66" role="img">
+          <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+        </svg>
+      </a>
+      <nav class="header__user-nav user-nav">
+        <a class="user-nav__login link" href="#">Login</a>
+        <a class="user-nav__bucket link" href="#">
+          <svg width="18" height="16" role="img">
+            <use xlink:href="img/sprite_auto.svg#icon-bucket"></use>
+          </svg>
+          Cart <span>0</span>
+        </a>
+      </nav>
+    </div>
+    <nav class="header__nav nav">
+      <ul class="nav__main-list">
+        <li class="nav__main-item"><a class="nav__main-link link" href="#">What’s new</a></li>
+        <li class="nav__main-item"><a class="nav__main-link link" href="#">Chokers</a></li>
+        <li class="nav__main-item"><a class="nav__main-link link" href="#">Necklaces</a></li>
+        <li class="nav__main-item"><a class="nav__main-link link" href="#">Rings</a></li>
+        <li class="nav__main-item"><a class="nav__main-link link" href="#">Earrings</a></li>
+      </ul>
+      <ul class="nav__small-list">
+        <li class="nav__small-item"><a class="nav__small-link" href="#">About CH</a></li>
+        <li class="nav__small-item"><a class="nav__small-link" href="#">Stores & Hours</a></li>
+        <li class="nav__small-item"><a class="nav__small-link" href="#">Contact Us</a></li>
+      </ul>
+      <a class="nav__login" href="#">Login</a>
+    </nav>
+  </div>
+</header>
+<main class="main-nojs">
+  <form class="catalog__filter-form filter-form filter-form--nojs" action="https://echo.htmlacademy.ru" method="get">
+    <fieldset class="filter-form__box">
+      <button type="button" class="filter-form__open-link filter-form__open-link--opened">
+        <span class="filter-form__heading">Product</span>
+      </button>
+      <div class="filter-form__check-container">
+        <div class="filter-form__checkbox">
+          <input type="checkbox" id="necklaces" name="necklaces" checked>
+          <label for="necklaces">Necklaces</label>
+        </div>
+        <div class="filter-form__checkbox">
+          <input type="checkbox" id="chokers" name="chokers" checked>
+          <label for="chokers">Chokers</label>
+        </div>
+        <div class="filter-form__checkbox">
+          <input type="checkbox" id="rings" name="rings">
+          <label for="rings">Rings</label>
+        </div>
+        <div class="filter-form__checkbox">
+          <input type="checkbox" id="earrings" name="earrings" checked>
+          <label for="earrings">Earrings</label>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset class="filter-form__box">
+      <button type="button" class="filter-form__open-link">
+        <span class="filter-form__heading">Material</span>
+      </button>
+      <div class="filter-form__check-container visually-hidden">
+        <div class="filter-form__checkbox">
+          <input type="checkbox" id="gold" name="gold">
+          <label for="gold">Gold</label>
+        </div>
+        <div class="filter-form__checkbox">
+          <input type="checkbox" id="silver" name="silver">
+          <label for="silver">Silver</label>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset class="filter-form__box">
+      <button type="button" class="filter-form__open-link">
+        <span class="filter-form__heading">Collection</span>
+      </button>
+      <div class="filter-form__check-container visually-hidden">
+        <div class="filter-form__checkbox">
+          <input type="checkbox" id="flamingo" name="flamingo">
+          <label for="flamingo">Pink flamingo</label>
+        </div>
+        <div class="filter-form__checkbox">
+          <input type="checkbox" id="dreams" name="dreams">
+          <label for="dreams">Dreams</label>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset class="filter-form__box">
+      <button type="button" class="filter-form__open-link filter-form__open-link--opened">
+        <span class="filter-form__heading">Price</span>
+      </button>
+      <div class="filter-form__range filter-range">
+        <div class="filter-range__controls">
+          <div class="filter-range__scale">
+            <div class="filter-range__bar"></div>
+          </div>
+          <button class="filter-range__toggle filter-range__toggle--min" type="button"><span
+            class="visually-hidden">Меньше</span>
+          </button>
+          <button class="filter-range__toggle filter-range__toggle--max" type="button"><span
+            class="visually-hidden">Больше</span>
+          </button>
+        </div>
+        <div class="filter-range__inp filter-range__inp--min">
+          <label for="low-price">$</label>
+          <input type="text" value="55" name="low-price" id="low-price" maxlength="4">
+        </div>
+        <div class="filter-range__inp filter-range__inp--max">
+          <label for="high-price">$</label>
+          <input type="text" value="155" name="high-price" id="high-price" maxlength="4">
+        </div>
+      </div>
+    </fieldset>
+    <button class="filter-form__btn" type="submit">Apply</button>
+    <button class="filter-form__btn filter-form__btn--reset" type="reset">Clear All</button>
+    <button class="filter-form__close" type="button" aria-label="Закрыть фильтр"></button>
+  </form>
+</main>
+</body>
+</html>
