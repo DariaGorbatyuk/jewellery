@@ -2,4 +2,10 @@
   &__promo {
     margin-bottom: 80px;
   }
+
+  @media (max-width: $m-end) {
+    &__promo {
+      margin-bottom: 50px;
+    }
+  }
 }

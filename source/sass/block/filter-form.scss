@@ -1,5 +1,18 @@
 .filter-form {
+  position: relative;
 
+  @media (max-width: $m-end) {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 100px;
+    right: 0;
+    margin: 0 auto;
+    max-width: 423px;
+    box-shadow: 0 5px 32px rgba($shadow, 0.24);
+    padding-bottom: 28px;
+    background-color: $white;
+  }
 }
 
 .filter-form__box {
@@ -12,6 +25,16 @@
     border-bottom: 1px solid $dark-gold;
     margin-bottom: 34px;
   }
+
+  @media (max-width: $m-end) {
+    border: none;
+    border-bottom: 1px solid $dark-gold;
+    padding: 30px 38px 30px 21px;
+
+    &:last-of-type {
+      margin-bottom: 42px;
+    }
+  }
 }
 
 .filter-form__heading {
@@ -21,6 +44,10 @@
   font-size: 16px;
   line-height: 1.3;
   color: $dark;
+
+  @media (max-width: $m-end) {
+    font-size: 18px;
+  }
 }
 
 .filter-form__open-link {
@@ -36,6 +63,7 @@
     @include pseudo($pos: static);
     @include size(17px, 12px);
     background-image: url("../img/icon-details.svg");
+    background-size: cover;
     background-repeat: no-repeat;
   }
 
@@ -50,12 +78,24 @@
       transform: rotate(180deg);
     }
   }
+
+  @media (max-width: $m-end) {
+    &::after {
+      @include size(25px, 14px);
+    }
+  }
 }
 
 .filter-form__check-container {
   margin-top: 17px;
   margin-left: 9px;
   margin-bottom: 7px;
+
+  @media (max-width: $m-end) {
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
 }
 
 .filter-form__checkbox {
@@ -104,10 +144,29 @@
       }
     }
   }
+
+  @media (max-width: $m-end) {
+    margin-bottom: 18px;
+
+    label {
+      font-size: 16px;
+      padding-left: 31px;
+
+      &::before {
+        @include square(18px);
+      }
+    }
+  }
 }
 
 .filter-form__range {
   margin-top: 12px;
+
+  @media (max-width: $m-end) {
+    margin-left: 10px;
+    margin-right: 49px;
+    margin-top: 18px;
+  }
 }
 
 .filter-form__btn {
@@ -129,5 +188,59 @@
     color: $dark-gold;
     border: 1px solid $dark-gold;
     margin-bottom: 0;
+  }
+
+  @media (max-width: $m-end) {
+    display: block;
+    width: 362px;
+    margin-left: 21px;
+    margin-bottom: 24px;
+
+    &--reset {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.filter-form__close {
+  display: none;
+
+  @media (max-width: $m-end) {
+    @include size(32px, 32px);
+    display: block;
+    position: absolute;
+    background-color: $black;
+    border-radius: 50%;
+    border: 1px solid $black;
+    top: -13px;
+    right: -15px;
+
+
+    &::before,
+    &::after {
+      @include pseudo();
+      @include size(14px, 2px);
+      background-color: $white;
+      left: 0;
+      right: 0;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &:hover,
+    &:focus {
+      outline: none;
+      transform: scale(1.2);
+      transition: all 300ms;
+    }
   }
 }

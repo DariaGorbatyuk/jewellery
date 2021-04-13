@@ -1,6 +1,10 @@
 .filter-range {
   position: relative;
   min-height: 41px;
+
+  @media (max-width: $m-end) {
+    min-height: 46px;
+  }
 }
 
 .filter-range__controls {
@@ -21,6 +25,12 @@
   background-color: $dark-gold;
   left: 27%;
   width: 51%;
+
+  @media (max-width: $m-end) {
+    left: 18%;
+    height: 1px;
+    width: 58%;
+  }
 }
 
 .filter-range__toggle {
@@ -44,6 +54,18 @@
 
   &--max {
     right: 18.5%;
+  }
+
+  @media (max-width: $m-end) {
+    @include square(18px);
+
+    &--min {
+      left: 14.7%;
+    }
+
+    &--max {
+      right: 20.7%;
+    }
   }
 }
 
@@ -77,5 +99,17 @@
 
   &--max {
     right: -1%;
+  }
+
+  @media (max-width: $m-end) {
+    font-size: 16px;
+
+    &--min {
+      left: 12%;
+    }
+
+    &--max {
+      right: 11%;
+    }
   }
 }
