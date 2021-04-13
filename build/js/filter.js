@@ -5,6 +5,8 @@
   const BTN_CLASS_NAME = '.filter-form__open-link';
   const BTN_CLASS_NAME_OPENED = 'filter-form__open-link--opened';
   const CLASS_NAME_HIDDEN = 'visually-hidden';
+  const linkOpenFilter = document.querySelector('.catalog__link-to-filter');
+  const closeBtn = filterForm.querySelector('.filter-form__close');
 
   function openDetails(evt) {
     if (!evt.target.matches(BTN_CLASS_NAME)) {
@@ -20,5 +22,24 @@
     }
   }
 
+  function onCloseFilter(evt) {
+    if (evt.key !== 'Escape' && !evt.target.classList.contains('filter-form__close')) {
+      return;
+    }
+    filterForm.classList.remove('filter-form--opened');
+  }
+
+  function openFilter(evt) {
+    evt.preventDefault();
+    if (filterForm.classList.contains('filter-form--opened')) {
+      filterForm.classList.remove('filter-form--opened');
+    } else {
+      filterForm.classList.add('filter-form--opened');
+      closeBtn.addEventListener('click', onCloseFilter);
+      document.addEventListener('keydown', onCloseFilter);
+    }
+  }
+
   filterForm.addEventListener('click', openDetails);
+  linkOpenFilter.addEventListener('click', openFilter);
 })();

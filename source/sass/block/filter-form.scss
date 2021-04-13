@@ -12,6 +12,11 @@
     box-shadow: 0 5px 32px rgba($shadow, 0.24);
     padding-bottom: 28px;
     background-color: $white;
+    display: none;
+
+    &--opened {
+      display: block;
+    }
   }
 }
 
