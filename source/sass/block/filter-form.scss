@@ -1,0 +1,126 @@
+.filter-form {
+
+}
+
+.filter-form__box {
+  border: 1px solid $dark-gold;
+  border-bottom: none;
+  margin: 0;
+  padding: 19px 23px 18px 25px;
+
+  &:last-of-type {
+    border-bottom: 1px solid $dark-gold;
+  }
+}
+
+.filter-form__heading {
+  font-family: $poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.3;
+  color: $dark;
+}
+
+.filter-form__open-link {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 5px 0;
+
+  &::after {
+    @include pseudo($pos: static);
+    @include size(17px, 12px);
+    background-image: url("../img/icon-details.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px $dark-gold;
+  }
+
+  &--opened {
+    &::after {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.filter-form__check-container {
+  margin-top: 17px;
+  margin-left: 9px;
+  margin-bottom: 7px;
+}
+
+.filter-form__checkbox {
+  margin-bottom: 13px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  label {
+    font-family: $poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.3;
+    color: $dark;
+    position: relative;
+    padding-left: 25px;
+
+    &::before {
+      @include pseudo();
+      @include square(15px);
+      border: 1px solid $dark-gold;
+      background-color: transparent;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+    }
+  }
+
+  input:checked ~ label {
+    &::before {
+      background-color: $dark-gold;
+    }
+  }
+
+  &:hover,
+  &:focus-within {
+    label {
+      color: $dark-gold;
+
+      &::before {
+        transform: scale(1.04);
+        transition: all 300ms;
+      }
+    }
+  }
+}
+
+.filter-form__btn {
+  width: 250px;
+  border: none;
+  background-color: $dark-gold;
+  color: $white;
+  padding: 28px 0;
+  text-align: center;
+  font-family: $poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.3;
+
+  &--reset {
+    background-color: $white;
+    color: $dark-gold;
+    border: 1px solid $dark-gold;
+  }
+}
