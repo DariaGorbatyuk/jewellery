@@ -1,5 +1,6 @@
 .filter-form {
   position: relative;
+  max-width: 250px;
 
   &--nojs {
     width: 250px;
@@ -97,7 +98,7 @@
 
   &::after {
     @include pseudo($pos: static);
-    @include size(17px, 12px);
+    @include size(22px, 12px);
     background-image: url("../img/icon-details.svg");
     background-size: cover;
     background-repeat: no-repeat;

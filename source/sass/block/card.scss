@@ -3,6 +3,14 @@
   font-style: normal;
   line-height: 1.3;
   color: $dark;
+  max-width: 270px;
+  height: auto;
+
+  &--catalog {
+    .card__img-container {
+      max-height: 272px;
+    }
+  }
 
   @media (max-width: $m-end) {
     max-width: 324px;
@@ -37,6 +45,7 @@
 .card__img-container {
   order: -1;
   margin-bottom: 23px;
+  overflow: hidden;
 
   @media (max-width: $m-end) {
     width: 324px;

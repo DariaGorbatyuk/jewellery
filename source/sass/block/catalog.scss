@@ -28,6 +28,7 @@
   display: grid;
   grid-template-columns: 250px 1fr;
   column-gap: 50px;
+  grid-template-rows: 1560px;
 
   @media (max-width: $m-end) {
     display: block;
@@ -37,5 +38,61 @@
 .catalog__filter-form {
   @media (max-width: $m-end) {
 
+  }
+}
+
+.catalog__slider {
+  width: 100%;
+}
+
+.catalog__list {
+  width: 100%;
+}
+
+.catalog__item {
+
+}
+
+.catalog__pagination {
+  bottom: 6px;
+
+  span {
+    background-color: transparent;
+    font-family: $poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.3;
+    opacity: 1;
+    color: $light-gary;
+    width: 15px;
+    height: 17px;
+  }
+
+  .swiper-pagination-bullet-active {
+    color: $dark;
+  }
+}
+
+.catalog__buttons-item {
+  font-family: $poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.3;
+  color: $dark;
+  background-color: transparent;
+  position: absolute;
+  border: none;
+  bottom: 4px;
+  padding: 0;
+  overflow: hidden;
+
+  &--prev {
+    left: 0;
+  }
+
+  &--next {
+    right: 0;
   }
 }
