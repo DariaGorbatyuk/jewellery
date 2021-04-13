@@ -4,7 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
+  <meta name="description" content="Stylish jewelry store">
+  <title>Jewellery shop</title>
+  <link rel="preload" href="fonts/Poppins-Regular.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/Poppins-Medium.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/Poppins-Bold.woff2" as="font" type="font/woff2">
+
+  <link rel="preload" href="fonts/CormorantGaramond-SemiBold.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/CormorantGaramond-Italic.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/CormorantGaramond-Bold.woff2" as="font" type="font/woff2">
+
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -12,7 +21,6 @@
 <header class="header header--nojs">
   <!--  header--nojs header--opened header--closed-->
   <div class="container">
-    <h1 class="visually-hidden">jewelry store</h1>
     <div class="header__top">
       <button class="header__toggle toggle" type="button" aria-label="Открыть/закрыть меню">
         <span></span>
@@ -45,11 +53,11 @@
     </div>
     <nav class="header__nav nav">
       <ul class="nav__main-list">
-        <li class="nav__main-item"><a class="nav__main-link link" href="#">What’s new</a></li>
-        <li class="nav__main-item"><a class="nav__main-link link" href="#">Chokers</a></li>
-        <li class="nav__main-item"><a class="nav__main-link link" href="#">Necklaces</a></li>
-        <li class="nav__main-item"><a class="nav__main-link link" href="#">Rings</a></li>
-        <li class="nav__main-item"><a class="nav__main-link link" href="#">Earrings</a></li>
+        <li class="nav__main-item"><a class="nav__main-link link" href="#novelty">What’s new</a></li>
+        <li class="nav__main-item"><a class="nav__main-link link" href="catalog.html">Chokers</a></li>
+        <li class="nav__main-item"><a class="nav__main-link link" href="catalog.html">Necklaces</a></li>
+        <li class="nav__main-item"><a class="nav__main-link link" href="catalog.html">Rings</a></li>
+        <li class="nav__main-item"><a class="nav__main-link link" href="catalog.html">Earrings</a></li>
       </ul>
       <ul class="nav__small-list">
         <li class="nav__small-item"><a class="nav__small-link" href="#">About CH</a></li>
@@ -61,13 +69,14 @@
   </div>
 </header>
 <main class="main">
+  <h1 class="visually-hidden">Jewelry store - main page</h1>
   <div class="main__promo promo">
     <div class="container">
       <span>perfection</span>
       <p>made to be yours</p>
     </div>
   </div>
-  <section class="main__novelty novelty">
+  <section class="main__novelty novelty" id="novelty">
     <div class="container">
       <div class="novelty__layout">
         <h2>New In</h2>
@@ -186,6 +195,13 @@
             </div>
           </div>
           <div class="swiper-pagination novelty__pagination"></div>
+          <!--
+                    <div class="slider-mobile-pagination">
+                      <span class="slider-mobile-pagination__current">current</span>
+                      &nbsp;of&nbsp;
+                      <span class="slider-mobile-pagination__total">total</span>
+                    </div>
+          -->
           <div class="novelty__buttons-container">
             <button class="novelty__buttons-item novelty__buttons-item--prev" aria-label="Previous">
               <svg width="29" height="15" role="img">
@@ -324,81 +340,81 @@
       </div>
     </div>
   </section>
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__layout">
-        <section class="footer__subscribe subscribe">
-          <h2>The good stuff in your inbox</h2>
-          <p>News and updates from CH. No spam, we promise.</p>
-          <form action="" method="post" class="subscribe__form subs-form">
-            <div>
-              <input type="email" name="email" id="subs-email" placeholder="Your E-mail">
-              <label class="visually-hidden" for="subs-email">Your E-mail</label>
-            </div>
-            <button class="subs-form__btn" type="submit">
-              <span>Sign Up</span>
-              <svg width="29" height="9" role="img">
-                <use xlink:href="./img/sprite_auto.svg#icon-signup"></use>
-              </svg>
-            </button>
-          </form>
-        </section>
-        <section class="footer__about about">
-          <h2 class="visually-hidden">Purchase information</h2>
-          <ul class="about__list about__list--buy">
-            <li class="about__item"><a href="#" class="about__link">Ordering & Payment</a></li>
-            <li class="about__item"><a href="#" class="about__link">Terms & Conditions</a></li>
-            <li class="about__item"><a href="#" class="about__link">Returns & Exchanges</a></li>
-            <li class="about__item"><a href="#" class="about__link">Delivery</a></li>
-          </ul>
-          <ul class="about__list about__list--info">
-            <li class="about__item"><a href="#" class="about__link">About CH</a></li>
-            <li class="about__item"><a href="#" class="about__link">Stores & Hours</a></li>
-            <li class="about__item"><a href="#" class="about__link">Jobs</a></li>
-            <li class="about__item"><a href="#" class="about__link">Contact Us</a></li>
-          </ul>
-        </section>
-        <section class="footer__socials socials">
-          <h2 class="visually-hidden">Our contacts</h2>
-          <ul class="socials__list">
-            <li class="socials__item">
-              <a href="#" class="socials__link" aria-label="Facebook">
-                <svg class="socials__svg" width="15" height="15" role="img">
-                  <use xlink:href="img/sprite_auto.svg#icon-f"></use>
-                </svg>
-                <span>Facebook</span>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a href="#" class="socials__link" aria-label="Instagram">
-                <svg class="socials__svg" width="15" height="15" role="img">
-                  <use xlink:href="img/sprite_auto.svg#icon-i"></use>
-                </svg>
-                <span>Instagram</span>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a href="#" class="socials__link" aria-label="Pinterest">
-                <svg class="socials__svg" width="15" height="15" role="img">
-                  <use xlink:href="img/sprite_auto.svg#icon-p"></use>
-                </svg>
-                <span>Pinterest</span>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a href="#" class="socials__link" aria-label="Twitter">
-                <svg class="socials__svg" width="15" height="13" role="img">
-                  <use xlink:href="img/sprite_auto.svg#icon-tw"></use>
-                </svg>
-                <span>Twitter</span>
-              </a>
-            </li>
-          </ul>
-        </section>
-      </div>
-    </div>
-  </footer>
 </main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__layout">
+      <section class="footer__subscribe subscribe">
+        <h2>The good stuff in your inbox</h2>
+        <p>News and updates from CH. No spam, we promise.</p>
+        <form action="" method="post" class="subscribe__form subs-form">
+          <div>
+            <input type="email" name="email" id="subs-email" placeholder="Your E-mail">
+            <label class="visually-hidden" for="subs-email">Your E-mail</label>
+          </div>
+          <button class="subs-form__btn" type="submit">
+            <span>Sign Up</span>
+            <svg width="29" height="9" role="img">
+              <use xlink:href="./img/sprite_auto.svg#icon-signup"></use>
+            </svg>
+          </button>
+        </form>
+      </section>
+      <section class="footer__about about">
+        <h2 class="visually-hidden">Purchase information</h2>
+        <ul class="about__list about__list--buy">
+          <li class="about__item"><a href="#" class="about__link">Ordering & Payment</a></li>
+          <li class="about__item"><a href="#" class="about__link">Terms & Conditions</a></li>
+          <li class="about__item"><a href="#" class="about__link">Returns & Exchanges</a></li>
+          <li class="about__item"><a href="#" class="about__link">Delivery</a></li>
+        </ul>
+        <ul class="about__list about__list--info">
+          <li class="about__item"><a href="#" class="about__link">About CH</a></li>
+          <li class="about__item"><a href="#" class="about__link">Stores & Hours</a></li>
+          <li class="about__item"><a href="#" class="about__link">Jobs</a></li>
+          <li class="about__item"><a href="#" class="about__link">Contact Us</a></li>
+        </ul>
+      </section>
+      <section class="footer__socials socials">
+        <h2 class="visually-hidden">Our contacts</h2>
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a href="#" class="socials__link" aria-label="Facebook">
+              <svg class="socials__svg" width="15" height="15" role="img">
+                <use xlink:href="img/sprite_auto.svg#icon-f"></use>
+              </svg>
+              <span>Facebook</span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link" aria-label="Instagram">
+              <svg class="socials__svg" width="15" height="15" role="img">
+                <use xlink:href="img/sprite_auto.svg#icon-i"></use>
+              </svg>
+              <span>Instagram</span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link" aria-label="Pinterest">
+              <svg class="socials__svg" width="15" height="15" role="img">
+                <use xlink:href="img/sprite_auto.svg#icon-p"></use>
+              </svg>
+              <span>Pinterest</span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link" aria-label="Twitter">
+              <svg class="socials__svg" width="15" height="13" role="img">
+                <use xlink:href="img/sprite_auto.svg#icon-tw"></use>
+              </svg>
+              <span>Twitter</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</footer>
 <script src="js/script.js"></script>
 <script src="js/vendor/swiper-bundle.min.js"></script>
 <script src="js/main-slider.js"></script>
