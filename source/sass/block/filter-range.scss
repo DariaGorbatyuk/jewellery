@@ -67,6 +67,12 @@
       right: 20.7%;
     }
   }
+
+  @media (max-width: $s-end) {
+    &--min {
+      left: 12.7%;
+    }
+  }
 }
 
 .filter-range__inp {
@@ -110,6 +116,16 @@
 
     &--max {
       right: 11%;
+    }
+  }
+
+  @media (max-width: $s-end) {
+    &--min {
+      left: 8%;
+    }
+
+    &--max {
+      right: 6%;
     }
   }
 }

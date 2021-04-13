@@ -18,6 +18,10 @@
       display: block;
     }
   }
+
+  @media (max-width: $s-end) {
+    max-width: 270px;
+  }
 }
 
 .filter-form__box {
@@ -38,6 +42,16 @@
 
     &:last-of-type {
       margin-bottom: 42px;
+    }
+  }
+
+  @media (max-width: $s-end) {
+    padding-right: 17px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+
+    &:last-of-type {
+      margin-bottom: 28px;
     }
   }
 }
@@ -100,6 +114,10 @@
     margin-left: 10px;
     margin-top: 20px;
     margin-bottom: 0;
+  }
+
+  @media (max-width: $s-end) {
+    margin-bottom: 8px;
   }
 }
 
@@ -172,6 +190,10 @@
     margin-right: 49px;
     margin-top: 18px;
   }
+
+  @media (max-width: $s-end) {
+    margin: 19px 0 6px;
+  }
 }
 
 .filter-form__btn {
@@ -200,6 +222,15 @@
     width: 362px;
     margin-left: 21px;
     margin-bottom: 24px;
+
+    &--reset {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: $s-end) {
+    width: 230px;
+    margin-bottom: 20px;
 
     &--reset {
       margin-bottom: 0;
@@ -247,5 +278,10 @@
       transform: scale(1.2);
       transition: all 300ms;
     }
+  }
+
+  @media (max-width: $s-end) {
+    top: -16px;
+    right: -10px;
   }
 }
