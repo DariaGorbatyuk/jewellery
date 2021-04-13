@@ -2,7 +2,6 @@
 @import "variables";
 @import "general";
 @import "mixin";
-@import "block/visually-hidden";
 @import "block/overflow";
 @import "block/link";
 @import "block/container";
@@ -28,4 +27,6 @@
 @import "block/catalog";
 @import "block/main-catalog";
 @import "block/filter-form";
+@import "block/filter-range";
+@import "block/visually-hidden";
 

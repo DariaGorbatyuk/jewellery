@@ -1,0 +1,81 @@
+.filter-range {
+  position: relative;
+  min-height: 41px;
+}
+
+.filter-range__controls {
+  position: relative;
+}
+
+.filter-range__scale {
+  height: 1px;
+  width: 100%;
+  background-color: $background-gray;
+  position: absolute;
+  top: 8px;
+}
+
+.filter-range__bar {
+  position: absolute;
+  height: 1px;
+  background-color: $dark-gold;
+  left: 27%;
+  width: 51%;
+}
+
+.filter-range__toggle {
+  @include square(15px);
+  background-color: $dark-gold;
+  border-radius: 50%;
+  position: absolute;
+  border: 1px solid $dark-gold;
+  padding: 0;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    transform: scale(1.2);
+    transition: all 300ms;
+  }
+
+  &--min {
+    left: 21.7%;
+  }
+
+  &--max {
+    right: 18.5%;
+  }
+}
+
+.filter-range__inp {
+  position: absolute;
+  bottom: 0;
+  font-family: $poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.3;
+  color: $dark;
+
+
+  input {
+    width: 50px;
+    border: none;
+    background-color: transparent;
+    padding-right: 10px;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 1px $dark-gold;
+    }
+  }
+
+  &--min {
+    left: 18%;
+  }
+
+  &--max {
+    right: -1%;
+  }
+}
