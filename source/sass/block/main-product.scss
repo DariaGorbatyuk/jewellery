@@ -1,7 +1,11 @@
-.main-product{
+.main-product {
   margin-top: 71px;
 
   @media (max-width: $m-end) {
     margin-top: 21px;
+  }
+
+  @media (max-width: $s-end) {
+    margin-top: 0;
   }
 }

@@ -20,12 +20,16 @@
   padding: 10px 10px 10px 0;
   margin-right: 24px;
 
-  &:last-child{
+  &:last-child {
     margin-right: 0;
   }
 
   &--disabled {
     color: $light-gary;
+  }
+
+  @media (max-width: $s-end) {
+    margin-right: 28px;
   }
 }
 
@@ -51,7 +55,7 @@
   padding-bottom: 11px;
   margin-bottom: 11px;
 
-  &:last-of-type{
+  &:last-of-type {
     margin-bottom: 0;
   }
 }
