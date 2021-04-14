@@ -215,7 +215,8 @@
 }
 
 .filter-form__btn {
-  width: 250px;
+  max-width: 250px;
+  width: 100%;
   border: none;
   background-color: $dark-gold;
   color: $white;

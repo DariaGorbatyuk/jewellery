@@ -26,12 +26,13 @@
 
 .catalog__layout {
   display: grid;
-  grid-template-columns: 250px 867px;
-  column-gap: 50px;
+  grid-template-columns: minmax(180px, 250px) minmax(10px, 50px) minmax(710px, 867px);
+  //column-gap: 50px;
   grid-template-rows: 1560px;
 
   @media (max-width: $m-end) {
-    display: block;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1300px;
   }
 }
 
@@ -43,6 +44,7 @@
 
 .catalog__slider {
   width: 100%;
+  grid-column: 3/-1;
 }
 
 .catalog__list {
