@@ -1,3 +1,7 @@
 .main-product{
   margin-top: 71px;
+
+  @media (max-width: $m-end) {
+    margin-top: 21px;
+  }
 }
