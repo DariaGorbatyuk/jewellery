@@ -154,4 +154,8 @@
       height: 15px;
     }
   }
+
+  @media (max-width: $m-end) {
+    display: none;
+  }
 }

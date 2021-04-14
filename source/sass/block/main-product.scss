@@ -1,11 +1,35 @@
 .main-product {
   margin-top: 71px;
 
+  &__product-card {
+    margin-bottom: 121px;
+  }
+
+  &__novelty {
+    margin-bottom: 120px;
+  }
+
   @media (max-width: $m-end) {
     margin-top: 21px;
+
+    &__product-card {
+      margin-bottom: 66px;
+    }
+
+    &__novelty {
+      margin-bottom: 69px;
+    }
   }
 
   @media (max-width: $s-end) {
     margin-top: 0;
+
+    &__product-card {
+      margin-bottom: 58px;
+    }
+
+    &__novelty {
+      margin-bottom: 89px;
+    }
   }
 }
