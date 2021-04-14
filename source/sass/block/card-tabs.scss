@@ -1,0 +1,68 @@
+.card-tabs {
+  font-family: $poppins;
+  font-style: normal;
+  line-height: 1.3;
+  color: $dark;
+}
+
+.card-tabs__headings {
+  font-weight: 500;
+  font-size: 16px;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 19px;
+}
+
+.card-tabs__title {
+  display: block;
+  padding: 10px 10px 10px 0;
+  margin-right: 24px;
+
+  &:last-child{
+    margin-right: 0;
+  }
+
+  &--disabled {
+    color: $light-gary;
+  }
+}
+
+.card-tabs__link {
+  text-decoration: none;
+}
+
+.card-tabs__content {
+
+}
+
+.card-tabs__tab-pane {
+  &--disabled {
+    display: none;
+  }
+}
+
+.card-tabs__dl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $white-gray;
+  padding-bottom: 11px;
+  margin-bottom: 11px;
+
+  &:last-of-type{
+    margin-bottom: 0;
+  }
+}
+
+.card-tabs__dt {
+  font-weight: 500;
+  font-size: 14px;
+  margin-right: auto;
+}
+
+.card-tabs__dd {
+  font-weight: normal;
+  font-size: 14px;
+}

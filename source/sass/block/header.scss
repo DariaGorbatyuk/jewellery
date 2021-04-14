@@ -177,6 +177,13 @@
   transform: translateX(-50%);
   top: 30px;
 
+  &:hover,
+  &:focus {
+    padding: 5px;
+    box-shadow: 0 0 0 2px $dark-gold;
+  }
+
+
   @media (max-width: $s-end) {
     top: 21px;
 
