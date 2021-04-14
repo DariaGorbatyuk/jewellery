@@ -35,6 +35,12 @@
 
 .card-tabs__link {
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    color: $dark-gold;
+  }
 }
 
 .card-tabs__content {
