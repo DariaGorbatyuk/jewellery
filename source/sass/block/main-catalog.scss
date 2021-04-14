@@ -16,4 +16,14 @@
       margin-bottom: 65px;
     }
   }
+
+  @media (max-width: $m-end) {
+    &__promo {
+      margin-bottom: 40px;
+    }
+
+    &__catalog {
+      margin-bottom: 55px;
+    }
+  }
 }

@@ -24,17 +24,15 @@
           return '<span class="' + className + '">' + (index + 1) + '</span>';
         },
       },
-
-/*      breakpoints: {
-/!*        768: {
-          slidesPerView: 3,
-          slidesPerGroup: 1,
+      breakpoints: {
+        320: {
+          slidesPerColumn: 6,
         },
-        *!/
-        1210:{
-          slidesPerView: 'auto',
-        }
-      },*/
+
+        768: {
+          slidesPerColumn: 4,
+        },
+      },
     });
   }
 

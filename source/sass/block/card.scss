@@ -32,6 +32,11 @@
 
   @media (max-width: $s-end) {
     max-width: 130px;
+    min-width: 130px;
+
+    &--catalog {
+      min-height: 220px;
+    }
   }
 }
 
