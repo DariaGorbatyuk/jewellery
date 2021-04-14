@@ -9,7 +9,7 @@
       slidesPerColumn: 4,
       slidesPerGroup: 1,
       centeredSlides: false,
-      spaceBetween: 33,
+      spaceBetween: 30,
       centeredSlidesBounds: true,
       grabCursor: true,
 
