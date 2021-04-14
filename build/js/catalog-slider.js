@@ -25,16 +25,16 @@
         },
       },
 
-      breakpoints: {
-/*        768: {
+/*      breakpoints: {
+/!*        768: {
           slidesPerView: 3,
           slidesPerGroup: 1,
         },
-        */
+        *!/
         1210:{
           slidesPerView: 'auto',
         }
-      },
+      },*/
     });
   }
 
