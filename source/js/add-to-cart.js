@@ -11,11 +11,15 @@
     const btnClose = newAddToCart.querySelector('.add-product__close');
     body.insertAdjacentElement('afterbegin', newAddToCart);
     btnClose.addEventListener('click', closeAddToCart);
+    document.addEventListener('click', closeAddToCart);
+    document.addEventListener('keydown', closeAddToCart);
 
     function closeAddToCart(evt) {
+      if (evt.key !== 'Escape' && !evt.target.matches('.add-product__close') && !evt.target.matches('.add-product__overlay')) {
+        return;
+      }
       newAddToCart.remove();
     }
   }
-
   btnAddToCart.addEventListener('click', addProduct);
 })();
