@@ -60,7 +60,7 @@
 }
 
 .add-product__btn {
-  width: 200px;
+  width: auto;
   color: $dark;
   background-color: $white;
   display: block;
@@ -77,6 +77,7 @@
   &--bucket {
     color: $white;
     background-color: $dark-gold;
+    margin-right: 20px;
   }
 
   &:hover,
@@ -87,7 +88,9 @@
   }
 
   @media (max-width: $m-end) {
-    width: 206px;
+    &--bucket {
+      margin-right: 19px;
+    }
   }
 }
 
