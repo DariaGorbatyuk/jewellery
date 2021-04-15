@@ -1,0 +1,112 @@
+.add-product {
+  background-color: $white;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 500px;
+  line-height: 1.3;
+  padding: 47px 15px 54px 36px;
+  display: grid;
+  grid-template-rows: repeat(4, min-content);
+  grid-template-columns: 200px 1fr;
+  column-gap: 30px;
+
+  h2 {
+    font-family: $cg;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    color: $dark;
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 37px;
+    grid-column: 1/-1;
+    padding-right: 21px;
+  }
+
+  p,
+  b {
+    font-family: $poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.3;
+    color: $dark;
+    margin: 0 0 36px;
+  }
+
+  b {
+    font-weight: 500;
+    text-align: right;
+    margin-right: 19px;
+  }
+}
+
+.add-product__item {
+  grid-column: 1/-1;
+  margin-bottom: 16px;
+}
+
+.add-product__btn {
+  width: 200px;
+  color: $dark;
+  background-color: $white;
+  display: block;
+  text-align: center;
+  border: 1px solid $dark-gold;
+  text-decoration: none;
+  font-family: $poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.3;
+  padding: 24px 10px 23px;
+
+  &--bucket {
+    color: $white;
+    background-color: $dark-gold;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    transform: scale(1.1);
+    transition: all 300ms;
+  }
+}
+
+.add-product__close {
+  @include square(25px);
+  background-color: transparent;
+  position: absolute;
+  border: none;
+  right: 14px;
+  top: 14px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px $dark-gold;
+  }
+
+
+  &::before,
+  &::after {
+    @include pseudo();
+    @include size(14px, 2px);
+    background-color: $dark;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
