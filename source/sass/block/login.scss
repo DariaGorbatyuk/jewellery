@@ -31,6 +31,12 @@
       margin-bottom: 15px;
     }
   }
+
+  &--nojs {
+    position: static;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
 }
 
 .login__layout {

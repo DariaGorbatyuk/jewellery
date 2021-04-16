@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Stylish jewelry store">
-  <title>Jewellery shop - add to cart</title>
+  <title>Jewellery shop - login</title>
   <link rel="preload" href="fonts/Poppins-Regular.woff2" as="font" type="font/woff2">
   <link rel="preload" href="fonts/Poppins-Medium.woff2" as="font" type="font/woff2">
   <link rel="preload" href="fonts/Poppins-Bold.woff2" as="font" type="font/woff2">
@@ -69,32 +69,29 @@
   </div>
 </header>
 <main class="main-nojs">
-  <div class="add-product add-product--nojs">
-    <h2>The item was added to your cart</h2>
-    <div class="add-product__item product-item-to-cart">
-      <div class="product-item-to-cart__img-container">
-        <img src="img/necklace-card-big.jpg" srcset="img/necklace-card-big@2x.jpg 2x"
-             alt="Gold necklace with blue stones">
-      </div>
-      <div class="product-item-to-cart__info">
-        <h3>Gold Necklace</h3>
-        <span>$ 115</span>
-      </div>
-      <div class="product-item-to-cart__quantity">
-        <button type="button" class="product-item-to-cart__btn product-item-to-cart__btn--plus"
-                aria-label="Plus"></button>
-        <div class="product-item-to-cart__inp-container">
-          <label class="visually-hidden" for="quantity">quantity of goods</label>
-          <input type="number" value="1" max="999" min="1" name="quantity" id="quantity">
-        </div>
-        <button type="button" class="product-item-to-cart__btn product-item-to-cart__btn--minus"
-                aria-label="Minus"></button>
-      </div>
+  <div class="login login--nojs">
+    <div class="login__img-container">
+      <img src="img/login-photo.jpg" alt="Interesting gold earrings with strings">
     </div>
-    <p>You have <span>1</span> item in the cart</p>
-    <b>Cart subtotal: <span>$ 115</span></b>
-    <a class="add-product__btn add-product__btn--continue" href="catalog.html">Continue shopping</a>
-    <a class="add-product__btn add-product__btn--bucket" href="catalog.html">Checkout</a>
+    <div class="login__layout">
+      <h2>Log In</h2>
+      <form action="https://echo.htmlacademy.ru" method="post" class="login__form login-form">
+        <div class="login-form__inp-container">
+          <label class="visually-hidden" for="login-email">Your E-mail</label>
+          <input id="login-email" type="email" placeholder="Your E-mail" name="email">
+        </div>
+        <div class="login-form__inp-container">
+          <label class="visually-hidden" for="login-password">Your password</label>
+          <input id="login-password" type="password" placeholder="Password" name="password">
+        </div>
+        <a class="login-form__forgot-link" href="#">Forgot your password?</a>
+        <button class="login-form__btn" type="submit">Log In</button>
+      </form>
+      <p class="login__new-login">
+        Don’t have an account?
+        <a class="login__new-link" href="#">Sign up</a>
+      </p>
+    </div>
   </div>
 </main>
 <footer class="footer">
