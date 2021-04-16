@@ -12,7 +12,6 @@
     box-shadow: 0 0 0 2px $dark-gold;
   }
 
-
   &::before,
   &::after {
     @include pseudo();
@@ -26,5 +25,16 @@
 
   &::after {
     transform: rotate(-45deg);
+  }
+
+  @media (max-width: $m-end) {
+    @include square(35px);
+
+    &--big {
+      &::before,
+      &::after {
+        @include size(20px, 2px);
+      }
+    }
   }
 }

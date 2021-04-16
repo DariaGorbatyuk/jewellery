@@ -19,10 +19,18 @@
     margin-top: 0;
     margin-bottom: 21px;
   }
+
+  @media (max-width: $m-end) {
+    width: 442px;
+  }
 }
 
 .login__layout {
   padding: 20px 45px 60px;
+
+  @media (max-width: $m-end) {
+    padding: 20px 50px 60px;
+  }
 }
 
 .login__img-container {
@@ -63,6 +71,11 @@
 .login__close {
   top: 12px;
   right: 15px;
+
+  @media (max-width: $m-end) {
+    top: 11px;
+    right: 10px;
+  }
 }
 
 .login__form {
