@@ -1,7 +1,7 @@
 'use strict';
 
 (function () {
-  const addToCartTemplate = document.querySelector('#add-product').content.querySelector('.add-product__overlay');
+  const addToCartTemplate = document.querySelector('#add-product').content.querySelector('.overlay');
   const btnAddToCart = document.querySelector('.product-card__add-link');
   const body = document.querySelector('body');
 
@@ -15,7 +15,7 @@
     document.addEventListener('keydown', closeAddToCart);
 
     function closeAddToCart(evt) {
-      if (evt.key !== 'Escape' && !evt.target.matches('.add-product__close') && !evt.target.matches('.add-product__overlay')) {
+      if (evt.key !== 'Escape' && !evt.target.matches('.add-product__close') && !evt.target.matches('.overlay')) {
         return;
       }
       newAddToCart.remove();

@@ -1,0 +1,80 @@
+.login-form {
+  width: 100%;
+}
+
+.login-form__inp-container {
+  &:first-of-type {
+    margin-bottom: 24px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 6px;
+  }
+
+  input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    box-shadow: 0 1px 0 0 $dark;
+    font-family: $poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: $dark;
+    padding: 12px 10px 8px 5px;
+
+    &::placeholder {
+      font: inherit;
+      color: $light-gary;
+    }
+
+    &:hover,
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 1px $dark-gold;
+    }
+  }
+}
+
+.login-form__forgot-link {
+  font-family: $poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: $light-gary;
+  text-align: right;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 44px;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    color: $dark-gold;
+  }
+}
+
+.login-form__btn {
+  display: block;
+  text-decoration: none;
+  background-color: $dark-gold;
+  font-family: $poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.3;
+  color: $white;
+  padding: 26px 15px;
+  padding-bottom: 22px;
+  text-align: center;
+  border: none;
+  width: 100%;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    background-color: lighten($dark-gold, 10%);
+  }
+}
