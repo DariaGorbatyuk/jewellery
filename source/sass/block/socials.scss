@@ -16,7 +16,6 @@
     flex-wrap: wrap;
     align-items: center;
   }
-
 }
 
 .socials__item {
@@ -30,7 +29,7 @@
     margin-right: 15px;
     margin-bottom: 7px;
 
-    &:last-child{
+    &:last-child {
       margin-right: 0;
       margin-bottom: 7px;
     }
@@ -40,6 +39,13 @@
 
 .socials__link {
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px $white;
+  }
+
 
   @media (max-width: $s-end) {
     span {
