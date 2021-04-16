@@ -142,36 +142,8 @@
 }
 
 .add-product__close {
-  @include square(25px);
-  background-color: transparent;
-  position: absolute;
-  border: none;
   right: 14px;
   top: 14px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-
-  &:hover,
-  &:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px $dark-gold;
-  }
-
-
-  &::before,
-  &::after {
-    @include pseudo();
-    @include size(14px, 2px);
-    background-color: $dark;
-  }
-
-  &::before {
-    transform: rotate(45deg);
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-  }
 
   @media (max-width: $s-end) {
     right: 10px;

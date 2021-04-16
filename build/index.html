@@ -415,6 +415,33 @@
     </div>
   </div>
 </footer>
+<template id="login">
+  <div class="login__overlay overlay">
+    <div class="login">
+      <div class="login__img-container">
+        <img src="img/login-photo.jpg" alt="Interesting gold earrings with strings">
+      </div>
+      <h2>Log In</h2>
+      <form action="https://echo.htmlacademy.ru" method="post" class="login__form login-form">
+        <div class="login-form__inp-container">
+          <label for="login-email">Your E-mail</label>
+          <input id="login-email" type="email" placeholder="Your E-mail" name="email">
+        </div>
+        <div class="login-form__inp-container">
+          <label for="login-password">Your password</label>
+          <input id="login-password" type="password" placeholder="Password" name="password">
+        </div>
+        <a class="login-form__forgot-link" href="#">Forgot your password?</a>
+        <button class="login-form__btn" type="submit">Log In</button>
+        <p class="login-form__new">
+          Don’t have an account?
+          <a class="login-form__new-link" href="#">Sign up</a>
+        </p>
+      </form>
+      <button class="login__close close" type="button" aria-label="Close modal"></button>
+    </div>
+  </div>
+</template>
 <script src="js/script.js"></script>
 <script src="js/vendor/swiper-bundle.min.js"></script>
 <script src="js/main-slider.js"></script>
