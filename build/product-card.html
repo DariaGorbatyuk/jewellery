@@ -55,10 +55,10 @@
     <nav class="header__nav nav">
       <ul class="nav__main-list">
         <li class="nav__main-item"><a class="nav__main-link link" href="#">What’s new</a></li>
-        <li class="nav__main-item"><a class="nav__main-link link" href="#">Chokers</a></li>
-        <li class="nav__main-item"><a class="nav__main-link link" href="#">Necklaces</a></li>
-        <li class="nav__main-item"><a class="nav__main-link link" href="#">Rings</a></li>
-        <li class="nav__main-item"><a class="nav__main-link link" href="#">Earrings</a></li>
+        <li class="nav__main-item"><a class="nav__main-link link" href="catalog.html">Chokers</a></li>
+        <li class="nav__main-item"><a class="nav__main-link link" href="catalog.html">Necklaces</a></li>
+        <li class="nav__main-item"><a class="nav__main-link link" href="catalog.html">Rings</a></li>
+        <li class="nav__main-item"><a class="nav__main-link link" href="catalog.html">Earrings</a></li>
       </ul>
       <ul class="nav__small-list">
         <li class="nav__small-item"><a class="nav__small-link" href="#">About CH</a></li>
@@ -289,7 +289,7 @@
         <p>News and updates from CH. No spam, we promise.</p>
         <form action="" method="post" class="subscribe__form subs-form">
           <div>
-            <input type="email" name="email" id="subs-email" placeholder="Your E-mail">
+            <input type="email" name="email" id="subs-email" placeholder="Your E-mail" required="">
             <label class="visually-hidden" for="subs-email">Your E-mail</label>
           </div>
           <button class="subs-form__btn" type="submit">
@@ -371,7 +371,7 @@
           <button type="button" class="product-item-to-cart__btn product-item-to-cart__btn--plus" aria-label="Plus"></button>
           <div class="product-item-to-cart__inp-container">
             <label class="visually-hidden" for="quantity">quantity of goods</label>
-            <input type="number" value="1" max="999" min="1" name="quantity" id="quantity">
+            <input type="number" value="1" max="999" min="1" name="quantity" id="quantity" required="">
           </div>
           <button type="button" class="product-item-to-cart__btn product-item-to-cart__btn--minus" aria-label="Minus"></button>
         </div>
@@ -395,11 +395,11 @@
         <form action="https://echo.htmlacademy.ru" method="post" class="login__form login-form">
           <div class="login-form__inp-container">
             <label class="visually-hidden" for="login-email">Your E-mail</label>
-            <input id="login-email" type="email" placeholder="Your E-mail" name="email">
+            <input id="login-email" type="email" placeholder="Your E-mail" name="email" required="">
           </div>
           <div class="login-form__inp-container">
             <label class="visually-hidden" for="login-password">Your password</label>
-            <input id="login-password" type="password" placeholder="Password" name="password">
+            <input id="login-password" type="password" placeholder="Password" name="password" required="">
           </div>
           <a class="login-form__forgot-link" href="#">Forgot your password?</a>
           <button class="login-form__btn" type="submit">Log In</button>
