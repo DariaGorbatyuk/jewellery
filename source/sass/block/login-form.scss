@@ -35,6 +35,16 @@
       box-shadow: 0 0 0 1px $dark-gold;
     }
   }
+
+  @media (max-width: $s-end) {
+    &:first-of-type {
+      margin-bottom: 19px;
+    }
+
+    input {
+      font-size: 14px;
+    }
+  }
 }
 
 .login-form__forgot-link {
@@ -53,6 +63,10 @@
   &:focus {
     outline: none;
     color: $dark-gold;
+  }
+
+  @media (max-width: $s-end) {
+    margin-bottom: 35px;
   }
 }
 
@@ -76,5 +90,10 @@
   &:focus {
     outline: none;
     background-color: lighten($dark-gold, 10%);
+  }
+
+  @media (max-width: $s-end) {
+    width: 240px;
+    margin: 0 auto;
   }
 }

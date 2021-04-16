@@ -1,8 +1,7 @@
 .login {
   width: 430px;
   background-color: $background-gray;
-  top: 20px;
-  //top: 100px;
+  top: 100px;
   left: 0;
   right: 0;
   margin: auto;
@@ -23,6 +22,15 @@
   @media (max-width: $m-end) {
     width: 442px;
   }
+
+  @media (max-width: $s-end) {
+    width: 84.5%;
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+  }
 }
 
 .login__layout {
@@ -30,6 +38,10 @@
 
   @media (max-width: $m-end) {
     padding: 20px 50px 60px;
+  }
+
+  @media (max-width: $s-end) {
+    padding: 20px 14px 40px;
   }
 }
 
@@ -43,6 +55,11 @@
     object-fit: cover;
     width: 100%;
     height: 100%;
+  }
+
+  @media (max-width: $s-end) {
+    height: 84px;
+    margin-bottom: 17px;
   }
 }
 
@@ -75,6 +92,11 @@
   @media (max-width: $m-end) {
     top: 11px;
     right: 10px;
+  }
+
+  @media (max-width: $s-end) {
+    top: 3px;
+    right: 3px;
   }
 }
 
