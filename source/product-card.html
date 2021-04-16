@@ -43,7 +43,7 @@
         </svg>
       </a>
       <nav class="header__user-nav user-nav">
-        <a class="user-nav__login link" href="#">Login</a>
+        <a class="user-nav__login link" href="login.html">Login</a>
         <a class="user-nav__bucket link" href="#">
           <svg width="18" height="16" role="img">
             <use xlink:href="img/sprite_auto.svg#icon-bucket"></use>
@@ -65,7 +65,7 @@
         <li class="nav__small-item"><a class="nav__small-link" href="#">Stores & Hours</a></li>
         <li class="nav__small-item"><a class="nav__small-link" href="#">Contact Us</a></li>
       </ul>
-      <a class="nav__login" href="#">Login</a>
+      <a class="nav__login" href="login.html">Login</a>
     </nav>
   </div>
 </header>
@@ -403,9 +403,39 @@
     </div>
   </div>
 </template>
+<template id="login">
+  <div class="overlay">
+    <div class="login">
+      <div class="login__img-container">
+        <img src="img/login-photo.jpg" alt="Interesting gold earrings with strings">
+      </div>
+      <div class="login__layout">
+        <h2>Log In</h2>
+        <form action="https://echo.htmlacademy.ru" method="post" class="login__form login-form">
+          <div class="login-form__inp-container">
+            <label class="visually-hidden" for="login-email">Your E-mail</label>
+            <input id="login-email" type="email" placeholder="Your E-mail" name="email">
+          </div>
+          <div class="login-form__inp-container">
+            <label class="visually-hidden" for="login-password">Your password</label>
+            <input id="login-password" type="password" placeholder="Password" name="password">
+          </div>
+          <a class="login-form__forgot-link" href="#">Forgot your password?</a>
+          <button class="login-form__btn" type="submit">Log In</button>
+        </form>
+        <p class="login__new-login">
+          Don’t have an account?
+          <a class="login__new-link" href="#">Sign up</a>
+        </p>
+        <button class="login__close close close--big" type="button" aria-label="Close modal"></button>
+      </div>
+    </div>
+  </div>
+</template>
 <script src="js/script.js"></script>
 <script src="js/vendor/swiper-bundle.min.js"></script>
 <script src="js/main-slider.js"></script>
 <script src="js/add-to-cart.js"></script>
+<script src="js/login.js"></script>
 </body>
 </html>
