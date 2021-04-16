@@ -6,14 +6,34 @@
   const btnOpenLoginSmall = document.querySelector('.nav__login');
   const body = document.querySelector('body');
 
+  var isStorageSupport = true;
+  var storageSupportEmail;
+
+  try {
+    storageSupportEmail = localStorage.getItem('email');
+  } catch (err) {
+    isStorageSupport = false;
+  }
+
+  function setStorage(email) {
+    if (isStorageSupport) {
+      email.value = storageSupportEmail;
+    }
+  }
+
   function openLoginForm(evt) {
     evt.preventDefault();
     const newLoginForm = loginTemplate.cloneNode(true);
+    const email = newLoginForm.querySelector('#login-email');
     const btnClose = newLoginForm.querySelector('.close');
+    const loginForm = newLoginForm.querySelector('.login-form');
     body.insertAdjacentElement('afterbegin', newLoginForm);
+    email.focus();
     btnClose.addEventListener('click', closeLoginForm);
     document.addEventListener('click', closeLoginForm);
     document.addEventListener('keydown', closeLoginForm);
+    loginForm.addEventListener('submit', onLoginFormSubmit);
+    setStorage(email);
 
     function closeLoginForm(evt) {
       if (evt.key !== 'Escape' && !evt.target.matches('.close') && !evt.target.matches('.overlay')) {
@@ -21,7 +41,19 @@
       }
       newLoginForm.remove();
     }
+
+    function onLoginFormSubmit(evt) {
+      evt.preventDefault();
+      if (isStorageSupport) {
+        localStorage.setItem('email', email.value);
+      }
+      loginForm.submit();
+      if (newLoginForm) {
+        newLoginForm.remove();
+      }
+    }
   }
+
   btnOpenLogin.addEventListener('click', openLoginForm);
   btnOpenLoginSmall.addEventListener('click', openLoginForm);
 })();
