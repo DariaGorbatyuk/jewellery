@@ -28,6 +28,8 @@
     const btnClose = newLoginForm.querySelector('.close');
     const loginForm = newLoginForm.querySelector('.login-form');
     body.insertAdjacentElement('afterbegin', newLoginForm);
+    body.classList.add('overflow');
+    newLoginForm.classList.add('overflow--scroll');
     email.focus();
     btnClose.addEventListener('click', closeLoginForm);
     document.addEventListener('click', closeLoginForm);
@@ -40,6 +42,7 @@
         return;
       }
       newLoginForm.remove();
+      body.classList.remove('overflow');
     }
 
     function onLoginFormSubmit(evt) {
@@ -50,6 +53,7 @@
       loginForm.submit();
       if (newLoginForm) {
         newLoginForm.remove();
+        body.classList.remove('overflow');
       }
     }
   }

@@ -10,6 +10,8 @@
     const newAddToCart = addToCartTemplate.cloneNode(true);
     const btnClose = newAddToCart.querySelector('.add-product__close');
     body.insertAdjacentElement('afterbegin', newAddToCart);
+    body.classList.add('overflow');
+    newAddToCart.classList.add('overflow--scroll');
     btnClose.addEventListener('click', closeAddToCart);
     document.addEventListener('click', closeAddToCart);
     document.addEventListener('keydown', closeAddToCart);
@@ -19,6 +21,7 @@
         return;
       }
       newAddToCart.remove();
+      body.classList.remove('overflow');
     }
   }
   btnAddToCart.addEventListener('click', addProduct);
