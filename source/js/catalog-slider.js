@@ -5,7 +5,7 @@
 
   function initSwiper() {
     swiper = new window.Swiper('.swiper-container', {
-      slidesPerView: 'auto',
+      slidesPerView: 3,
       slidesPerColumn: 4,
       slidesPerGroup: 1,
       centeredSlides: false,
@@ -27,10 +27,12 @@
       breakpoints: {
         320: {
           slidesPerColumn: 6,
+          slidesPerView: 2,
         },
 
         768: {
           slidesPerColumn: 4,
+          slidesPerView: 3,
         },
       },
     });

@@ -37,7 +37,6 @@
     display: flex;
     flex-direction: column;
     height: 1307px;
-    //margin-right: -30px;
     max-width: 677px;
     margin: 0 auto;
   }
@@ -56,7 +55,7 @@
 }
 
 .catalog .swiper-wrapper {
-  width: 100% !important;
+  width: 100%;
 
   @media (max-width: $m-end) {
     margin: 0 auto;
@@ -90,6 +89,12 @@
     color: $light-gary;
     width: 15px;
     height: 17px;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      color: $dark-gold;
+    }
   }
 
   .swiper-pagination-bullet-active {
@@ -111,6 +116,12 @@
   padding: 0;
   overflow: hidden;
   z-index: 10;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    color: $dark-gold;
+  }
 
   &--prev {
     left: 0;
