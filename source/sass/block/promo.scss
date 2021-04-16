@@ -1,14 +1,11 @@
 .promo {
   min-height: 463px;
   background-color: $promo-filter;
-  background-image: linear-gradient(rgba($promo-filter, 0.7), rgba($promo-filter, 0.7)), url("../img/intro-desktop.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   font-family: $cg;
   color: $white;
   filter: drop-shadow(0 4px 4px rgba($black, 0.25));
   padding-top: 180px;
+  position: relative;
 
   span {
     font-style: normal;
@@ -19,6 +16,7 @@
     text-transform: uppercase;
     text-align: center;
     display: block;
+    position: relative;
   }
 
   p {
@@ -29,10 +27,10 @@
     text-transform: lowercase;
     margin: 0;
     text-align: center;
+    position: relative;
   }
 
   &--catalog {
-    background-image: linear-gradient(rgba($promo-filter, 0.7), rgba($promo-filter, 0.7)), url("../img/intro-catalog-d.jpg");
     filter: none;
     min-height: 261px;
     padding-top: 92px;
@@ -52,26 +50,12 @@
     }
   }
 
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/intro-desktop@2x.jpg");
-
-    &--catalog {
-      background-image: linear-gradient(rgba($promo-filter, 0.7), rgba($promo-filter, 0.7)), url("../img/intro-catalog-d@2x.jpg");
-    }
-  }
-
   @media (max-width: $m-end) {
     filter: none;
   }
 
   @media (max-width: $s-end) {
     padding-top: 188px;
-    background-image: linear-gradient(rgba($promo-filter, 0.7), rgba($promo-filter, 0.7)), url("../img/intro-320.jpg");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/intro-320@2x.jpg");
-    }
 
     span {
       font-size: 38px;
@@ -95,3 +79,21 @@
   }
 }
 
+.promo__img-container {
+  width: 100%;
+  height: 463px;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &--catalog {
+    height: 261px;
+  }
+}
