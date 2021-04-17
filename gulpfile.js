@@ -94,14 +94,9 @@ gulp.task('copy', function () {
     .pipe(gulp.dest('build'));
 });
 
-gulp.task('copySliderCss', function () {
-  return gulp.src('source/swiper-bundle.min.css')
-    .pipe(gulp.dest('build/css'));
-});
-
 gulp.task('clean', function () {
   return del('build');
 });
 
-gulp.task('build', gulp.series('clean', 'copy', 'webp', 'copySliderCss', 'css', 'sprite', 'html'));
+gulp.task('build', gulp.series('clean', 'copy', 'webp', 'css', 'sprite', 'html'));
 gulp.task('start', gulp.series('build', 'server'));

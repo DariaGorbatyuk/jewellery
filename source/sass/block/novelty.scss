@@ -82,7 +82,7 @@
 }
 
 .novelty .swiper-pagination-bullet {
-  @include size(13px, 30px);
+  @include size(20px, 30px);
   font-family: $poppins;
   font-style: normal;
   font-weight: 500;
@@ -94,6 +94,7 @@
   color: $light-gary;
   background-color: transparent;
   opacity: 1;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -104,7 +105,7 @@
   }
 
   @media (max-width: $m-end) {
-    width: 15px;
+    width: 22px;
   }
 }
 
