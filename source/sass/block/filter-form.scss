@@ -228,11 +228,23 @@
   padding: 26px 0 22px;
   margin-bottom: 25px;
 
+  &:hover,
+  &:focus {
+    outline: none;
+    background-color: lighten($dark-gold, 10%);
+  }
+
   &--reset {
     background-color: $white;
     color: $dark-gold;
     border: 1px solid $dark-gold;
     margin-bottom: 0;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      background-color: lighten($dark-gold, 30%);
+    }
   }
 
   @media (max-width: $m-end) {
