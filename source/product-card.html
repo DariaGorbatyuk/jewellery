@@ -408,8 +408,13 @@
       <h2>The item was added to your cart</h2>
       <div class="add-product__item product-item-to-cart">
         <div class="product-item-to-cart__img-container">
-          <img src="img/necklace-card-big.jpg" srcset="img/necklace-card-big@2x.jpg 2x"
-               alt="Gold necklace with blue stones">
+          <!-- 1х: 84px; 2x: 168px -->
+          <picture>
+            <source srcset="img/necklace-card-small.webp 1x, img/necklace-card-small.webp 2x"
+                    type="image/webp">
+            <img src="img/necklace-card-small.jpg" srcset="img/necklace-card-small@2x.jpg 2x"
+                 alt="Gold necklace with blue stones" width="84" height="79">
+          </picture>
         </div>
         <div class="product-item-to-cart__info">
           <h3>Gold Necklace</h3>
