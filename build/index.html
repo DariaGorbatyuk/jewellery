@@ -198,7 +198,6 @@
                 <span>$ 95</span>
               </a>
             </div>
-
           </div>
           <div class="swiper-pagination novelty__pagination"></div>
           <div class="novelty__buttons-container">
@@ -476,7 +475,11 @@
   <div class="overlay">
     <div class="login">
       <div class="login__img-container">
-        <img src="img/login-photo.jpg" alt="Interesting gold earrings with strings">
+        <!-- 1х: 430px; 2x: 860px -->
+        <picture>
+          <source srcset="img/login-photo.webp 1x, img/login-photo@2x.webp 2x" type="image/webp">
+          <img src="img/login-photo.jpg" alt="Interesting gold earrings with strings" width="430" height="138">
+        </picture>
       </div>
       <div class="login__layout">
         <h2>Log In</h2>
