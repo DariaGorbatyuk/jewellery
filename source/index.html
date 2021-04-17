@@ -72,7 +72,13 @@
   <h1 class="visually-hidden">Jewelry store - main page</h1>
   <div class="main__promo promo">
     <div class="promo__img-container">
-      <img src="img/promo-d.jpg" srcset="img/promo-d@2x.jpg 2x" alt="Gold jewelry on the girl">
+      <!-- 1х: 1365px; 2x: 463px -->
+      <picture>
+        <source media="(max-width: 767px)" srcset="img/promo-m.webp 1x, img/promo-m@2x.webp 2x" type="image/webp">
+        <source media="(max-width: 1023px)" srcset="img/promo-t.webp 1x, img/promo-t@2x.webp 2x" type="image/webp">
+        <source media="(min-width: 1024px)" srcset="img/promo-d.webp 1x, img/promo-d@2x.webp 2x" type="image/webp">
+        <img src="img/promo-d.jpg" srcset="img/promo-d@2x.jpg 2x" alt="Gold jewelry on the girl" width="1365" height="463">
+      </picture>
     </div>
     <div class="container">
       <span>perfection</span>
@@ -92,8 +98,14 @@
               <a class=" card__link" href="#">
                 <h3>Necklace with amethyst</h3>
                 <div class="card__img-container">
-                  <img src="img/purple-gemstone-necklace-desktop.jpg" alt="Purple gemstone necklace"
-                       srcset="img/purple-gemstone-necklace-desktop@2x.jpg 2x" width="270" height="284">
+                  <!-- 1х: 270px; 2x: 284px -->
+                  <picture>
+                    <source
+                      srcset="img/purple-gemstone-necklace-desktop.webp 1x, img/purple-gemstone-necklace-desktop.webp 2x"
+                      type="image/webp">
+                    <img src="img/purple-gemstone-necklace-desktop.jpg" alt="Purple gemstone necklace"
+                         srcset="img/purple-gemstone-necklace-desktop@2x.jpg 2x" width="270" height="284">
+                  </picture>
                 </div>
                 <span>$ 145</span>
               </a>
@@ -102,8 +114,14 @@
               <a class=" card__link" href="#">
                 <h3>Layered сhoker</h3>
                 <div class="card__img-container">
-                  <img src="img/layered-choker-necklace-desktop.jpg" alt="layered choker - necklace"
-                       srcset="img/layered-choker-necklace-desktop@2x.jpg 2x" width="270" height="284">
+                  <!-- 1х: 270px; 2x: 284px -->
+                  <picture>
+                    <source
+                      srcset="img/layered-choker-necklace-desktop.webp 1x, img/layered-choker-necklace-desktop.webp 2x"
+                      type="image/webp">
+                    <img src="img/layered-choker-necklace-desktop.jpg" alt="layered choker - necklace"
+                         srcset="img/layered-choker-necklace-desktop@2x.jpg 2x" width="270" height="284">
+                  </picture>
                 </div>
                 <span>$ 115</span>
               </a>
@@ -112,8 +130,14 @@
               <a class=" card__link" href="#">
                 <h3>Gold chain</h3>
                 <div class="card__img-container">
-                  <img src="img/dainty-gold-necklace-desktop.jpg" alt="Dainty gold chain"
-                       srcset="img/dainty-gold-necklace-desktop@2x.jpg 2x" width="270" height="284">
+                  <!-- 1х: 270px; 2x: 284px -->
+                  <picture>
+                    <source
+                      srcset="img/dainty-gold-necklace-desktop.webp 1x, img/dainty-gold-necklace-desktop.webp 2x"
+                      type="image/webp">
+                    <img src="img/dainty-gold-necklace-desktop.jpg" alt="Dainty gold chain"
+                         srcset="img/dainty-gold-necklace-desktop@2x.jpg 2x" width="270" height="284">
+                  </picture>
                 </div>
                 <span>$ 215</span>
               </a>
@@ -122,8 +146,14 @@
               <a class=" card__link" href="#">
                 <h3>Galaxy earrings</h3>
                 <div class="card__img-container">
-                  <img src="img/galaxy-earrings-desktop.jpg" alt="Galaxy earrings"
-                       srcset="img/galaxy-earrings-desktop@2x.jpg 2x" width="270" height="284">
+                  <!-- 1х: 270px; 2x: 284px -->
+                  <picture>
+                    <source
+                      srcset="img/galaxy-earrings-desktop.webp 1x, img/galaxy-earrings-desktop.webp 2x"
+                      type="image/webp">
+                    <img src="img/galaxy-earrings-desktop.jpg" alt="Galaxy earrings"
+                         srcset="img/galaxy-earrings-desktop@2x.jpg 2x" width="270" height="284">
+                  </picture>
                 </div>
                 <span>$ 95</span>
               </a>
@@ -132,8 +162,14 @@
               <a class=" card__link" href="#">
                 <h3>Necklace with amethyst</h3>
                 <div class="card__img-container">
-                  <img src="img/purple-gemstone-necklace-desktop.jpg" alt="Purple gemstone necklace"
-                       srcset="img/purple-gemstone-necklace-desktop@2x.jpg 2x" width="270" height="284">
+                  <!-- 1х: 270px; 2x: 284px -->
+                  <picture>
+                    <source
+                      srcset="img/purple-gemstone-necklace-desktop.webp 1x, img/purple-gemstone-necklace-desktop.webp 2x"
+                      type="image/webp">
+                    <img src="img/purple-gemstone-necklace-desktop.jpg" alt="Purple gemstone necklace"
+                         srcset="img/purple-gemstone-necklace-desktop@2x.jpg 2x" width="270" height="284">
+                  </picture>
                 </div>
                 <span>$ 145</span>
               </a>
@@ -142,8 +178,14 @@
               <a class=" card__link" href="#">
                 <h3>Layered сhoker</h3>
                 <div class="card__img-container">
-                  <img src="img/layered-choker-necklace-desktop.jpg" alt="layered choker - necklace"
-                       srcset="img/layered-choker-necklace-desktop@2x.jpg 2x" width="270" height="284">
+                  <!-- 1х: 270px; 2x: 284px -->
+                  <picture>
+                    <source
+                      srcset="img/layered-choker-necklace-desktop.webp 1x, img/layered-choker-necklace-desktop.webp 2x"
+                      type="image/webp">
+                    <img src="img/layered-choker-necklace-desktop.jpg" alt="layered choker - necklace"
+                         srcset="img/layered-choker-necklace-desktop@2x.jpg 2x" width="270" height="284">
+                  </picture>
                 </div>
                 <span>$ 115</span>
               </a>
@@ -152,8 +194,14 @@
               <a class=" card__link" href="#">
                 <h3>Gold chain</h3>
                 <div class="card__img-container">
-                  <img src="img/dainty-gold-necklace-desktop.jpg" alt="Dainty gold chain"
-                       srcset="img/dainty-gold-necklace-desktop@2x.jpg 2x" width="270" height="284">
+                  <!-- 1х: 270px; 2x: 284px -->
+                  <picture>
+                    <source
+                      srcset="img/dainty-gold-necklace-desktop.webp 1x, img/dainty-gold-necklace-desktop.webp 2x"
+                      type="image/webp">
+                    <img src="img/dainty-gold-necklace-desktop.jpg" alt="Dainty gold chain"
+                         srcset="img/dainty-gold-necklace-desktop@2x.jpg 2x" width="270" height="284">
+                  </picture>
                 </div>
                 <span>$ 215</span>
               </a>
@@ -162,61 +210,21 @@
               <a class=" card__link" href="#">
                 <h3>Galaxy earrings</h3>
                 <div class="card__img-container">
-                  <img src="img/galaxy-earrings-desktop.jpg" alt="Galaxy earrings"
-                       srcset="img/galaxy-earrings-desktop@2x.jpg 2x" width="270" height="284">
+                  <!-- 1х: 270px; 2x: 284px -->
+                  <picture>
+                    <source
+                      srcset="img/galaxy-earrings-desktop.webp 1x, img/galaxy-earrings-desktop.webp 2x"
+                      type="image/webp">
+                    <img src="img/galaxy-earrings-desktop.jpg" alt="Galaxy earrings"
+                         srcset="img/galaxy-earrings-desktop@2x.jpg 2x" width="270" height="284">
+                  </picture>
                 </div>
                 <span>$ 95</span>
               </a>
             </div>
-            <div class="swiper-slide novelty__item card">
-              <a class=" card__link" href="#">
-                <h3>Necklace with amethyst</h3>
-                <div class="card__img-container">
-                  <img src="img/purple-gemstone-necklace-desktop.jpg" alt="Purple gemstone necklace"
-                       srcset="img/purple-gemstone-necklace-desktop@2x.jpg 2x" width="270" height="284">
-                </div>
-                <span>$ 145</span>
-              </a>
-            </div>
-            <div class="swiper-slide novelty__item card">
-              <a class=" card__link" href="#">
-                <h3>Layered сhoker</h3>
-                <div class="card__img-container">
-                  <img src="img/layered-choker-necklace-desktop.jpg" alt="layered choker - necklace"
-                       srcset="img/layered-choker-necklace-desktop@2x.jpg 2x" width="270" height="284">
-                </div>
-                <span>$ 115</span>
-              </a>
-            </div>
-            <div class="swiper-slide novelty__item card">
-              <a class=" card__link" href="#">
-                <h3>Gold chain</h3>
-                <div class="card__img-container">
-                  <img src="img/dainty-gold-necklace-desktop.jpg" alt="Dainty gold chain"
-                       srcset="img/dainty-gold-necklace-desktop@2x.jpg 2x" width="270" height="284">
-                </div>
-                <span>$ 215</span>
-              </a>
-            </div>
-            <div class="swiper-slide novelty__item card">
-              <a class=" card__link" href="#">
-                <h3>Galaxy earrings</h3>
-                <div class="card__img-container">
-                  <img src="img/galaxy-earrings-desktop.jpg" alt="Galaxy earrings"
-                       srcset="img/galaxy-earrings-desktop@2x.jpg 2x" width="270" height="284">
-                </div>
-                <span>$ 95</span>
-              </a>
-            </div>
+
           </div>
           <div class="swiper-pagination novelty__pagination"></div>
-          <!--
-                    <div class="slider-mobile-pagination">
-                      <span class="slider-mobile-pagination__current">current</span>
-                      &nbsp;of&nbsp;
-                      <span class="slider-mobile-pagination__total">total</span>
-                    </div>
-          -->
           <div class="novelty__buttons-container">
             <button class="novelty__buttons-item novelty__buttons-item--prev" aria-label="Previous">
               <svg width="29" height="15" role="img">
@@ -242,8 +250,14 @@
       <div class="blog__layout">
         <article class="blog__article blog-article blog-article">
           <div class="blog-article__img-container">
-            <img src="img/care.jpg" srcset="img/care@2x.jpg 2x" alt="Several gold accessories on a white background"
-                 width="285" height="300">
+            <!-- 1х: 285px; 2x: 300px -->
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/care-m.webp 1x, img/care-m@2x.webp 2x" type="image/webp">
+              <source media="(max-width: 1023px)" srcset="img/care-t.webp 1x, img/care-t@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 1024px)" srcset="img/care.webp 1x, img/care@2x.webp 2x" type="image/webp">
+              <img src="img/care.jpg" srcset="img/care@2x.jpg 2x" alt="Several gold accessories on a white background"
+                   width="285" height="300">
+            </picture>
           </div>
           <div class="blog-article__text-container">
             <h3>How to care for your jewellery</h3>
@@ -258,8 +272,17 @@
             <a class="blog-article__excerpt link" href="#">Read Article</a>
           </div>
           <div class="blog-article__img-container">
-            <img src="img/crystal.jpg" srcset="img/crystal@2x.jpg 2x" alt="Several crystals on a gray background"
-                 width="285" height="300">
+            <!-- 1х: 285px; 2x: 300px -->
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/crystal-m.webp 1x, img/crystal-m@2x.webp 2x"
+                      type="image/webp">
+              <source media="(max-width: 1023px)" srcset="img/crystal-t.webp 1x, img/crystal-t@2x.webp 2x"
+                      type="image/webp">
+              <source media="(min-width: 1024px)" srcset="img/crystal.webp 1x, img/crystal@2x.webp 2x"
+                      type="image/webp">
+              <img src="img/crystal.jpg" srcset="img/crystal@2x.jpg 2x" alt="Several crystals on a gray background"
+                   width="285" height="300">
+            </picture>
           </div>
         </article>
         <article class="blog__article blog-article blog-article--big">
@@ -269,9 +292,17 @@
             <a class="blog-article__excerpt link" href="#">Read Article</a>
           </div>
           <div class="blog-article__img-container">
-            <img src="img/trends.jpg" srcset="img/trends@2x.jpg 2x" alt="Silver rings on woman hands"
-                 width="570"
-                 height="630">
+            <!-- 1х: 570px; 2x: 630px -->
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/trends-m.webp 1x, img/trends-m@2x.webp 2x"
+                      type="image/webp">
+              <source media="(max-width: 1023px)" srcset="img/trends-t.webp 1x, img/trends-t@2x.webp 2x"
+                      type="image/webp">
+              <source media="(min-width: 1024px)" srcset="img/trends.webp 1x, img/trends@2x.webp 2x" type="image/webp">
+              <img src="img/trends.jpg" srcset="img/trends@2x.jpg 2x" alt="Silver rings on woman hands"
+                   width="570"
+                   height="630">
+            </picture>
           </div>
         </article>
       </div>
@@ -333,35 +364,93 @@
       <div class="inst__wrapper">
         <ul class="inst__list inst__list--l">
           <li class="inst__item inst__item--l inst__item--l1">
-            <img src="img/11inst-desktop.jpg" srcset="img/11inst-desktop@2x.jpg 2x" alt="The square earrings"
-                 width="230"
-                 height="230">
+            <!-- 1х: 230px; 2x: 230px -->
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/11inst-desktop.webp 1x, img/11inst-desktop@2x.webp 2x"
+                      type="image/webp">
+              <source media="(max-width: 1023px)" srcset="img/11inst-t.webp 1x, img/11inst-t@2x.webp 2x"
+                      type="image/webp">
+              <source media="(min-width: 1024px)" srcset="img/11inst-m.webp 1x, img/11inst-m@2x.webp 2x"
+                      type="image/webp">
+              <img src="img/11inst-desktop.jpg" srcset="img/11inst-desktop@2x.jpg 2x" alt="The square earrings"
+                   width="230"
+                   height="230">
+            </picture>
           </li>
           <li class="inst__item inst__item--l inst__item--l2">
-            <img src="img/21inst-desktop.jpg" srcset="img/21inst-desktop@2x.jpg 2x" alt="The multi-colored earrings"
-                 width="230" height="154">
+            <!-- 1х: 230px; 2x: 154px -->
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/21inst-m.webp 1x, img/21inst-m@2x.webp 2x"
+                      type="image/webp">
+              <source media="(max-width: 1023px)" srcset="img/21inst-t.webp 1x, img/21inst-t@2x.webp 2x"
+                      type="image/webp">
+              <source media="(min-width: 1024px)" srcset="img/21inst-desktop.webp 1x, img/21inst-desktop.webp 2x"
+                      type="image/webp">
+              <img src="img/21inst-desktop.jpg" srcset="img/21inst-desktop@2x.jpg 2x" alt="The multi-colored earrings"
+                   width="230" height="154">
+            </picture>
           </li>
         </ul>
         <div class="inst__item inst__item--big">
-          <img src="img/2inst-desktop.jpg" srcset="img/2inst-desktop@2x.jpg 2x" alt="A girl with big gold earrings"
-               width="400" height="414">
+          <!-- 1х: 400px; 2x: 414px -->
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/2inst-m.webp 1x, img/2inst-m@2x.webp 2x" type="image/webp">
+            <source media="(max-width: 1023px)" srcset="img/2inst-t.webp 1x, img/2inst-t@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="img/2inst-desktop.webp 1x, img/2inst-desktop@2x.webp 2x"
+                    type="image/webp">
+            <img src="img/2inst-desktop.jpg" srcset="img/2inst-desktop@2x.jpg 2x" alt="A girl with big gold earrings"
+                 width="400" height="414">
+          </picture>
         </div>
         <ul class="inst__list inst__list--r">
           <li class="inst__item inst__item--r inst__item--r1">
-            <img src="img/13inst-desktop.jpg" srcset="img/13inst-desktop@2x.jpg 2x"
-                 alt="Two gold bracelets and a ring on the girl's hands" width="232" height="193">
+            <!-- 1х: 232px; 2x: 193px -->
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/13inst-m.webp 1x, img/13inst-m@2x.webp 2x"
+                      type="image/webp">
+              <source media="(max-width: 1023px)" srcset="img/13inst-t.webp 1x, img/13inst-t@2x.webp 2x"
+                      type="image/webp">
+              <source media="(min-width: 1024px)" srcset="img/13inst-desktop.webp 1x, img/13inst-desktop@2x.webp 2x"
+                      type="image/webp">
+              <img src="img/13inst-desktop.jpg" srcset="img/13inst-desktop@2x.jpg 2x"
+                   alt="Two gold bracelets and a ring on the girl's hands" width="232" height="193">
+            </picture>
           </li>
           <li class="inst__item inst__item--r inst__item--r2">
-            <img src="img/14inst-desktop.jpg" srcset="img/14inst-desktop@2x.jpg 2x" alt="Round earrings" width="218"
-                 height="218">
+            <!-- 1х: 218px; 2x: 218px -->
+            <picture>
+              <source media="(max-width: 1023px)" srcset="img/14inst-t.webp 1x, img/14inst-t@2x.webp 2x"
+                      type="image/webp">
+              <source media="(min-width: 1024px)" srcset="img/14inst-desktop.webp 1x, img/14inst-desktop@2x.webp 2x"
+                      type="image/webp">
+              <img src="img/14inst-desktop.jpg" srcset="img/14inst-desktop@2x.jpg 2x" alt="Round earrings" width="218"
+                   height="218">
+            </picture>
           </li>
           <li class="inst__item inst__item--r inst__item--r3">
-            <img src="img/23inst-desktop.jpg" srcset="img/23inst-desktop@2x.jpg 2x" alt="Crystals necklace and bracelet"
-                 width="218" height="191">
+            <!-- 1х: 218px; 2x: 191px -->
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/23inst-m.webp 1x, img/23inst-m@2x.webp 2x"
+                      type="image/webp">
+              <source media="(max-width: 1023px)" srcset="img/23inst-t.webp 1x, img/23inst-t@2x.webp 2x"
+                      type="image/webp">
+              <source media="(min-width: 1024px)" srcset="img/23inst-desktop.webp 1x, img/23inst-desktop@2x.webp 2x"
+                      type="image/webp">
+              <img src="img/23inst-desktop.jpg" srcset="img/23inst-desktop@2x.jpg 2x"
+                   alt="Crystals necklace and bracelet"
+                   width="218" height="191">
+            </picture>
           </li>
           <li class="inst__item inst__item--r inst__item--r4">
-            <img src="img/24inst-desktop.jpg" srcset="img/24inst-desktop@2x.jpg 2x" alt="Ring on crossed female hands"
-                 width="232" height="166">
+            <!-- 1х: 232px; 2x: 166px -->
+            <picture>
+              <source media="(max-width: 1023px)" srcset="img/24inst-t.webp 1x, img/24inst-t@2x.webp 2x"
+                      type="image/webp">
+              <source media="(min-width: 1024px)" srcset="img/24inst-desktop.webp 1x, img/24inst-desktop@2x.webp 2x"
+                      type="image/webp">
+              <img src="img/24inst-desktop.jpg" srcset="img/24inst-desktop@2x.jpg 2x" alt="Ring on crossed female hands"
+                   width="232" height="166">
+            </picture>
           </li>
         </ul>
       </div>
