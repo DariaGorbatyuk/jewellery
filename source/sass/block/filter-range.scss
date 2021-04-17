@@ -92,6 +92,12 @@
     background-color: transparent;
     padding-right: 5px;
 
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      appearance: none;
+      margin: 0;
+    }
+
     &:hover,
     &:focus {
       outline: none;
