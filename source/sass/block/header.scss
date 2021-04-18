@@ -177,8 +177,8 @@
   transform: translateX(-50%);
   top: 30px;
 
-  &:hover,
-  &:focus {
+  &[href]:hover,
+  &[href]:focus {
     outline: none;
     box-shadow: 0 0 0 2px $dark-gold;
   }
