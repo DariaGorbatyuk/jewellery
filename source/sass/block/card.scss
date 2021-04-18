@@ -7,7 +7,9 @@
   height: auto;
 
   &--catalog {
-    width: 269px;
+    max-width: 269px;
+    flex-shrink: 1;
+    width: 31%;
 
     .card__img-container {
       max-height: 272px;

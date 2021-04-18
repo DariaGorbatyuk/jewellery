@@ -30,7 +30,7 @@
 
 .catalog__layout {
   display: grid;
-  grid-template-columns: minmax(180px, 250px) minmax(10px, 50px) 867px;
+  grid-template-columns: minmax(180px, 250px) minmax(10px, 50px) minmax(710px, 867px);
 
   @media (max-width: $m-end) {
     display: block;
@@ -39,9 +39,7 @@
   }
 
   @media (max-width: $s-end) {
-    height: 1511px;
     max-width: 289px;
-    margin: 0 auto;
   }
 }
 
@@ -50,6 +48,10 @@
   grid-column: 3/-1;
   min-width: 0;
   margin-bottom: 37px;
+
+  @media (max-width: $s-end) {
+    margin-bottom: 18px;
+  }
 }
 
 .catalog .swiper-wrapper {
@@ -78,19 +80,12 @@
   }
 
   @media (max-width: $catalog-desk) {
-    &:nth-child(2n+2) {
-      margin-right: 0;
-    }
+    margin-right: 7px;
   }
 
   @media (max-width: $m-end) {
-    margin-bottom: 35px;
+    margin-bottom: 39px;
     margin-right: 25px;
-
-    &:nth-child(2n+2) {
-      margin-right: 25px;
-      margin-bottom: 39px;
-    }
 
     &:nth-child(3n+3) {
       margin-right: 0;
@@ -98,6 +93,18 @@
   }
 
   @media (max-width: $s-end) {
+    margin-right: 29px;
+    margin-bottom: 24px;
+
+    &:nth-child(2n+2) {
+      margin-right: 0;
+      margin-bottom: 24px;
+    }
+
+    &:nth-child(3n+3) {
+      margin-right: auto;
+      margin-bottom: auto;
+    }
   }
 }
 
@@ -147,6 +154,15 @@
   @media (max-width: $m-end) {
     width: auto;
   }
+
+  @media (max-width: $s-end) {
+    width: 100%;
+    margin-right: 0;
+
+    span {
+      margin-right: 8px;
+    }
+  }
 }
 
 .catalog__buttons-item {
@@ -166,13 +182,6 @@
   &:focus {
     outline: none;
     color: $dark-gold;
-  }
-
-  &--prev {
-  }
-
-  &--next {
-
   }
 
   @media (max-width: $m-end) {
