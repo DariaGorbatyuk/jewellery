@@ -14,7 +14,7 @@
   <link rel="preload" href="fonts/CormorantGaramond-Italic.woff2" as="font" type="font/woff2">
   <link rel="preload" href="fonts/CormorantGaramond-Bold.woff2" as="font" type="font/woff2">
 
-<!--  <link rel="stylesheet" href="css/swiper-bundle.min.css">-->
+  <!--  <link rel="stylesheet" href="css/swiper-bundle.min.css">-->
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -77,7 +77,8 @@
         <source media="(max-width: 767px)" srcset="img/promo-m.webp 1x, img/promo-m@2x.webp 2x" type="image/webp">
         <source media="(max-width: 1023px)" srcset="img/promo-t.webp 1x, img/promo-t@2x.webp 2x" type="image/webp">
         <source media="(min-width: 1024px)" srcset="img/promo-d.webp 1x, img/promo-d@2x.webp 2x" type="image/webp">
-        <img src="img/promo-d.jpg" srcset="img/promo-d@2x.jpg 2x" alt="Gold jewelry on the girl" width="1365" height="463">
+        <img src="img/promo-d.jpg" srcset="img/promo-d@2x.jpg 2x" alt="Gold jewelry on the girl" width="1365"
+             height="463">
       </picture>
     </div>
     <div class="container">
@@ -375,45 +376,53 @@
     <div class="container">
       <h2>Frequently asked questions</h2>
       <ul class="faq__list">
-        <li class="faq__item faq-el">
-          <details class="faq-el__det" open>
-            <summary class="faq-el__sum">What materials are the&nbsp;jewellery made of?</summary>
-            <p>
-              Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
-              semiprecious
-              stones and crystals.
-            </p>
-          </details>
+        <li class="faq__item faq-el" data-toggle="1" tabindex="0">
+          <a class="faq-el__link">
+            <h3 class="faq-el__title">What materials are the&nbsp;jewellery made of?</h3>
+            <div class="faq-el__content">
+              <p>
+                Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
+                semiprecious
+                stones and crystals.
+              </p>
+            </div>
+          </a>
         </li>
-        <li class="faq__item faq-el">
-          <details class="faq-el__det">
-            <summary class="faq-el__sum">Which countries do&nbsp;you&nbsp;deliver&nbsp;to?</summary>
-            <p>
-              Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
-              semiprecious
-              stones and crystals.
-            </p>
-          </details>
+        <li class="faq__item faq-el" data-toggle="0" tabindex="0">
+          <a class="faq-el__link">
+            <h3 class="faq-el__title">Which countries do&nbsp;you&nbsp;deliver&nbsp;to?</h3>
+            <div class="faq-el__content">
+              <p>
+                Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
+                semiprecious
+                stones and crystals.
+              </p>
+            </div>
+          </a>
         </li>
-        <li class="faq__item faq-el">
-          <details class="faq-el__det">
-            <summary class="faq-el__sum">What are the payment&nbsp;methods?</summary>
-            <p>
-              Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
-              semiprecious
-              stones and crystals.
-            </p>
-          </details>
+        <li class="faq__item faq-el" data-toggle="0" tabindex="0">
+          <a class="faq-el__link">
+            <h3 class="faq-el__title">What are the payment&nbsp;methods?</h3>
+            <div class="faq-el__content">
+              <p>
+                Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
+                semiprecious
+                stones and crystals.
+              </p>
+            </div>
+          </a>
         </li>
-        <li class="faq__item faq-el">
-          <details class="faq-el__det">
-            <summary class="faq-el__sum">Can I return the jewellery&nbsp;if&nbsp;it&nbsp;didn’t fit&nbsp;me?</summary>
-            <p>
-              Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
-              semiprecious
-              stones and crystals.
-            </p>
-          </details>
+        <li class="faq__item faq-el" data-toggle="0" tabindex="0">
+          <a class="faq-el__link">
+            <h3 class="faq-el__title">Can I return the jewellery&nbsp;if&nbsp;it&nbsp;didn’t fit&nbsp;me?</h3>
+            <div class="faq-el__content">
+              <p>
+                Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
+                semiprecious
+                stones and crystals.
+              </p>
+            </div>
+          </a>
         </li>
       </ul>
     </div>
@@ -632,5 +641,6 @@
 <script src="js/vendor/swiper-bundle.min.js"></script>
 <script src="js/main-slider.js"></script>
 <script src="js/login.js"></script>
+<script src="js/faq.js"></script>
 </body>
 </html>

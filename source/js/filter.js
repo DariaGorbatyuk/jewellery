@@ -2,7 +2,6 @@
 
 (function () {
   const filterForm = document.querySelector('.filter-form');
-
   const TOGGLE_DETAILS_CLASS = '.filter-form__open-link';
   const TOGGLE_OPENED_CLASS = 'filter-form__open-link--opened';
   const CLOSED_DETAILS_CLASS = 'filter-form__check-container--closed';
