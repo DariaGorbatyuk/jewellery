@@ -5,13 +5,10 @@
 
   function initSwiper() {
     swiper = new window.Swiper('.swiper-container', {
-      slidesPerView: 3,
-      slidesPerColumn: 4,
+      slidesPerView: 1,
       slidesPerGroup: 1,
       centeredSlides: false,
-      spaceBetween: 30,
-      centeredSlidesBounds: true,
-      grabCursor: true,
+      direction: 'horizontal',
 
       navigation: {
         prevEl: '.catalog__buttons-item--prev',
@@ -22,17 +19,6 @@
         clickable: true,
         renderBullet: function (index, className) {
           return '<span class="' + className + '">' + (index + 1) + '</span>';
-        },
-      },
-      breakpoints: {
-        320: {
-          slidesPerColumn: 6,
-          slidesPerView: 2,
-        },
-
-        768: {
-          slidesPerColumn: 4,
-          slidesPerView: 3,
         },
       },
     });
