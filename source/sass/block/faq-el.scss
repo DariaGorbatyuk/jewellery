@@ -10,7 +10,7 @@
   &:hover,
   &:focus {
     outline: none;
-    background-color: rgba($dark-gold, 0.6);
+    background-color: rgba($dark-gold, 0.8);
   }
 
   @media (max-width: $m-end) {
@@ -24,7 +24,8 @@
     width: 100%;
     padding: 16px 55px 21px 24px;
   }
-  a{
+
+  a {
     cursor: pointer;
   }
 }
