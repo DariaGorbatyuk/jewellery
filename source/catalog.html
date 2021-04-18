@@ -92,8 +92,8 @@
 
       <div class="catalog__layout">
         <form class="catalog__filter-form filter-form" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="filter-form__box">
-            <button type="button" class="filter-form__open-link filter-form__open-link--opened">
+          <fieldset class="filter-form__box" data-toggle="1">
+            <button type="button" class="filter-form__open-link">
               <span class="filter-form__heading">Product</span>
             </button>
             <div class="filter-form__check-container">
@@ -115,7 +115,7 @@
               </div>
             </div>
           </fieldset>
-          <fieldset class="filter-form__box">
+          <fieldset class="filter-form__box" data-toggle="0">
             <button type="button" class="filter-form__open-link">
               <span class="filter-form__heading">Material</span>
             </button>
@@ -130,7 +130,7 @@
               </div>
             </div>
           </fieldset>
-          <fieldset class="filter-form__box">
+          <fieldset class="filter-form__box" data-toggle="0">
             <button type="button" class="filter-form__open-link">
               <span class="filter-form__heading">Collection</span>
             </button>
@@ -145,8 +145,8 @@
               </div>
             </div>
           </fieldset>
-          <fieldset class="filter-form__box">
-            <button type="button" class="filter-form__open-link filter-form__open-link--opened">
+          <fieldset class="filter-form__box" data-toggle="1">
+            <button type="button" class="filter-form__open-link">
               <span class="filter-form__heading">Price</span>
             </button>
             <div class="filter-form__range filter-range">
@@ -791,7 +791,7 @@
   </div>
 </template>
 <script src="js/script.js"></script>
-<!--<script src="js/filter.js"></script>-->
+<script src="js/filter.js"></script>
 <script src="js/vendor/swiper-bundle.min.js"></script>
 <script src="js/catalog-slider.js"></script>
 <script src="js/login.js"></script>

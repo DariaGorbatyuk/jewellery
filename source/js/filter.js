@@ -6,10 +6,12 @@
   const toggleOpened = 'filter-form__open-link--opened';
   const closedDetails = 'filter-form__check-container--closed';
 
-  document.querySelectorAll(toggleDetails).forEach(function (item) {
-   if(!item.classList.contains(toggleOpened)){
-     item.nextElementSibling.classList.add(closedDetails);
-   }
+  document.querySelectorAll('.filter-form__box').forEach(function (item) {
+    if (item.dataset.toggle === '1') {
+      item.firstElementChild.classList.add(toggleOpened);
+    } else {
+     item.lastElementChild.classList.add(closedDetails);
+    }
   });
 
   /*
