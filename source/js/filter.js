@@ -1,15 +1,15 @@
 'use strict';
 
-const TOGGLE_DETAILS_CLASS = '.filter-form__open-link';
-const TOGGLE_OPENED_CLASS = 'filter-form__open-link--opened';
-const CLOSED_DETAILS_CLASS = 'filter-form__check-container--closed';
-const FILTER_CLOSED_CLASS = 'filter-form__close';
-const FILTER_OPENED_CLASS = 'filter-form--opened';
-const filterForm = document.querySelector('.filter-form');
-const linkOpenFilter = document.querySelector('.catalog__link-to-filter');
-const closeBtn = document.querySelector('.filter-form__close');
-const inputLowPrice = document.querySelector('#low-price');
-const inputHighPrice = document.querySelector('#high-price');
+var TOGGLE_DETAILS_CLASS = '.filter-form__open-link';
+var TOGGLE_OPENED_CLASS = 'filter-form__open-link--opened';
+var CLOSED_DETAILS_CLASS = 'filter-form__check-container--closed';
+var FILTER_CLOSED_CLASS = 'filter-form__close';
+var FILTER_OPENED_CLASS = 'filter-form--opened';
+var filterForm = document.querySelector('.filter-form');
+var linkOpenFilter = document.querySelector('.catalog__link-to-filter');
+var closeBtn = document.querySelector('.filter-form__close');
+var inputLowPrice = document.querySelector('#low-price');
+var inputHighPrice = document.querySelector('#high-price');
 
 document.querySelectorAll('.filter-form__box').forEach(function (item) {
   if (item.dataset.toggle === '1') {
@@ -23,7 +23,7 @@ function openDetails(evt) {
   if (!evt.target.matches(TOGGLE_DETAILS_CLASS)) {
     return;
   }
-  let details = evt.target.nextElementSibling;
+  var details = evt.target.nextElementSibling;
   if (evt.target.classList.contains(TOGGLE_OPENED_CLASS)) {
     details.classList.add(CLOSED_DETAILS_CLASS);
     evt.target.classList.remove(TOGGLE_OPENED_CLASS);

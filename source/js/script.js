@@ -19,4 +19,3 @@ headerToggle.addEventListener('click', function () {
     pageHeader.classList.remove('overflow--scroll');
   }
 });
-

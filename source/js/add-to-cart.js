@@ -1,7 +1,7 @@
 'use strict';
-const addToCartID = document.querySelector('#add-product');
-const btnAddToCart = document.querySelector('.product-card__add-link');
-const body = document.querySelector('body');
+var addToCartID = document.querySelector('#add-product');
+var btnAddToCart = document.querySelector('.product-card__add-link');
+var body = document.querySelector('body');
 
 if (addToCartID) {
   var addToCartTemplate = addToCartID.content.querySelector('.overlay');
@@ -10,8 +10,8 @@ if (addToCartID) {
 
 function addProduct(evt) {
   evt.preventDefault();
-  const newAddToCart = addToCartTemplate.cloneNode(true);
-  const btnClose = newAddToCart.querySelector('.add-product__close');
+  var newAddToCart = addToCartTemplate.cloneNode(true);
+  var btnClose = newAddToCart.querySelector('.add-product__close');
   body.insertAdjacentElement('afterbegin', newAddToCart);
   body.classList.add('overflow');
   newAddToCart.classList.add('overflow--scroll');
@@ -19,8 +19,8 @@ function addProduct(evt) {
   document.addEventListener('click', closeAddToCart);
   document.addEventListener('keydown', closeAddToCart);
 
-  function closeAddToCart(evt) {
-    if (evt.key !== 'Escape' && !evt.target.matches('.add-product__close') && !evt.target.matches('.overlay')) {
+  function closeAddToCart(e) {
+    if (e.key !== 'Escape' && !e.target.matches('.add-product__close') && !e.target.matches('.overlay')) {
       return;
     }
     newAddToCart.remove();

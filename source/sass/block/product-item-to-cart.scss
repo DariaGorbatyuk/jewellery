@@ -132,12 +132,12 @@
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    -moz-appearance: textfield;
+    appearance: textfield;
     padding-left: 7px;
 
     &::-webkit-outer-spin-button,
     &::-webkit-inner-spin-button {
-      -webkit-appearance: none;
+      appearance: none;
       margin: 0;
     }
 

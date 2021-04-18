@@ -1,9 +1,9 @@
 'use strict';
 
-const loginTemplate = document.querySelector('#login').content.querySelector('.overlay');
-const btnOpenLogin = document.querySelector('.user-nav__login');
-const btnOpenLoginSmall = document.querySelector('.nav__login');
-const body = document.querySelector('body');
+var loginTemplate = document.querySelector('#login').content.querySelector('.overlay');
+var btnOpenLogin = document.querySelector('.user-nav__login');
+var btnOpenLoginSmall = document.querySelector('.nav__login');
+var body = document.querySelector('body');
 
 var isStorageSupport = true;
 var storageSupportEmail;
@@ -22,10 +22,10 @@ function setStorage(email) {
 
 function openLoginForm(evt) {
   evt.preventDefault();
-  const newLoginForm = loginTemplate.cloneNode(true);
-  const email = newLoginForm.querySelector('#login-email');
-  const btnClose = newLoginForm.querySelector('.close');
-  const loginForm = newLoginForm.querySelector('.login-form');
+  var newLoginForm = loginTemplate.cloneNode(true);
+  var email = newLoginForm.querySelector('#login-email');
+  var btnClose = newLoginForm.querySelector('.close');
+  var loginForm = newLoginForm.querySelector('.login-form');
   body.insertAdjacentElement('afterbegin', newLoginForm);
   body.classList.add('overflow');
   newLoginForm.classList.add('overflow--scroll');
@@ -36,16 +36,16 @@ function openLoginForm(evt) {
   loginForm.addEventListener('submit', onLoginFormSubmit);
   setStorage(email);
 
-  function closeLoginForm(evt) {
-    if (evt.key !== 'Escape' && !evt.target.matches('.close') && !evt.target.matches('.overlay')) {
+  function closeLoginForm(e) {
+    if (e.key !== 'Escape' && !e.target.matches('.close') && !e.target.matches('.overlay')) {
       return;
     }
     newLoginForm.remove();
     body.classList.remove('overflow');
   }
 
-  function onLoginFormSubmit(evt) {
-    evt.preventDefault();
+  function onLoginFormSubmit(ev) {
+    ev.preventDefault();
     if (isStorageSupport) {
       localStorage.setItem('email', email.value);
     }

@@ -7,9 +7,9 @@
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements:  */
 
-const addToCartID = document.querySelector('#add-product');
-const btnAddToCart = document.querySelector('.product-card__add-link');
-const body = document.querySelector('body');
+var addToCartID = document.querySelector('#add-product');
+var btnAddToCart = document.querySelector('.product-card__add-link');
+var body = document.querySelector('body');
 
 if (addToCartID) {
   var addToCartTemplate = addToCartID.content.querySelector('.overlay');
@@ -18,8 +18,8 @@ if (addToCartID) {
 
 function addProduct(evt) {
   evt.preventDefault();
-  const newAddToCart = addToCartTemplate.cloneNode(true);
-  const btnClose = newAddToCart.querySelector('.add-product__close');
+  var newAddToCart = addToCartTemplate.cloneNode(true);
+  var btnClose = newAddToCart.querySelector('.add-product__close');
   body.insertAdjacentElement('afterbegin', newAddToCart);
   body.classList.add('overflow');
   newAddToCart.classList.add('overflow--scroll');
@@ -27,8 +27,8 @@ function addProduct(evt) {
   document.addEventListener('click', closeAddToCart);
   document.addEventListener('keydown', closeAddToCart);
 
-  function closeAddToCart(evt) {
-    if (evt.key !== 'Escape' && !evt.target.matches('.add-product__close') && !evt.target.matches('.overlay')) {
+  function closeAddToCart(e) {
+    if (e.key !== 'Escape' && !e.target.matches('.add-product__close') && !e.target.matches('.overlay')) {
       return;
     }
     newAddToCart.remove();
@@ -48,7 +48,7 @@ if (addToCartTemplate) {
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements:  */
 
-let swiper;
+var swiper;
 
 function initSwiper() {
   swiper = new window.Swiper('.swiper-container', {
@@ -81,12 +81,12 @@ initSwiper();
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements:  */
 
-const CONTENT_CLOSED_CLASS = 'faq-el__content--closed';
-const TITLE_CLOSED_CLASS = 'faq-el__title--closed';
-const FAQ_LIST_CLASS = 'faq__list';
-const FAQ_EL_CLASS = 'faq-el';
-const FAQ_LINK_CLASS = 'faq-el__link';
-const faqList = document.querySelector('.' + FAQ_LIST_CLASS);
+var CONTENT_CLOSED_CLASS = 'faq-el__content--closed';
+var TITLE_CLOSED_CLASS = 'faq-el__title--closed';
+var FAQ_LIST_CLASS = 'faq__list';
+var FAQ_EL_CLASS = 'faq-el';
+var FAQ_LINK_CLASS = 'faq-el__link';
+var faqList = document.querySelector('.' + FAQ_LIST_CLASS);
 
 function startFaq() {
   document.querySelectorAll('.' + FAQ_EL_CLASS).forEach(function (item) {
@@ -116,7 +116,6 @@ if (faqList) {
   faqList.addEventListener('keydown', onToggleFAQ);
 }
 
-
 }();
 !function() {
 /*!*****************************!*\
@@ -126,16 +125,16 @@ if (faqList) {
 /*! runtime requirements:  */
 
 
-const TOGGLE_DETAILS_CLASS = '.filter-form__open-link';
-const TOGGLE_OPENED_CLASS = 'filter-form__open-link--opened';
-const CLOSED_DETAILS_CLASS = 'filter-form__check-container--closed';
-const FILTER_CLOSED_CLASS = 'filter-form__close';
-const FILTER_OPENED_CLASS = 'filter-form--opened';
-const filterForm = document.querySelector('.filter-form');
-const linkOpenFilter = document.querySelector('.catalog__link-to-filter');
-const closeBtn = document.querySelector('.filter-form__close');
-const inputLowPrice = document.querySelector('#low-price');
-const inputHighPrice = document.querySelector('#high-price');
+var TOGGLE_DETAILS_CLASS = '.filter-form__open-link';
+var TOGGLE_OPENED_CLASS = 'filter-form__open-link--opened';
+var CLOSED_DETAILS_CLASS = 'filter-form__check-container--closed';
+var FILTER_CLOSED_CLASS = 'filter-form__close';
+var FILTER_OPENED_CLASS = 'filter-form--opened';
+var filterForm = document.querySelector('.filter-form');
+var linkOpenFilter = document.querySelector('.catalog__link-to-filter');
+var closeBtn = document.querySelector('.filter-form__close');
+var inputLowPrice = document.querySelector('#low-price');
+var inputHighPrice = document.querySelector('#high-price');
 
 document.querySelectorAll('.filter-form__box').forEach(function (item) {
   if (item.dataset.toggle === '1') {
@@ -149,7 +148,7 @@ function openDetails(evt) {
   if (!evt.target.matches(TOGGLE_DETAILS_CLASS)) {
     return;
   }
-  let details = evt.target.nextElementSibling;
+  var details = evt.target.nextElementSibling;
   if (evt.target.classList.contains(TOGGLE_OPENED_CLASS)) {
     details.classList.add(CLOSED_DETAILS_CLASS);
     evt.target.classList.remove(TOGGLE_OPENED_CLASS);
@@ -200,10 +199,10 @@ if (filterForm) {
 /*! runtime requirements:  */
 
 
-const loginTemplate = document.querySelector('#login').content.querySelector('.overlay');
-const btnOpenLogin = document.querySelector('.user-nav__login');
-const btnOpenLoginSmall = document.querySelector('.nav__login');
-const body = document.querySelector('body');
+var loginTemplate = document.querySelector('#login').content.querySelector('.overlay');
+var btnOpenLogin = document.querySelector('.user-nav__login');
+var btnOpenLoginSmall = document.querySelector('.nav__login');
+var body = document.querySelector('body');
 
 var isStorageSupport = true;
 var storageSupportEmail;
@@ -222,10 +221,10 @@ function setStorage(email) {
 
 function openLoginForm(evt) {
   evt.preventDefault();
-  const newLoginForm = loginTemplate.cloneNode(true);
-  const email = newLoginForm.querySelector('#login-email');
-  const btnClose = newLoginForm.querySelector('.close');
-  const loginForm = newLoginForm.querySelector('.login-form');
+  var newLoginForm = loginTemplate.cloneNode(true);
+  var email = newLoginForm.querySelector('#login-email');
+  var btnClose = newLoginForm.querySelector('.close');
+  var loginForm = newLoginForm.querySelector('.login-form');
   body.insertAdjacentElement('afterbegin', newLoginForm);
   body.classList.add('overflow');
   newLoginForm.classList.add('overflow--scroll');
@@ -236,16 +235,16 @@ function openLoginForm(evt) {
   loginForm.addEventListener('submit', onLoginFormSubmit);
   setStorage(email);
 
-  function closeLoginForm(evt) {
-    if (evt.key !== 'Escape' && !evt.target.matches('.close') && !evt.target.matches('.overlay')) {
+  function closeLoginForm(e) {
+    if (e.key !== 'Escape' && !e.target.matches('.close') && !e.target.matches('.overlay')) {
       return;
     }
     newLoginForm.remove();
     body.classList.remove('overflow');
   }
 
-  function onLoginFormSubmit(evt) {
-    evt.preventDefault();
+  function onLoginFormSubmit(ev) {
+    ev.preventDefault();
     if (isStorageSupport) {
       localStorage.setItem('email', email.value);
     }
@@ -269,7 +268,7 @@ btnOpenLoginSmall.addEventListener('click', openLoginForm);
 /*! runtime requirements:  */
 
 
-let swiper;
+var swiper;
 
 function initSwiper() {
   swiper = new window.Swiper('.novelty__slider', {
@@ -358,7 +357,6 @@ headerToggle.addEventListener('click', function () {
     pageHeader.classList.remove('overflow--scroll');
   }
 });
-
 
 }();
 /******/ })()

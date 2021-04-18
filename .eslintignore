@@ -1,1 +1,3 @@
 gulpfile.js
+source/js/vendor.js
+source/js/main.js

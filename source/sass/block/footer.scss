@@ -51,10 +51,6 @@
     margin-top: 0;
     margin-left: 0;
   }
-
-  @media (max-width: $s-end) {
-
-  }
 }
 
 .footer__socials {
@@ -65,9 +61,5 @@
     grid-column: 3/4;
     margin-top: 0;
     margin-right: auto;
-  }
-
-  @media (max-width: $s-end) {
-
   }
 }

@@ -1,6 +1,6 @@
 'use strict';
 
-let swiper;
+var swiper;
 
 function initSwiper() {
   swiper = new window.Swiper('.novelty__slider', {

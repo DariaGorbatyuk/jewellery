@@ -1,10 +1,10 @@
 'use strict';
-const CONTENT_CLOSED_CLASS = 'faq-el__content--closed';
-const TITLE_CLOSED_CLASS = 'faq-el__title--closed';
-const FAQ_LIST_CLASS = 'faq__list';
-const FAQ_EL_CLASS = 'faq-el';
-const FAQ_LINK_CLASS = 'faq-el__link';
-const faqList = document.querySelector('.' + FAQ_LIST_CLASS);
+var CONTENT_CLOSED_CLASS = 'faq-el__content--closed';
+var TITLE_CLOSED_CLASS = 'faq-el__title--closed';
+var FAQ_LIST_CLASS = 'faq__list';
+var FAQ_EL_CLASS = 'faq-el';
+var FAQ_LINK_CLASS = 'faq-el__link';
+var faqList = document.querySelector('.' + FAQ_LIST_CLASS);
 
 function startFaq() {
   document.querySelectorAll('.' + FAQ_EL_CLASS).forEach(function (item) {
@@ -33,4 +33,3 @@ if (faqList) {
   faqList.addEventListener('click', onToggleFAQ);
   faqList.addEventListener('keydown', onToggleFAQ);
 }
-
