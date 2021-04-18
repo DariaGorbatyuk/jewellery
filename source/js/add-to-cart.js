@@ -1,9 +1,14 @@
 'use strict';
 
 (function () {
-  const addToCartTemplate = document.querySelector('#add-product').content.querySelector('.overlay');
+  const addToCartID = document.querySelector('#add-product');
   const btnAddToCart = document.querySelector('.product-card__add-link');
   const body = document.querySelector('body');
+
+  if(addToCartID){
+    var addToCartTemplate = addToCartID.content.querySelector('.overlay');
+  }
+
 
   function addProduct(evt) {
     evt.preventDefault();
@@ -24,5 +29,8 @@
       body.classList.remove('overflow');
     }
   }
-  btnAddToCart.addEventListener('click', addProduct);
+
+  if (addToCartTemplate) {
+    btnAddToCart.addEventListener('click', addProduct);
+  }
 })();

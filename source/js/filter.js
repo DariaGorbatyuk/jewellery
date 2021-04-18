@@ -8,7 +8,7 @@
   const FILTER_OPENED_CLASS = 'filter-form--opened';
   const filterForm = document.querySelector('.filter-form');
   const linkOpenFilter = document.querySelector('.catalog__link-to-filter');
-  const closeBtn = filterForm.querySelector('.filter-form__close');
+  const closeBtn = document.querySelector('.filter-form__close');
   const inputLowPrice = document.querySelector('#low-price');
   const inputHighPrice = document.querySelector('#high-price');
 
@@ -55,12 +55,15 @@
   function onRangeInput(evt) {
     var max = evt.currentTarget.value;
     if (evt.currentTarget.value.length > 3) {
-      evt.currentTarget.value =  max.slice(0,3);
+      evt.currentTarget.value = max.slice(0, 3);
     }
   }
 
-  filterForm.addEventListener('click', openDetails);
-  linkOpenFilter.addEventListener('click', openFilter);
-  inputLowPrice.addEventListener('input', onRangeInput);
-  inputHighPrice.addEventListener('input', onRangeInput);
+  if (filterForm) {
+    filterForm.addEventListener('click', openDetails);
+    linkOpenFilter.addEventListener('click', openFilter);
+    inputLowPrice.addEventListener('input', onRangeInput);
+    inputHighPrice.addEventListener('input', onRangeInput);
+  }
+
 })();

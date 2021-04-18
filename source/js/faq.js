@@ -5,7 +5,7 @@
   const TITLE_CLOSED_CLASS = 'faq-el__title--closed';
   const FAQ_LIST_CLASS = 'faq__list';
   const FAQ_EL_CLASS = 'faq-el';
-  const FAQ_LINK_CLASS = 'faq-el__link'
+  const FAQ_LINK_CLASS = 'faq-el__link';
   const faqList = document.querySelector('.' + FAQ_LIST_CLASS);
 
   function startFaq() {
@@ -30,7 +30,10 @@
     }
   }
 
-  startFaq();
-  faqList.addEventListener('click', onToggleFAQ);
-  faqList.addEventListener('keydown', onToggleFAQ);
+  if (faqList) {
+    startFaq();
+    faqList.addEventListener('click', onToggleFAQ);
+    faqList.addEventListener('keydown', onToggleFAQ);
+  }
+
 })();

@@ -15,14 +15,10 @@
 
   @media (max-width: $m-end) {
     width: 100%;
-    padding-left: 47px;
-    padding-bottom: 43px;
-    padding-right: 73px;
   }
 
   @media (max-width: $s-end) {
     width: 100%;
-    padding: 16px 55px 21px 24px;
   }
 
   a {
@@ -36,6 +32,7 @@
   list-style: none;
   cursor: none;
   pointer-events: none;
+  margin: 0;
 
   &::after {
     @include pseudo();
@@ -78,6 +75,16 @@
   display: block;
   padding: 43px 66px 43px 42px;
   cursor: pointer;
+
+  @media (max-width: $m-end) {
+    padding-left: 47px;
+    padding-bottom: 43px;
+    padding-right: 73px;
+  }
+
+  @media (max-width: $s-end) {
+    padding: 16px 55px 21px 24px;
+  }
 }
 
 .faq-el__content {
