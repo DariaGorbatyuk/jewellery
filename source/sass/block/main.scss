@@ -1,65 +1,59 @@
-.main {
-  &__promo {
-    margin-bottom: 120px;
-  }
-
-  &__novelty {
-    margin-bottom: 110px;
-  }
-
-  &__blog {
-    margin-bottom: 119px;
-  }
-
-  &__faq {
-    margin-bottom: 109px;
-  }
-
-  &__inst {
-    margin-bottom: 130px;
-  }
+.main__promo {
+  margin-bottom: 120px;
 
   @media (max-width: $m-end) {
-    &__promo {
-      margin-bottom: 71px;
-    }
-
-    &__novelty {
-      margin-bottom: 61px;
-    }
-
-    &__blog {
-      margin-bottom: 70px;
-    }
-
-    &__faq {
-      margin-bottom: 75px;
-    }
-
-    &__inst {
-      margin-bottom: 79px;
-    }
+    margin-bottom: 71px;
   }
 
   @media (max-width: $s-end) {
-    &__promo {
-      margin-bottom: 60px;
-    }
+    margin-bottom: 60px;
+  }
+}
 
-    &__novelty {
-      margin-bottom: 55px;
-    }
+.main__novelty {
+  margin-bottom: 110px;
 
-    &__blog {
-      margin-bottom: 57px;
-    }
+  @media (max-width: $m-end) {
+    margin-bottom: 61px;
+  }
 
-    &__faq {
-      margin-bottom: 60px;
-    }
+  @media (max-width: $s-end) {
+    margin-bottom: 55px;
+  }
+}
 
-    &__inst {
-      margin-bottom: 71px;
-    }
+.main__blog {
+  margin-bottom: 119px;
+
+  @media (max-width: $m-end) {
+    margin-bottom: 70px;
+  }
+
+  @media (max-width: $s-end) {
+    margin-bottom: 57px;
+  }
+}
+
+.main__faq {
+  margin-bottom: 109px;
+
+  @media (max-width: $m-end) {
+    margin-bottom: 75px;
+  }
+
+  @media (max-width: $s-end) {
+    margin-bottom: 60px;
+  }
+}
+
+.main__inst {
+  margin-bottom: 130px;
+
+  @media (max-width: $m-end) {
+    margin-bottom: 79px;
+  }
+
+  @media (max-width: $s-end) {
+    margin-bottom: 71px;
   }
 }
