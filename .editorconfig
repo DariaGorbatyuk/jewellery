@@ -22,10 +22,8 @@ trim_trailing_whitespace = true
 trim_trailing_whitespace = false
 
 # Ignore paths
-[/build/js/*.js]
-charset = unset
-end_of_line = unset
-insert_final_newline = unset
-trim_trailing_whitespace = unset
-indent_style = unset
-indent_size = unset
+[source/js/vendor.js]
+insert_final_newline = false
+
+[source/js/main.js]
+insert_final_newline = false
