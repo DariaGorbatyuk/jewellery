@@ -1,29 +1,19 @@
-.main-catalog {
-  &__promo {
-    margin-bottom: 80px;
-  }
-
-  &__catalog {
-    margin-bottom: 75px;
-  }
+.main-catalog__promo {
+  margin-bottom: 80px;
 
   @media (max-width: $m-end) {
-    &__promo {
-      margin-bottom: 50px;
-    }
-
-    &__catalog {
-      margin-bottom: 75px;
-    }
+    margin-bottom: 50px;
   }
 
   @media (max-width: $s-end) {
-    &__promo {
-      margin-bottom: 40px;
-    }
+    margin-bottom: 40px;
+  }
+}
 
-    &__catalog {
-      margin-bottom: 65px;
-    }
+.main-catalog__catalog {
+  margin-bottom: 75px;
+
+  @media (max-width: $s-end) {
+    margin-bottom: 65px;
   }
 }
