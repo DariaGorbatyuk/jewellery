@@ -47,6 +47,7 @@ if (addToCartTemplate) {
   \*************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements:  */
+/* eslint-disable no-unused-vars */
 
 var swiper;
 
@@ -266,7 +267,7 @@ btnOpenLoginSmall.addEventListener('click', openLoginForm);
   \**********************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements:  */
-
+/* eslint-disable no-unused-vars */
 
 var swiper;
 

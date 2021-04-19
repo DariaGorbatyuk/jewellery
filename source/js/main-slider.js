@@ -1,5 +1,5 @@
+/* eslint-disable no-unused-vars */
 'use strict';
-
 var swiper;
 
 function initSwiper() {
