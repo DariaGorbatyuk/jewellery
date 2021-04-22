@@ -14,19 +14,23 @@
 
   &--buy {
     margin-right: 30px;
+    max-width: 175px;
   }
 
   &--info {
     margin-left: auto;
+    max-width: 152px;
   }
 
   @media (max-width: $m-end) {
     &--buy {
       margin-right: 18%;
+      max-width: 175px;
     }
 
     &--info {
       margin-left: 0;
+      max-width: 124px;
     }
   }
 
@@ -34,6 +38,11 @@
     &--buy {
       margin-right: 0;
       margin-bottom: 39px;
+      max-width: unset;
+    }
+
+    &--info {
+      max-width: unset;
     }
   }
 }

@@ -48,6 +48,9 @@
   right: 0;
   top: 0;
   padding: 10px 0 10px 5px;
+  max-width: 107px;
+  height: 40px;
+  overflow: hidden;
 
   &:hover,
   &:focus {
