@@ -24,7 +24,7 @@
   }
 
   @media (max-width: $s-end) {
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 
     &::after {
       width: calc(100% + 15px);
@@ -145,6 +145,16 @@
     &:focus {
       outline: none;
       box-shadow: 0 0 0 2px $dark-gold;
+    }
+  }
+
+  @media (max-width: $s-end) {
+    width: 28px;
+    margin-right: auto;
+    margin-bottom: -1px;
+
+    input {
+      height: 18px;
     }
   }
 }
