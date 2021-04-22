@@ -2,29 +2,38 @@
   color: $dark;
   line-height: 1.3;
   position: relative;
+
+  h2 {
+    font-family: $cg;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+
+  @media (max-width: $m-end) {
+    h2 {
+      margin-bottom: 19px;
+    }
+  }
+
+  &--product {
+    h2 {
+      margin-bottom: 19px;
+    }
+  }
 }
 
 .novelty__layout {
   position: relative;
 }
 
-.novelty h2 {
-  font-family: $cg;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 34px;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 24px;
-
-  @media (max-width: $m-end) {
-    margin-bottom: 19px;
-  }
-}
 
 .novelty p {
   text-align: center;
-  padding-bottom: 0;
+  padding-bottom: 6px;
   position: relative;
   margin-top: 0;
   margin-bottom: 58px;
