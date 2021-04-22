@@ -7,12 +7,6 @@
   position: relative;
   width: 83%;
 
-  &:hover,
-  &:focus {
-    outline: none;
-    background-color: rgba($dark-gold, 0.8);
-  }
-
   @media (max-width: $m-end) {
     width: 100%;
   }
@@ -75,6 +69,7 @@
   display: block;
   padding: 43px 66px 43px 42px;
   cursor: pointer;
+  text-decoration: none;
 
   @media (max-width: $m-end) {
     padding-left: 47px;
@@ -84,6 +79,12 @@
 
   @media (max-width: $s-end) {
     padding: 16px 55px 21px 24px;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    background-color: rgba($dark-gold, 0.8);
   }
 }
 

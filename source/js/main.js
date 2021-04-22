@@ -99,15 +99,20 @@ function startFaq() {
 }
 
 function onToggleFAQ(evt) {
-  if (!evt.target.classList.contains(FAQ_LINK_CLASS) && evt.key !== 'Enter') {
+  if (evt.key !== 'Tab') {
+    evt.preventDefault();
+  }
+  if (!evt.target.classList.contains(FAQ_LINK_CLASS)) {
     return;
   }
-  if (evt.target.querySelector('.faq-el__title').classList.contains(TITLE_CLOSED_CLASS)) {
-    evt.target.querySelector('.faq-el__title').classList.remove(TITLE_CLOSED_CLASS);
-    evt.target.querySelector('.faq-el__content').classList.remove(CONTENT_CLOSED_CLASS);
-  } else {
-    evt.target.querySelector('.faq-el__title').classList.add(TITLE_CLOSED_CLASS);
-    evt.target.querySelector('.faq-el__content').classList.add(CONTENT_CLOSED_CLASS);
+  if (evt.type === 'click' || evt.key === 'Enter') {
+    if (evt.target.querySelector('.faq-el__title').classList.contains(TITLE_CLOSED_CLASS)) {
+      evt.target.querySelector('.faq-el__title').classList.remove(TITLE_CLOSED_CLASS);
+      evt.target.querySelector('.faq-el__content').classList.remove(CONTENT_CLOSED_CLASS);
+    } else {
+      evt.target.querySelector('.faq-el__title').classList.add(TITLE_CLOSED_CLASS);
+      evt.target.querySelector('.faq-el__content').classList.add(CONTENT_CLOSED_CLASS);
+    }
   }
 }
 
