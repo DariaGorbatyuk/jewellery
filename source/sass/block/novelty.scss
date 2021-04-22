@@ -13,9 +13,22 @@
     margin-bottom: 24px;
   }
 
-  @media (max-width: $m-end) {
-    h2 {
-      margin-bottom: 19px;
+  p {
+    text-align: center;
+    padding-bottom: 0;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 58px;
+    font-size: 16px;
+
+    &::after {
+      @include pseudo();
+      @include size(80px, 1px);
+      background-color: $dark-gold;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
     }
   }
 
@@ -23,40 +36,32 @@
     h2 {
       margin-bottom: 19px;
     }
+
+    p {
+      padding-bottom: 6px;
+    }
+  }
+
+  @media (max-width: $m-end) {
+    h2 {
+      margin-bottom: 19px;
+    }
+
+    p {
+      padding-bottom: 5px;
+      margin-bottom: 50px;
+    }
+  }
+
+  @media (max-width: $s-end) {
+    p {
+      margin-bottom: 40px;
+    }
   }
 }
 
 .novelty__layout {
   position: relative;
-}
-
-
-.novelty p {
-  text-align: center;
-  padding-bottom: 6px;
-  position: relative;
-  margin-top: 0;
-  margin-bottom: 58px;
-  font-size: 16px;
-
-  &::after {
-    @include pseudo();
-    @include size(80px, 1px);
-    background-color: $dark-gold;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-  }
-
-  @media (max-width: $m-end) {
-    padding-bottom: 5px;
-    margin-bottom: 50px;
-  }
-
-  @media (max-width: $s-end) {
-    margin-bottom: 40px;
-  }
 }
 
 .novelty__excerpt {
