@@ -22,6 +22,8 @@
 
     &--opened {
       display: block;
+      visibility: visible;
+      overflow: visible;
     }
 
     &--nojs {

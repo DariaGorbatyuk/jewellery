@@ -43,6 +43,24 @@
   }
 }
 
+.catalog__filter-form {
+  @media (max-width: $m-end) {
+    visibility: hidden;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+
+    &--visible {
+      visibility: visible;
+      overflow: scroll;
+    }
+  }
+}
+
 .catalog__slider {
   width: 100%;
   grid-column: 3/-1;

@@ -10,7 +10,8 @@
   <link rel="preload" href="fonts/poppins-medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/poppins-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
-  <link rel="preload" href="fonts/cormorant-garamond-semi-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/cormorant-garamond-semi-bold.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
   <link rel="preload" href="fonts/cormorant-garamond-italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/cormorant-garamond-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="icon" href="./img/icon-logo.svg" sizes="any" type="image/svg+xml">
@@ -92,90 +93,92 @@
       <a href="filter.html" class="catalog__link-to-filter">Filter</a>
 
       <div class="catalog__layout">
-        <form class="catalog__filter-form filter-form" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="filter-form__box" data-toggle="1">
-            <button type="button" class="filter-form__open-link">
-              <span class="filter-form__heading">Product</span>
-            </button>
-            <div class="filter-form__check-container">
-              <div class="filter-form__checkbox">
-                <input type="checkbox" id="necklaces" name="necklaces" checked>
-                <label for="necklaces">Necklaces</label>
-              </div>
-              <div class="filter-form__checkbox">
-                <input type="checkbox" id="chokers" name="chokers" checked>
-                <label for="chokers">Chokers</label>
-              </div>
-              <div class="filter-form__checkbox">
-                <input type="checkbox" id="rings" name="rings">
-                <label for="rings">Rings</label>
-              </div>
-              <div class="filter-form__checkbox">
-                <input type="checkbox" id="earrings" name="earrings" checked>
-                <label for="earrings">Earrings</label>
-              </div>
-            </div>
-          </fieldset>
-          <fieldset class="filter-form__box" data-toggle="0">
-            <button type="button" class="filter-form__open-link">
-              <span class="filter-form__heading">Material</span>
-            </button>
-            <div class="filter-form__check-container">
-              <div class="filter-form__checkbox">
-                <input type="checkbox" id="gold" name="gold">
-                <label for="gold">Gold</label>
-              </div>
-              <div class="filter-form__checkbox">
-                <input type="checkbox" id="silver" name="silver">
-                <label for="silver">Silver</label>
-              </div>
-            </div>
-          </fieldset>
-          <fieldset class="filter-form__box" data-toggle="0">
-            <button type="button" class="filter-form__open-link">
-              <span class="filter-form__heading">Collection</span>
-            </button>
-            <div class="filter-form__check-container">
-              <div class="filter-form__checkbox">
-                <input type="checkbox" id="flamingo" name="flamingo">
-                <label for="flamingo">Pink flamingo</label>
-              </div>
-              <div class="filter-form__checkbox">
-                <input type="checkbox" id="dreams" name="dreams">
-                <label for="dreams">Dreams</label>
-              </div>
-            </div>
-          </fieldset>
-          <fieldset class="filter-form__box" data-toggle="1">
-            <button type="button" class="filter-form__open-link">
-              <span class="filter-form__heading">Price</span>
-            </button>
-            <div class="filter-form__range filter-range">
-              <div class="filter-range__controls">
-                <div class="filter-range__scale">
-                  <div class="filter-range__bar"></div>
+        <div class="catalog__filter-form">
+          <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="filter-form__box" data-toggle="1">
+              <button type="button" class="filter-form__open-link">
+                <span class="filter-form__heading">Product</span>
+              </button>
+              <div class="filter-form__check-container">
+                <div class="filter-form__checkbox">
+                  <input type="checkbox" id="necklaces" name="necklaces" checked>
+                  <label for="necklaces">Necklaces</label>
                 </div>
-                <button class="filter-range__toggle filter-range__toggle--min" type="button"><span
-                  class="visually-hidden">Меньше</span>
-                </button>
-                <button class="filter-range__toggle filter-range__toggle--max" type="button"><span
-                  class="visually-hidden">Больше</span>
-                </button>
+                <div class="filter-form__checkbox">
+                  <input type="checkbox" id="chokers" name="chokers" checked>
+                  <label for="chokers">Chokers</label>
+                </div>
+                <div class="filter-form__checkbox">
+                  <input type="checkbox" id="rings" name="rings">
+                  <label for="rings">Rings</label>
+                </div>
+                <div class="filter-form__checkbox">
+                  <input type="checkbox" id="earrings" name="earrings" checked>
+                  <label for="earrings">Earrings</label>
+                </div>
               </div>
-              <div class="filter-range__inp filter-range__inp--min">
-                <label for="low-price">$</label>
-                <input type="number" value="55" name="low-price" id="low-price" min="0" step="1" required>
+            </fieldset>
+            <fieldset class="filter-form__box" data-toggle="0">
+              <button type="button" class="filter-form__open-link">
+                <span class="filter-form__heading">Material</span>
+              </button>
+              <div class="filter-form__check-container">
+                <div class="filter-form__checkbox">
+                  <input type="checkbox" id="gold" name="gold">
+                  <label for="gold">Gold</label>
+                </div>
+                <div class="filter-form__checkbox">
+                  <input type="checkbox" id="silver" name="silver">
+                  <label for="silver">Silver</label>
+                </div>
               </div>
-              <div class="filter-range__inp filter-range__inp--max">
-                <label for="high-price">$</label>
-                <input type="number" value="155" name="high-price" id="high-price" max="999" step="1" required>
+            </fieldset>
+            <fieldset class="filter-form__box" data-toggle="0">
+              <button type="button" class="filter-form__open-link">
+                <span class="filter-form__heading">Collection</span>
+              </button>
+              <div class="filter-form__check-container">
+                <div class="filter-form__checkbox">
+                  <input type="checkbox" id="flamingo" name="flamingo">
+                  <label for="flamingo">Pink flamingo</label>
+                </div>
+                <div class="filter-form__checkbox">
+                  <input type="checkbox" id="dreams" name="dreams">
+                  <label for="dreams">Dreams</label>
+                </div>
               </div>
-            </div>
-          </fieldset>
-          <button class="filter-form__btn" type="submit">Apply</button>
-          <button class="filter-form__btn filter-form__btn--reset" type="reset">Clear All</button>
-          <button class="filter-form__close" type="button" aria-label="Закрыть фильтр"></button>
-        </form>
+            </fieldset>
+            <fieldset class="filter-form__box" data-toggle="1">
+              <button type="button" class="filter-form__open-link">
+                <span class="filter-form__heading">Price</span>
+              </button>
+              <div class="filter-form__range filter-range">
+                <div class="filter-range__controls">
+                  <div class="filter-range__scale">
+                    <div class="filter-range__bar"></div>
+                  </div>
+                  <button class="filter-range__toggle filter-range__toggle--min" type="button"><span
+                    class="visually-hidden">Меньше</span>
+                  </button>
+                  <button class="filter-range__toggle filter-range__toggle--max" type="button"><span
+                    class="visually-hidden">Больше</span>
+                  </button>
+                </div>
+                <div class="filter-range__inp filter-range__inp--min">
+                  <label for="low-price">$</label>
+                  <input type="number" value="55" name="low-price" id="low-price" min="0" step="1" required>
+                </div>
+                <div class="filter-range__inp filter-range__inp--max">
+                  <label for="high-price">$</label>
+                  <input type="number" value="155" name="high-price" id="high-price" max="999" step="1" required>
+                </div>
+              </div>
+            </fieldset>
+            <button class="filter-form__btn" type="submit">Apply</button>
+            <button class="filter-form__btn filter-form__btn--reset" type="reset">Clear All</button>
+            <button class="filter-form__close" type="button" aria-label="Закрыть фильтр"></button>
+          </form>
+        </div>
         <div class="swiper-container catalog__slider">
           <div class="swiper-wrapper catalog__list">
             <div class="swiper-slide catalog__page">

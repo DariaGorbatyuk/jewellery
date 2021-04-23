@@ -143,6 +143,8 @@ var linkOpenFilter = document.querySelector('.catalog__link-to-filter');
 var closeBtn = document.querySelector('.filter-form__close');
 var inputLowPrice = document.querySelector('#low-price');
 var inputHighPrice = document.querySelector('#high-price');
+var filterOverlay = document.querySelector('.catalog__filter-form');
+var body = document.querySelector('body');
 
 document.querySelectorAll('.filter-form__box').forEach(function (item) {
   if (item.dataset.toggle === '1') {
@@ -167,21 +169,23 @@ function openDetails(evt) {
 }
 
 function onCloseFilter(evt) {
-  if (evt.key !== 'Escape' && !evt.target.classList.contains(FILTER_CLOSED_CLASS)) {
+  if (evt.key !== 'Escape' && !evt.target.classList.contains(FILTER_CLOSED_CLASS) && !evt.target.matches('.catalog__filter-form')) {
     return;
   }
   filterForm.classList.remove(FILTER_OPENED_CLASS);
+  filterOverlay.classList.remove('catalog__filter-form--visible');
+  body.classList.remove('overflow');
 }
 
 function openFilter(evt) {
   evt.preventDefault();
-  if (filterForm.classList.contains(FILTER_OPENED_CLASS)) {
-    filterForm.classList.remove(FILTER_OPENED_CLASS);
-  } else {
-    filterForm.classList.add(FILTER_OPENED_CLASS);
-    closeBtn.addEventListener('click', onCloseFilter);
-    document.addEventListener('keydown', onCloseFilter);
-  }
+  filterForm.classList.add(FILTER_OPENED_CLASS);
+  filterOverlay.classList.add('catalog__filter-form--visible');
+  body.classList.add('overflow');
+  closeBtn.addEventListener('click', onCloseFilter);
+  document.addEventListener('click', onCloseFilter);
+  document.addEventListener('keydown', onCloseFilter);
+
 }
 
 function onRangeInput(evt) {
