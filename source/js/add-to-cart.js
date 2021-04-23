@@ -15,6 +15,7 @@ function addProduct(evt) {
   body.insertAdjacentElement('afterbegin', newAddToCart);
   body.classList.add('overflow');
   newAddToCart.classList.add('overflow--scroll');
+  newAddToCart.querySelector('.product-item-to-cart__btn--plus').focus();
   btnClose.addEventListener('click', closeAddToCart);
   document.addEventListener('click', closeAddToCart);
   document.addEventListener('keydown', closeAddToCart);
