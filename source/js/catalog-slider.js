@@ -4,6 +4,7 @@ var swiper;
 
 function initSwiper() {
   swiper = new window.Swiper('.swiper-container', {
+    loop: true,
     slidesPerView: 1,
     slidesPerGroup: 1,
     centeredSlides: false,
