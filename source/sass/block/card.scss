@@ -16,6 +16,16 @@
     }
   }
 
+  &--nojs {
+    width: 100%;
+    max-width: 100%;
+
+    .card__img-container {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
   @media (max-width: $m-end) {
     max-width: 324px;
 
@@ -29,6 +39,16 @@
         overflow: hidden;
       }
     }
+
+    &--nojs {
+      width: 100%;
+      max-width: 100%;
+
+      .card__img-container {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
   }
 
   @media (max-width: $s-end) {
@@ -37,6 +57,16 @@
 
     &--catalog {
       min-height: 220px;
+    }
+
+    &--nojs {
+      width: 100%;
+      max-width: 100%;
+
+      .card__img-container {
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
   }
 }
