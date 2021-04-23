@@ -17,13 +17,8 @@
   }
 
   &--nojs {
-    width: 100%;
-    max-width: 100%;
-
-    .card__img-container {
-      margin-left: auto;
-      margin-right: auto;
-    }
+    margin-right: 2.7%;
+    width: 23%;
   }
 
   @media (max-width: $m-end) {
@@ -41,13 +36,9 @@
     }
 
     &--nojs {
-      width: 100%;
-      max-width: 100%;
-
-      .card__img-container {
-        margin-left: auto;
-        margin-right: auto;
-      }
+      width: 48%;
+      margin-right: 4%;
+      max-width: unset;
     }
   }
 
@@ -60,13 +51,8 @@
     }
 
     &--nojs {
-      width: 100%;
-      max-width: 100%;
-
-      .card__img-container {
-        margin-left: auto;
-        margin-right: auto;
-      }
+      width: 48%;
+      margin-right: 10%;
     }
   }
 }
