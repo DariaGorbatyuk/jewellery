@@ -58,6 +58,7 @@
     display: block;
     margin: auto;
     padding: 65px 15px 18px;
+    top: 50px;
 
     h2 {
       font-size: 24px;
@@ -140,11 +141,16 @@
 }
 
 .add-product__close {
-  right: 14px;
+  right: 16px;
   top: 14px;
 
+  @media (max-width: $m-end) {
+    right: 9px;
+    top: 9px;
+  }
+
   @media (max-width: $s-end) {
-    right: -1px;
+    right: 5px;
     top: 29px;
   }
 }

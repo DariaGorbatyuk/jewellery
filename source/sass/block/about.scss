@@ -1,9 +1,13 @@
 .about {
   display: flex;
+  justify-content: flex-end;
+
+  @media (max-width: $m-end) {
+    justify-content: flex-start;
+  }
 
   @media (max-width: $s-end) {
     display: block;
-    margin-bottom: 45px;
   }
 }
 
@@ -13,7 +17,7 @@
   padding: 0;
 
   &--buy {
-    margin-right: 30px;
+    margin-right: auto;
     max-width: 175px;
   }
 
@@ -24,7 +28,7 @@
 
   @media (max-width: $m-end) {
     &--buy {
-      margin-right: 18%;
+      margin-right: 17%;
       max-width: 175px;
     }
 
@@ -37,7 +41,7 @@
   @media (max-width: $s-end) {
     &--buy {
       margin-right: 0;
-      margin-bottom: 39px;
+      margin-bottom: 36px;
       max-width: unset;
     }
 
@@ -55,7 +59,7 @@
   }
 
   @media (max-width: $s-end) {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
   }
 }
 
@@ -78,5 +82,11 @@
   @media (max-width: $s-end) {
     display: block;
     width: 100%;
+    padding-left: 0;
+
+    &:hover,
+    &:focus {
+      box-shadow: none;
+    }
   }
 }

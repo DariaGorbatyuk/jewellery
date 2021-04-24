@@ -15,8 +15,13 @@
   &::before,
   &::after {
     @include pseudo();
-    @include size(14px, 2px);
+    @include size(17px, 2px);
     background-color: $dark;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
 
   &::before {
@@ -33,7 +38,18 @@
     &--big {
       &::before,
       &::after {
-        @include size(20px, 2px);
+        @include size(25px, 3px);
+      }
+    }
+  }
+
+  @media (max-width: $s-end) {
+    &--big {
+      @include square(25px);
+
+      &::before,
+      &::after {
+        @include size(21px, 2px);
       }
     }
   }

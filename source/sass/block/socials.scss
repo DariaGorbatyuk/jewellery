@@ -15,6 +15,8 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: flex-start;
+    margin-left: -3px;
   }
 }
 
@@ -26,7 +28,7 @@
   }
 
   @media (max-width: $s-end) {
-    margin-right: 15px;
+    margin-right: 16px;
     margin-bottom: 7px;
 
     &:last-child {
@@ -54,7 +56,9 @@
 }
 
 .socials__svg {
-  margin-right: 15px;
+  margin-right: 9px;
+  width: 15px;
+  height: 15px;
 
   @media (max-width: $m-end) {
     margin-right: 12px;

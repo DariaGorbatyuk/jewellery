@@ -1,3 +1,11 @@
+.nav {
+  padding-left: 6px;
+
+  @media (max-width: $m-end) {
+    padding: 0;
+  }
+}
+
 .nav__main-list {
   list-style: none;
   padding: 0;
@@ -19,7 +27,7 @@
 
 
 .nav__main-item {
-  margin-right: 32px;
+  margin-right: 35px;
 
   &:last-child {
     margin: 0;

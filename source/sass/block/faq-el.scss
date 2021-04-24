@@ -77,13 +77,11 @@
   text-decoration: none;
 
   @media (max-width: $m-end) {
-    padding-left: 47px;
-    padding-bottom: 43px;
-    padding-right: 77px;
+    padding: 44px 77px 43px 47px;
   }
 
   @media (max-width: $s-end) {
-    padding: 16px 55px 21px 24px;
+    padding: 17px 55px 21px 24px;
   }
 
   &:hover,
