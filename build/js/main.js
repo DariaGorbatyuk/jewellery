@@ -341,7 +341,6 @@ function initSwiper() {
 }
 
 function onResize() {
-  console.log('resize');
   swiper.destroy();
   initSwiper();
 }
