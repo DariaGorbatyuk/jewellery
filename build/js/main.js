@@ -282,11 +282,6 @@ btnOpenLoginSmall.addEventListener('click', openLoginForm);
 
 var swiper;
 var list = document.querySelector('.novelty__list');
-if (list) {
-  document.querySelectorAll('.card--nojs').forEach(function (card) {
-    card.classList.remove('card--nojs');
-  });
-}
 
 function initSwiper() {
   swiper = new window.Swiper('.novelty__slider', {
@@ -345,7 +340,19 @@ function initSwiper() {
   });
 }
 
-initSwiper();
+function onResize() {
+  console.log('resize');
+  swiper.destroy();
+  initSwiper();
+}
+
+if (list) {
+  document.querySelectorAll('.card--nojs').forEach(function (card) {
+    card.classList.remove('card--nojs');
+  });
+  initSwiper();
+  window.addEventListener('resize', onResize);
+}
 
 }();
 !function() {
