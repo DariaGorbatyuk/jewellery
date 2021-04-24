@@ -46,16 +46,11 @@
     color: $white;
     width: 100%;
     display: block;
-    padding-left: 20px;
 
     &:hover,
     &:focus {
       color: $white;
     }
-  }
-
-  @media (max-width: $s-end) {
-    padding-left: 0;
   }
 }
 
@@ -95,11 +90,6 @@
     text-decoration: none;
     display: block;
     width: 100%;
-    padding-left: 20px;
-  }
-
-  @media (max-width: $s-end) {
-    padding-left: 0;
   }
 }
 
@@ -116,10 +106,5 @@
     text-decoration: none;
     display: block;
     width: 100%;
-    padding-left: 20px;
-  }
-
-  @media (max-width: $s-end) {
-    padding-left: 0;
   }
 }
