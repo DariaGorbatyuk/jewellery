@@ -16,7 +16,7 @@
 
 .footer__layout {
   display: grid;
-  grid-template-columns: minmax(410px, 500px) minmax(30px, 77px) minmax(300px, 375px) minmax(30px, 98px) 120px;
+  grid-template-columns: minmax(410px, 500px) minmax(15px, 77px) minmax(335px, 375px) minmax(20px, 98px) 120px;
 
   @media (max-width: $m-end) {
     grid-template-rows: repeat(2, min-content);
