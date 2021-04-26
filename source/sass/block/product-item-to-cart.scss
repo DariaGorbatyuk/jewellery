@@ -133,7 +133,8 @@
     font-weight: normal;
     font-size: 18px;
     appearance: textfield;
-    padding-left: 7px;
+    padding: 0 0 0 7px;
+    height: 25px;
 
     &::-webkit-outer-spin-button,
     &::-webkit-inner-spin-button {

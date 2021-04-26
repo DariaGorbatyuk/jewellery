@@ -91,13 +91,7 @@
     border: none;
     background-color: transparent;
     padding-right: 2px;
- /*   appearance: textfield;
-
-    &::-webkit-outer-spin-button,
-    &::-webkit-inner-spin-button {
-      appearance: none;
-      margin: 0;
-    }*/
+    height: 23px;
 
     &:hover,
     &:focus {
@@ -127,6 +121,10 @@
   }
 
   @media (max-width: $s-end) {
+    input {
+      width: 35px;
+    }
+
     &--min {
       left: 8%;
     }
