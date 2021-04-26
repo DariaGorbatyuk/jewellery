@@ -4,7 +4,7 @@
 
 .login-form__inp-container {
   &:first-of-type {
-    margin-bottom: 24px;
+    margin-bottom: 23px;
   }
 
   &:last-of-type {
@@ -15,7 +15,7 @@
     width: 100%;
     background-color: transparent;
     border: none;
-    box-shadow: 0 1px 0 0 $dark;
+    border-bottom: 1px solid $dark;
     font-family: $poppins;
     font-style: normal;
     font-weight: 500;
@@ -32,13 +32,14 @@
     &:hover,
     &:focus {
       outline: none;
+      border-bottom: 1px solid $dark-gold;
       box-shadow: 0 0 0 1px $dark-gold;
     }
   }
 
   @media (max-width: $s-end) {
     &:first-of-type {
-      margin-bottom: 19px;
+      margin-bottom: 18px;
     }
 
     input {
@@ -53,7 +54,7 @@
   margin-top: 0;
 
   @media (max-width: $s-end) {
-    margin-bottom: 35px;
+    margin-bottom: 33px;
   }
 }
 
