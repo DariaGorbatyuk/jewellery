@@ -47,6 +47,16 @@
   }
 }
 
+.login-form__forgot-container {
+  text-align: right;
+  margin-bottom: 44px;
+  margin-top: 0;
+
+  @media (max-width: $s-end) {
+    margin-bottom: 35px;
+  }
+}
+
 .login-form__forgot-link {
   font-family: $poppins;
   font-style: normal;
@@ -56,17 +66,11 @@
   color: $light-gary;
   text-align: right;
   text-decoration: none;
-  display: block;
-  margin-bottom: 44px;
 
   &:hover,
   &:focus {
     outline: none;
     color: $dark-gold;
-  }
-
-  @media (max-width: $s-end) {
-    margin-bottom: 35px;
   }
 }
 
