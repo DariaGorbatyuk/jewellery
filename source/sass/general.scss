@@ -52,6 +52,10 @@ a {
   cursor: pointer;
 }
 
+input[type="checkbox"] ~ label {
+  cursor: pointer;
+}
+
 a:not([href]) {
   cursor: auto;
 }
