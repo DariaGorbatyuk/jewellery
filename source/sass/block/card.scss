@@ -30,11 +30,13 @@
   }
 
   @media (max-width: $m-end) {
-    //max-width: 324px;
-
     &--catalog {
       width: 206px;
       min-width: 206px;
+
+      .card__link{
+        width: 206px;
+      }
 
       .card__img-container {
         max-height: 208px;
@@ -51,11 +53,17 @@
   }
 
   @media (max-width: $s-end) {
-    //max-width: 130px;
-    //min-width: 130px;
-
     &--catalog {
+      width: 195px;
       min-height: 220px;
+
+      .card__link{
+        width: 195px;
+      }
+      .card__img-container{
+        width: 195px;
+        height: 195px;
+      }
     }
 
     &--nojs {

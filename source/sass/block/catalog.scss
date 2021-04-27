@@ -43,7 +43,7 @@
   }
 
   @media (max-width: $s-end) {
-    max-width: 289px;
+    max-width: 450px;
   }
 }
 
@@ -113,7 +113,11 @@
 
   @media (max-width: $m-end) {
     margin-bottom: 39px;
-    margin-right: 25px;
+    margin-right: 27px;
+
+    &:nth-child(2n+2) {
+      margin-right: 27px;
+    }
 
     &:nth-child(3n+3) {
       margin-right: 0;
@@ -124,14 +128,14 @@
     margin-right: 29px;
     margin-bottom: 24px;
 
-    &:nth-child(2n+2) {
-      margin-right: 0;
+    &:nth-child(3n+3) {
+      margin-right: 29px;
       margin-bottom: 24px;
     }
 
-    &:nth-child(3n+3) {
-      margin-right: auto;
-      margin-bottom: auto;
+    &:nth-child(2n+2) {
+      margin-right: 0;
+      margin-bottom: 24px;
     }
   }
 }
