@@ -80,6 +80,18 @@
   font-weight: 500;
 }
 
+.novelty__slider-layout {
+  @media (max-width: $s-end) {
+    width: 454px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (max-width: $main-slider-tiny) {
+    width: 294px;
+  }
+}
+
 .novelty__slider {
   position: static;
 }
