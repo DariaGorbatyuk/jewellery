@@ -3,7 +3,7 @@
 var swiper;
 
 function initSwiper() {
-  swiper = new window.Swiper('.swiper-container', {
+  swiper = new window.Swiper('.catalog__slider', {
     loop: true,
     slidesPerView: 1,
     slidesPerGroup: 1,
