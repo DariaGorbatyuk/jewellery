@@ -45,6 +45,10 @@
   @media (max-width: $s-end) {
     max-width: 450px;
   }
+
+  @media (max-width: $main-slider-tiny) {
+    max-width: 280px;
+  }
 }
 
 .catalog__filter-form {
@@ -130,6 +134,20 @@
 
     &:nth-child(3n+3) {
       margin-right: 29px;
+      margin-bottom: 24px;
+    }
+
+    &:nth-child(2n+2) {
+      margin-right: 0;
+      margin-bottom: 24px;
+    }
+  }
+
+  @media (max-width: $main-slider-tiny) {
+    margin-right: 19px;
+
+    &:nth-child(3n+3) {
+      margin-right: 19px;
       margin-bottom: 24px;
     }
 

@@ -32,9 +32,9 @@
   @media (max-width: $m-end) {
     &--catalog {
       width: 206px;
-      min-width: 206px;
+      //min-width: 206px;
 
-      .card__link{
+      .card__link {
         width: 206px;
       }
 
@@ -57,10 +57,11 @@
       width: 195px;
       min-height: 220px;
 
-      .card__link{
+      .card__link {
         width: 195px;
       }
-      .card__img-container{
+
+      .card__img-container {
         width: 195px;
         height: 195px;
       }
@@ -69,6 +70,23 @@
     &--nojs {
       width: 48%;
       margin-right: 10%;
+    }
+  }
+
+  @media (max-width: $main-slider-tiny) {
+    &--catalog {
+      width: 130px;
+      max-width: 130px;
+      min-height: 220px;
+
+      .card__link {
+        width: 130px;
+      }
+
+      .card__img-container {
+        width: 130px;
+        height: 136px;
+      }
     }
   }
 }
