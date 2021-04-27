@@ -92,8 +92,8 @@
   align-items: flex-start;
   justify-content: flex-start;
 
-  @media (max-width: $catalog-desk) {
-    justify-content: flex-start;
+  @media (max-width: $s-end) {
+    justify-content: center;
   }
 }
 
