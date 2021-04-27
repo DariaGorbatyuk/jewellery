@@ -32,7 +32,36 @@ function initSwiper() {
           },
         },
       },
+
+      480: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        pagination: {
+          type: 'fraction',
+          el: '.swiper-pagination',
+          renderFraction: function (currentClass, totalClass) {
+            return '<span class="' + currentClass + '"></span>' +
+              '<span class="swiper-pagination-of">\t&nbsp;of\t&nbsp;</span>' +
+              '<span class="' + totalClass + '"></span>';
+          },
+        },
+      },
       768: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        pagination: {
+          type: 'bullets',
+          el: '.swiper-pagination',
+          clickable: 'true',
+          renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (index + 1) + '</span>';
+          },
+        },
+      },
+      1024: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+
         pagination: {
           type: 'bullets',
           el: '.swiper-pagination',
@@ -43,7 +72,7 @@ function initSwiper() {
         },
       },
 
-      1024: {
+      1280: {
         slidesPerView: 4,
         slidesPerGroup: 4,
 
