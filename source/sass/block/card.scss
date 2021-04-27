@@ -7,9 +7,11 @@
   height: auto;
 
   &--catalog {
-    max-width: 269px;
-    flex-shrink: 1;
-    width: 31%;
+    width: 30%;
+
+    .card__link {
+      width: 270px;
+    }
 
     .card__img-container {
       max-height: 272px;
@@ -19,6 +21,12 @@
   &--nojs {
     margin-right: 2.7%;
     width: 23%;
+  }
+
+  @media (max-width: $catalog-desk) {
+    &--catalog {
+      width: auto;
+    }
   }
 
   @media (max-width: $m-end) {

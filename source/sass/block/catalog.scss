@@ -30,7 +30,11 @@
 
 .catalog__layout {
   display: grid;
-  grid-template-columns: minmax(180px, 250px) minmax(10px, 50px) minmax(710px, 867px);
+  grid-template-columns: minmax(190px, 250px) minmax(15px, 50px) minmax(850px, 867px);
+
+  @media (max-width: $catalog-desk) {
+    grid-template-columns: minmax(230px, 250px) minmax(50px, 100px) minmax(570px, 650px);
+  }
 
   @media (max-width: $m-end) {
     display: block;
@@ -91,14 +95,20 @@
 
 .catalog__item {
   margin-bottom: 35px;
-  margin-right: 3.5%;
+  margin-right: 4.9%;
 
   &:nth-child(3n+3) {
     margin-right: 0;
   }
 
   @media (max-width: $catalog-desk) {
-    margin-right: 7px;
+    &:nth-child(3n+3) {
+      margin-right: 4.9%;
+    }
+
+    &:nth-child(2n+2) {
+      margin-right: 0;
+    }
   }
 
   @media (max-width: $m-end) {
@@ -135,7 +145,8 @@
 }
 
 .catalog__pagination {
-  width: 500px;
+  width: 60%;
+  //width: 500px;
   justify-content: center;
   display: flex;
   align-items: center;
